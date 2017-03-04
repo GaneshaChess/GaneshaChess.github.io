@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="UTF-8">
+  	<link rel="stylesheet" type="text/css" href="../../darstellung.css">
+    <title>Angriffsanalyse</title>
+    	<script src="Angriffsanalyse.js" type="text/javascript"></script>
+    
+  </head>
+  <body>
+  	
+  	<div class="top-menu">
+	<ul class="reframe">
+	<li><a href="../../index.html">Startseite</a></li>
+	<li><a href="../../HowTo.html">Tutorial</a></li>
+	<li><a href="../../Werkzeugkiste.html">Werkzeugkiste</a></li>
+	<li><a href="../../Kontakt.html">Kontakt</a></li>
+	<li id="showresp"></li>
+	</ul>
+	</div>
+  
+  
+    <h3>Angriffskraft berechnen</h3>
+    <form method="get" name="Form1">
+      Schwertkaempfer:
+      <input type="text" name="schwerti"></input>
+      <br>
+      
+      Bogenschützen:
+      <input type="text" name="bogi"></input>
+      <br>
+      
+      Hopliten:
+      <input type="text" name="hoplit"></input>
+      <br>
+      
+      Streitwagen:
+      <input type="text" name="streitwagen"></input>
+      <br>
+      
+      Reiter:
+      <input type="text" name="reiter"></input>
+      <br>
+      
+       Schleuderer:
+      <input type="text" name="schleuderer"></input>
+      <br>
+      
+      <input type="button" name="btnSumme" value="Summe ermitteln" onclick="analysiereAngriff()"></input>
+      <br>
+
+      Bashpunkte =      
+      <output type="text" name="bashpunkte"></output>
+      <br>
+
+      Angriff Stichwaffen =      
+      <output type="text" name="AStich"></output>
+      <br>
+
+      Angriff Schlag =      
+      <output type="text" name="ASchlag"></output>
+      <br>
+
+     Angriff Distanzwaffen =      
+     <output type="text" name="AFern"></output>
+     <br>
+
+     Ressourcenkosten der Einheiten =      
+     <output type="text" name="Res"></output>
+     <br>
+
+      
+    </form>
+    
+    <script type="text/javascript">
+	init();
+	</script>
+	
+  </body>
+</html>

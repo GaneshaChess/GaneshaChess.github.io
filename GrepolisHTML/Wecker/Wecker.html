@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../darstellung.css">
+<title>Wecker</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script src="Wecker.js"></script>
+</head>
+<body>
+
+<div class="top-menu">
+<ul class="reframe">
+<li><a href="../index.html">Startseite</a></li>
+<li><a href="../HowTo.html">Tutorial</a></li>
+<li><a href="../Werkzeugkiste.html">Werkzeugkiste</a></li>
+<li><a href="../Kontakt.html">Kontakt</a></li>
+<li id="showresp"></li>
+</ul>
+</div>
+
+<h3>Aktuelle Uhrzeit</h3>
+<p id="Uhr"></p>
+
+<h3>Anleitung</h3>
+Trage in die ersten beiden Felder eine Uhrzeit ein. In
+das vierte Feld kann eine Beschreibung hinzugefuegt werden.
+Die Uhrzeit mit der Beschreibung wird 5 Minuten nach Verstreichen
+der Zeit gelöscht.
+
+<h3>Erinnerungen</h3>
+<form method="get" name="Form">
+<input type="text" name="Stunde"></input>:
+<input type="text" name="Minute"></input>:
+<input type="text" name="Sekunde"></input>
+<input type="text" name="Beschreibung"></input><br>
+<input type="button" name="UhrzeitHinzufügen" value="Uhrzeit hinzufügen" onclick="fuegeUhrzeitHinzu()"></input>
+<br> 
+</form>
+<p id="Wecker"></p>
+
+
+<script>
+init();
+testCookies();
+</script>
+
+</body>
+</html>

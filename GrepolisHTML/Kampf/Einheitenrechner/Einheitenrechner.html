@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Einheitenrechner</title>
+        <meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../../darstellung.css">
+	<script src="Einheitenrechner.js" type="text/javascript"></script>
+  </head>
+  
+  <body>
+  
+  	<div class="top-menu">
+	<ul class="reframe">
+	<li><a href="../../index.html">Startseite</a></li>
+	<li><a href="../../HowTo.html">Tutorial</a></li>
+	<li><a href="../../Werkzeugkiste.html">Werkzeugkiste</a></li>
+	<li><a href="../../Kontakt.html">Kontakt</a></li>
+	<li id="showresp"></li>
+	</ul>
+	</div>
+  
+    <h2>Rechner für Verteidigungswerte</h2>
+    Das kleine Programm hier berechnet die Daten einer Abwehr. Berechnet wird wieviel Kampfpunkte die Abwehr
+    wert ist, wieviel Rohstoffe die Abwehr gekostet hat, mit wieviel Einheiten einer der drei Waffengattung Stich, Fern und Schlagwaffe
+    angegriffen werden müsste, um die Abwehr zu überwinden. Entwicklungen, die die Kampfkraft der Truppen beeinflussen oder die Ausbaustufe der Stadtmauer
+    wurden hierbei nicht beachtet. Da diese Entwicklungen alle Truppenarten gleichermaßen beeinflussen, ändert dies nichts an einer potentiellen Schwachstelle der Abwehr und es ist daher nicht weiter
+    schlimm, dass diese Daten nicht in die Berechnung miteinfließen.
+    <br>
+    
+    <h3>Truppenzusammensetzung der Abwehr</h3>
+    Gebe hier die Truppenzusammensetzung der Abwehr ein. <br>
+    <form method="get" name="Form1">
+      Schwertkämpfer:
+      <input type="text" name="schwerti"></input>
+      <br>
+      
+      Bogenschützen:
+      <input type="text" name="bogi"></input>
+      <br>
+      
+      Hopliten:
+      <input type="text" name="hoplit"></input>
+      <br>
+      
+       Streitwagen:
+      <input type="text" name="streitwagen"></input>
+      <br>
+      
+      Reiter:
+      <input type="text" name="reiter"></input>
+      <br>
+      
+      Schleuderer:
+      <input type="text" name="schleuderer"></input>
+      <br>
+      
+      Miliz:
+      <input type="text" name="miliz"></input>
+      <br>
+      <br>
+      
+      <input type="button" name="btnSumme" value="berechne Werte der Abwehr" onclick="berechneWerteDerAbwehr()"></input>
+      
+      <h3>Daten der Verteidigung</h3>
+      Im folgenden sind die allgemeinen Daten der Verteidigung aufgelistet.<br>
+      <br>
+      Bashpunkte =      
+      <input type="text" name="bashpunkte"></input>      
+      <br>
+
+      <br>
+      Kosten der Verteidigung =      
+      <input type="text" name="kostenVert"></input>      
+      <br>
+
+	  <h4>Stichwaffen</h4>
+	  Wieviel Einheiten und Ressourcen würde ein Stickwaffenangriff kosten? Das Resultat ist bezüglich Hopliten
+	  oder Streitwagen aufgelistet.
+      <br>
+      Verteidigung gegen Stichwaffen =
+      <input type="text" name="VStich"></input>
+      
+      <br>
+      benötigte Hopliten =
+      <input type="text" name="bHopliten"></input>
+      
+      <br>
+      Rohstoffkosten =
+      <input type="text" name="rHoplit"></input>
+      
+      <br>
+      benötigte Streitwagen =
+      <input type="text" name="bStreit"></input>
+      
+      <br>
+      Rohstoffkosten =
+      <input type="text" name="rStreit"></input>
+      
+      <br>
+      <br>
+      <h4>Schlagwaffen</h4>
+      Wieviel Einheiten und Ressourcen würde ein Schlagwaffenangriff kosten? <br>
+      Verteidigung gegen Schlagwaffen =
+      <input type="text" name="VSchlag"></input>
+      
+      <br>
+      benötigte Reiter =
+      <input type="text" name="bReiter"></input>
+      
+      <br>
+      Rohstoffkosten =
+      <input type="text" name="rReiter"></input>
+      
+      <br>
+      <br>
+      <h4>Distanzwaffen</h4>
+      Wieviel Einheiten und Ressourcen würde ein Distanzwaffenangriff kosten? <br>
+      Verteidigung gegen Distanzwaffen =
+      <input type="text" name="VFern"></input>
+      
+      <br>
+      benötigte Schleuderer =
+      <input type="text" name="bSchleuderer"></input>
+      
+      <br>
+      Rohstoffkosten =
+      <input type="text" name="rSchleuderer"></input>
+      
+    </form>
+    
+    <script type="text/javascript">
+	init();
+	</script>
+  </body>
+</html>

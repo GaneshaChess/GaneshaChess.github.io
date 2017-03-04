@@ -1,0 +1,64 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../darstellung.css">
+<title>Uhrzeit</title>
+<script src="AmpelRaetsel.js"></script>
+</head>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var myVar = setInterval(function(){myTimer()},1000);
+function myTimer() {
+    var d = new Date();
+    document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+}
+</script>
+
+<h3>Regeln</h3>
+1) Die letzte Ampel funktioniert nicht.<br><br>
+2) Die erste Ampel kann nur umschalten, wenn sie nicht die
+gleiche Farbe, wie die zweite Ampel hat.<br><br>
+3) Die mittleren Ampeln können nur umschalten, wenn die vorausgehende und nachfolgende
+Ampel unterschiedliche Farbe haben.<br><br>
+
+<h3>Die Ampeln</h3>
+
+
+<svg id="circleA" height="100" width="80" >
+<circle id="1" onclick="changeColor('1')" cx="20" cy="20" r="20" fill="red" />
+</svg>
+
+<svg id="circleB" height="100" width="80">
+<circle id="2" onclick="changeColor('2')" cx="20" cy="20" r="20" fill="red" />
+</svg>
+
+<svg id="circleC" height="100" width="80">
+<circle id="3" onclick="changeColor('3')" cx="20" cy="20" r="20" fill="green" />
+</svg>
+
+<svg id="circleD" height="100" width="80">
+<circle id="4" onclick="changeColor('4')" cx="20" cy="20" r="20" fill="red" />
+</svg>
+
+<svg id="circleE" height="100" width="80">
+<circle id="5" onclick="changeColor('5')" cx="20" cy="20" r="20" fill="green" />
+</svg>
+
+<svg id="circleF" height="100" width="80">
+<circle id="6" onclick="changeColor('6')" cx="20" cy="20" r="20" fill="green" />
+</svg>
+
+<svg id="circleG" height="100" width="80">
+<circle id="7" onclick="changeColor('7')" cx="20" cy="20" r="20" fill="red" />
+</svg>
+
+<input type="button" name="btnSumme" value="Würfel" onclick="init()"></input>
+
+</body>
+</html>

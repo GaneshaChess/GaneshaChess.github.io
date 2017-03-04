@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../../darstellung.css">
+<title>Planung von Truppenbewegungen</title>
+
+<script type="text/javascript" src="bewegungsplaner.js"></script>
+<script type="text/javascript" src="uebertrageUhrzeitenInZeitenbuendel.js"></script>
+<script type="text/javascript" src="../../Wecker/Wecker.js"></script>
+
+</head>
+<body>
+
+<div class="top-menu">
+	<ul class="reframe">
+	<li><a href="../../index.html">Startseite</a></li>
+	<li><a href="../../HowTo.html">Tutorial</a></li>
+	<li><a href="../../Werkzeugkiste.html">Werkzeugkiste</a></li>
+	<li><a href="../../Kontakt.html">Kontakt</a></li>
+	<li id="showresp"></li>
+	</ul>
+	</div>
+
+<h2>Planung von Truppenbewegungen</h2>
+Das folgende kleine Programm berechnet die Abfahrtszeiten verschiedener Einheiten zu einer vorgegebenen Ankunftszeit.
+Es genügt die Laufzeit eines Einheitentyps anzugeben. Das Programm ist nützlich, um trotz Anti-Timing Regel eine zeitnahe Ankunftszeit
+zu erreichen.
+
+<form method="get" name="Form1">
+
+<h3>Geplante Ankunftszeit</h3>
+Gebe in diesem Feld die geplante Ankunftszeit der Truppen im Format Stunde:Minute:Sekunde an.
+<br>
+<input type="text" name="AnkunftStd"></input> : <input type="text" name="AnkunftMin"></input> : <input type="text" name="AnkunftSek"></input>
+<br>
+
+<h3>Laufzeit einer Truppenart</h3>
+Gebe die Laufzeit der Einheit in der ersten Spalte der Tabelle im Format Stunde:Minute:Sekunde an.
+<br>
+<input type="text" name="LaufzeitStd"></input> : <input type="text" name="LaufzeitMin"></input> : <input type="text" name="LaufzeitSek"></input>
+<br>
+
+<h3>Servergeschwindigkeit</h3>
+Gebe die Servergeschwindigkeit an.
+<br>
+<input type="text" name="Servergeschwindigkeit"></input>
+<br>
+
+<h3>Einheitengeschwindigkeiten der navalen Einheiten</h3>
+<table border="1">
+  <tr>
+    <th><input type="text" name="Transportboot"></input></th>
+    <th><input type="text" name="schnellesTransportboot"></input></th>
+    <th><input type="text" name="Feuerschiff"></input></th>
+    <th><input type="text" name="Brander"></input></th>
+    <th><input type="text" name="Tireme"></input></th>
+    <th><input type="text" name="Kolonieschiff"></input></th>
+  </tr>
+  <tr>
+    <th>  <input type="text" name="TransportbootGeschw"></input>  </th>
+    <th>  <input type="text" name="schnellesTransportbootGeschw"></input></th>
+    <th>  <input type="text" name="FeuerschiffGeschw"></th>
+    <th>  <input type="text" name="BranderGeschw"></th>
+    <th>  <input type="text" name="TiremeGeschw"></th>
+    <th>  <input type="text" name="KolonieschiffGeschw"></th>
+  </tr>
+</table>
+
+<h3>Abfahrtszeiten</h3>
+<table border="1">
+  <tr>
+    <th><input type="text" name="TransportbootE"></input></th>
+    <th><input type="text" name="schnellesTransportbootE"></input></th>
+    <th><input type="text" name="FeuerschiffE"></input></th>
+    <th><input type="text" name="BranderE"></input></th>
+    <th><input type="text" name="TiremeE"></input></th>
+    <th><input type="text" name="KolonieschiffE"></input></th>
+  </tr>
+  <tr>
+    <th>  <input type="text" name="TransportbootGeschwE"></input>  </th>
+    <th>  <input type="text" name="schnellesTransportbootGeschwE"></input></th>
+    <th>  <input type="text" name="FeuerschiffGeschwE"></th>
+    <th>  <input type="text" name="BranderGeschwE"></th>
+    <th>  <input type="text" name="TiremeGeschwE"></th>
+    <th>  <input type="text" name="KolonieschiffGeschwE"></th>
+  </tr>
+</table>
+
+<input type="button" name="btnSumme" value="Abfahrtszeiten ermitteln" onclick="berechneLaufzeiten()"></input>
+<input type="button" name="btnSumme" value="Speichere Abfahrtszeiten" onclick="	speichereZeiten();"></input>
+<br>
+
+</form>
+    <script type="text/javascript">
+	fillTable();
+	</script>
+
+</body>
+</html>

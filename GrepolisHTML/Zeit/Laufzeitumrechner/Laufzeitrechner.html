@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  
+  	<meta charset="UTF-8">
+  	<link rel="stylesheet" type="text/css" href="../../darstellung.css">
+    <title>Laufzeitrechner</title>
+    
+    <script type="text/javascript" src="Laufzeitrechner.js">
+	</script>
+	
+    
+  </head>
+  <body>
+  
+  <div class="top-menu">
+	<ul class="reframe">
+	<li><a href="../../index.html">Startseite</a></li>
+	<li><a href="../../HowTo.html">Tutorial</a></li>
+	<li><a href="../../Werkzeugkiste.html">Werkzeugkiste</a></li>
+	<li><a href="../../Kontakt.html">Kontakt</a></li>
+	<li id="showresp"></li>
+	</ul>
+	</div>
+  
+  	<h2>Laufzeitumrechner</h2>
+  	Das kleine Programm hier kann Laufzeiten zu unterschiedlichen Geschwindigkeiten berechnen. Zunächst
+  	muss die bekannte Laufzeit angegeben werden und die zugehörige Einheitengeschwindigkeit. Anschließend
+  	kann zu einer beliebigen Geschwindigkeit die Laufzeit für die gleiche Strecke ermittelt werden.
+  	
+    <form method="get" name="Form1">
+    
+      <h3>bekannte Laufzeit</h3>
+      
+       bekannte Laufzeit Stunden:
+      <input type="text" name="bekLaufzeitStd"></input>
+      <br>
+    
+      bekannte Laufzeit Minuten:
+      <input type="text" name="bekLaufzeitMin"></input>
+      <br>
+      
+      bekannte Laufzeit Sekunden:
+      <input type="text" name="bekLaufzeitSek"></input>
+      <br>
+      
+      <h3>bekannte Geschwindigkeit</h3>
+      
+      Geschwindigkeit:
+      <input type="text" name="bekGeschwindigkeit"></input>
+      <br>
+      
+      <h3>gesuchte Geschwindigkeit</h3>
+      gesuchte Geschwindigkeit:
+      <input type="text" name="gesGeschwindigkeit"></input>
+      <br>
+      
+      <h3>Servergeschwindigkeit</h3>
+      Servergeschwindigkeit:
+      <input type="text" name="EinheitenGeschwindigkeit"></input>
+      <br>
+
+      
+      <input type="button" name="btnSumme" value="Geschwindigkeit ermitteln" onclick="berechneGeschwindigkeit()"></input>
+      <br>
+      
+      <h3>gesuchte Laufzeit</h3>
+      
+      <br>
+      gesuchte Laufzeit in Min:   
+      <input type="text" name="gesLaufzeitMin"></input>
+      
+      <br>
+      gesuchte Laufzeit in Sek:
+      
+      <input type="text" name="gesLaufzeitSek"></input>
+      
+      <br>
+      gesuchte Laufzeit in Std:
+      
+      <input type="text" name="gesLaufzeitStd"></input>
+      
+    </form>
+    
+    <script type="text/javascript">
+	init();
+	</script>
+	
+  </body>
+</html>

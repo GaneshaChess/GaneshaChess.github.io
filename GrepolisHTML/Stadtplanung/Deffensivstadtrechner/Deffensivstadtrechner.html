@@ -1,0 +1,97 @@
+<html>
+  <head>
+  	<meta charset="UTF-8">
+  	  	<link rel="stylesheet" type="text/css" href="../../darstellung.css">
+    <title>Deffensivstadtrechner</title>
+	<script src="Deffensivstadtrechner.js" type="text/javascript"></script>
+  </head>
+  
+  <div class="top-menu">
+	<ul class="reframe">
+	<li><a href="../../index.html">Startseite</a></li>
+	<li><a href="../../HowTo.html">Tutorial</a></li>
+	<li><a href="../../Werkzeugkiste.html">Werkzeugkiste</a></li>
+	<li><a href="../../Kontakt.html">Kontakt</a></li>
+	<li id="showresp"></li>
+	</ul>
+   </div>
+  
+  <body>
+    <h3>Zusammensetzung der Verteidigung</h3>
+    Mit dem folgenden kleinen Programm kann bei einer gegebenen Anzahl von Bauernhofplätzen
+	die Zusammensetzung einer ausgeglichenenen Abwehr berechnet werden und wieviele Transportschiffe
+	zum Überseetransport benötigt werden.<br><br>
+    <form method="get" name="Form1">
+      
+      <h3>Wieviel Bauernhofplätze stehen zur Verfügung?</h3>
+       Bauernhofplätze:
+      <input type="text" name="bauernhofpl"></input>
+      <br>
+
+	  <h3>Welche Transportboote verwendest du und hast du die Entwicklung "Kojen" vollzogen?</h3>
+       Trage hier ein wieviel Bauernhofplätze dein Transportschiff kostet.
+       Ein schnelles Transportboot kostet 5 Bauernhofplätze und ein normales 7.<br><br>
+       Bauernhofkosten eines Transportbootes:
+      <input type="text" name="bKostenTranse"></input>
+      <br>
+
+	  <br>Trage hier ein, wieviel Einheiten dein Transportboot
+	  transportieren kann. Ein normales Transportschiff kann Einheiten im Wert von 20 Bauernhofplätzen
+	  transportieren. Ein schnelles Transportboot nur 10.<br><br>
+	  Transportschiffkapazität:
+      <input type="text" name="transK"></input>
+      <br>
+    
+      Gewichtung Stichwaffen:
+      <input type="text" name="GewichtungStichwaffen"></input>
+      <br>
+
+      
+      <input type="button" name="btnSumme" value="Abwehr ermitteln" onclick="fSumme()"></input>
+      <br>
+
+	<h3>Einheitenzusammensetzung</h3>
+	
+	Anzahl Schwertkämpfer:
+      <input type="text" name="AnzSchwert"></input>
+      <br>
+
+	Anzahl Bogenschützen:
+      <input type="text" name="AnzBogen"></input>
+      <br>
+
+	Anzahl Hopliten:
+      <input type="text" name="AnzHopliten"></input>
+      <br>
+
+	Anzahl Transportschiffe:
+      <input type="text" name="AnzTransportschiffe"></input>
+      <br>
+
+	<h3>Kosten der Abwehr</h3>
+
+	Kosten der Abwehr(ohne Transen):
+      <input type="text" name="KostenAbwehr"></input>
+      <br>
+
+	<h3>Kosten für den Angreifer</h3>
+	Kosten Stichangriff:
+      <input type="text" name="KostenStich"></input>
+      <br>
+
+	Kosten Schlagangriff:
+      <input type="text" name="KostenSchlag"></input>
+      <br>
+
+	Kosten Fernangriff:
+      <input type="text" name="KostenFern"></input>
+      <br>
+     
+      
+    </form>
+    
+    <script type="text/javascript">
+	init();
+	</script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+  <head>
+  	<meta charset="UTF-8">
+  	<link rel="stylesheet" type="text/css" href="../../darstellung.css">
+    <title>Verlustrechner fuer Nukes</title>
+	<script src="Verlustrechner.js" type="text/javascript"></script>
+  </head>
+  <body>
+  
+  	<div class="top-menu">
+	<ul class="reframe">
+	<li><a href="../../index.html">Startseite</a></li>
+	<li><a href="../../Kontakt.html">Kontakt</a></li>
+	<li><a href="../../Werkzeugkiste.html">Werkzeugkiste</a></li>
+	<li><a href="../../HowTo.html">Tutorial</a></li>
+	<li id="showresp"></li>
+	</ul>
+	</div>
+  
+    <h3>Verlustrechner für "Kanonen"</h3>
+    Mit diesem Programm kann berechnet werden, wieviel
+    Prozent der Armee des Verteidigers bei einem Angriff
+    mit vorgegebener Stärke zerstört wird.<br><br>
+    <form method="get" name="Form1">
+
+      Stärke der Verteidigung:
+      <input type="text" name="verteidigung"></input>
+      <br>
+    
+      Stärke des Angriffs:
+      <input type="text" name="angriff"></input>
+      <br>
+
+      Verlustrate des Verteidigers:      
+      <output type="text" name="verlust"></output>
+      <br>
+      
+      <input type="button" name="btnSumme" value="Verlustrate ermitteln" onclick="fBerechneVerlust()"></input>
+      
+    </form>
+    
+    <script type="text/javascript">
+	init();
+	</script>
+	
+  </body>
+</html>

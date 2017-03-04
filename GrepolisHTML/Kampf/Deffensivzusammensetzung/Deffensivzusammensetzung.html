@@ -1,0 +1,94 @@
+<html>
+  <head>
+  	<meta charset="UTF-8">
+  	 <link rel="stylesheet" type="text/css" href="../../darstellung.css">
+    <title>Deffensivzusammensetzung ohne Miliz</title>
+	<script src="Deffensivzusammensetzung.js" type="text/javascript"></script>
+  </head>
+  <body>
+  
+  	<div class="top-menu">
+	<ul class="reframe">
+	<li><a href="../../index.html">Startseite</a></li>
+	<li><a href="../../Kontakt.html">Kontakt</a></li>
+	<li><a href="../../Werkzeugkiste.html">Werkzeugkiste</a></li>
+	<li><a href="../../HowTo.html">Tutorial</a></li>
+	<li id="showresp"></li>
+	</ul>
+	</div>
+  
+    <h3>Zusammensetzung der Verteidigung</h3>
+    Mit diesem kleinen Werkzeug kann eine Zusammensetzung der Abwehr
+    ermittelt werden, sodass es für den Angreifer egal mit welcher
+    Waffengattung er angreift gleich teuer ist. Die Größe der 
+    Abwehr wird dabei über den Verteidigungswert gegenüber Stichwaffen
+    festgelegt. Die restlichen Verteidigungswerte werden dann so
+    angepasst, dass die Abwehr ausgeglichen ist.<br>
+    In der Realität finden sehr wenige Angriffe mit Hopliten
+    oder Streitwagen statt. Die meißten Angriffe werden mit
+    zahlreichen Reitern und Schleuderern durchgeführt. Es kann daher
+    sinnvoll sein, die Abwehr gegenüber Stichwaffen etwas zu vernachlässigen und die
+    gewonnen Ressourcen woanders zu investieren. Daher kann die Stichwaffenverteidigung
+    gewichtet werden. Ein Wert von 1 entspricht 100%. Die Abwehr ist völlig ausgeglichen.
+    Ein Wert kleiner als 1 lässt eine Lücke gegenüber Stichwaffen in der
+    Abwehr zu. Bei einer Gewichtung kleiner als 0.64878 kommen negative Einheitenzahlen heraus.
+    D.h. eine solche Abwehr ist nicht realisierbar.
+    <br> Ersetze die Werte 1000 und 1 durch beliebige Werte.
+    <br><br>
+    <form method="get" name="Form1">
+      
+       Stichwaffenverteidigung:
+      <input type="text" name="VertStichwaffen"></input>
+      <br>
+    
+      Gewichtung Stichwaffen:
+      <input type="text" name="GewichtungStichwaffen"></input>
+      <br>
+
+      
+      <input type="button" name="btnSumme" value="Abwehr ermitteln" onclick="fSumme()"></input>
+      <br>
+
+	<h3>Ermittelte Einheiten der Abwehr</h3>
+	Wie muss sich die Abwehr zusammensetzen?<br><br>
+	Anzahl Schwertkaempfer:
+      <input type="text" name="AnzSchwert"></input>
+      <br>
+
+	Anzahl Bogenschuetzen:
+      <input type="text" name="AnzBogen"></input>
+      <br>
+
+	Anzahl Hopliten:
+      <input type="text" name="AnzHopliten"></input>
+      <br>
+
+	<h3>Baukosten der Verteidigung</h3>
+	Kosten der Abwehr:
+      <input type="text" name="KostenAbwehr"></input>
+      <br>
+
+	<h3>Kosten des Angreifers</h3>
+	Wie teuer wäre ein potentieller Angriff mit Stichwaffen, Schlagwaffen
+	oder Distanzwaffen?<br><br>
+	Kosten Stichangriff:
+      <input type="text" name="KostenStich"></input>
+      <br>
+
+	Kosten Schlagangriff:
+      <input type="text" name="KostenSchlag"></input>
+      <br>
+
+	Kosten Fernangriff:
+      <input type="text" name="KostenFern"></input>
+      <br>
+     
+      
+    </form>
+    
+    <script type="text/javascript">
+	init();
+	</script>
+	
+  </body>
+</html>

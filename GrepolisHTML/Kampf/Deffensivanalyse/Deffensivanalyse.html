@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../darstellung.css">
+    <title>Deffensivanalyse</title>
+	<script src="./Deffensivanalyse.js" type="text/javascript"></script>
+  </head>
+  <body>
+  
+	<div class="top-menu">
+	<ul class="reframe">
+	<li><a href="../../index.html">Startseite</a></li>
+	<li><a href="../../HowTo.html">Tutorial</a></li>
+	<li><a href="../../Werkzeugkiste.html">Werkzeugkiste</a></li>
+	<li><a href="../../Kontakt.html">Kontakt</a></li>
+	<li id="showresp"></li>
+	</ul>
+	</div>
+  
+    <h3>Deffensivanalyse</h3>
+    Das kleine Programm hier zeigt, dass es für eine ausgeglichene Abwehr
+    nicht reicht die Abwehr so zusammenzusetzen, dass die Verteidigung die gleichen
+    Verteidigungswerte gegenüber Stichwaffen, Distanzwaffen und Schlagwaffen
+    aufweist. Die Kosten für die einzelnen Waffengattungen müssen ebenfalls 
+    in die Rechnung einbezogen werden.
+    <br><br>
+    <form method="get" name="Form1">
+
+	Verteidigung gegen Schlagwaffen:
+      <input type="text" name="OffsetSchlag"></input>
+      <br>
+
+	Verteidigung gegen Stichwaffen:
+      <input type="text" name="OffsetStich"></input>
+      <br>
+
+	Verteidigung gegen Fernwaffen:
+      <input type="text" name="OffsetFern"></input>
+      <br>
+
+      
+      <input type="button" name="btnSumme" value="Abwehr ermitteln" onclick="ermittleAngriffskosten()"></input>
+      <br>
+
+
+	Kosten Stichangriff:
+      <input type="text" name="KostenStich"></input>
+      <br>
+
+	Kosten Schlagangriff:
+      <input type="text" name="KostenSchlag"></input>
+      <br>
+
+	Kosten Fernangriff:
+      <input type="text" name="KostenFern"></input>
+      <br>
+      
+    </form>
+    
+    <script type="text/javascript">
+	init();
+	</script>
+	
+  </body>
+</html>

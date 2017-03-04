@@ -1,0 +1,348 @@
+.wp-caption-text { font-style: italic; }
+a{color:#3B7290;text-decoration:none} a img{border:none}
+pre, .grayframe {border:1px solid rgb(245,245,235);padding:1ex;background:rgb(250,250,250);border-radius:4px;line-height:140%;font-family:"Lucida Console",'Monaco','Andale Mono',monospace;font-size:1.5ex;color:rgb(80,80,80);margin:1.6em 0}
+.frame {font-family:serif;font-size:1em;line-height:120%;background:rgb(243,243,243);border-radius:4px;padding:1ex;margin:1.6em 0;width:100%}
+.frame p { width:100% }
+
+.autor{margin:0}
+.autor a{color:#ccc}
+h1,h2,h3,h4,h5{font-weight:normal;line-height:140%}
+h1 {margin-left:134px}
+h1 a{color:rgb(178,206,143)}
+h2{margin-top:0.2ex} h2.entry-title{margin-top:0} h2 img{display:none} h2 a{color:rgb(90,90,90)}
+h3,h4{font-size:1.7em;padding-bottom:4px;border-bottom:4px solid #80B47F;color:#80B47F;clear:both}
+hr{clear:both;visibility:hidden;}
+blockquote { font-size: 1.3em; line-height: 150%}
+pre{white-space:-moz-pre-wrap !important;white-space:-pre-wrap;white-space:-o-pre-wrap;white-space:pre-wrap;word-wrap:break-word}
+
+table{font-size:95%;color:rgb(120,120,120);border-collapse:collapse}
+.separate{border-collapse:separate}
+td,th{border:1px solid gainsboro;padding:2px 4px;text-align:left;vertical-align:top}
+
+ul.plus,ul.minus{list-style-type:none;padding-left:0}
+ul.plus li,ul.minus li{background:rgb(250,250,250);margin:0;padding:10px;border:1px solid gainsboro;border-radius:3px;margin-bottom:2px}
+ul.plus li:before, ul.minus li:before{content:" + ";color:green;font-weight:bold;font-size:2em}
+ul.minus li:before{content:" - ";color:firebrick}
+
+.header-image{float:left}
+#hcol{list-style-type:none;margin-left:0.5ex;padding-left:0.5ex}
+#hcol li{padding:1ex 0;border-bottom:1px dotted gainsboro}
+
+/** Hor Nav **/
+.assistive-text{display:none}
+
+nav#gatonav {min-height: 80px;display: block;position: relative;background: rgb(240,242,245)}
+nav#gatonav:after {content: 'eof';display:block;clear:both;height: 0;visibility: hidden}
+
+ul#menu-nav {list-style-type: none;margin:0;padding:0 }
+ul#menu-nav li {text-transform:uppercase;display:inline;float:left;font-size:0.98em;height:70px;width:130px;border:1px solid gainsboro;border-right: white;border-bottom:none;
+background:rgb(240,242,245);margin: 0;padding: 0;
+line-height: 120%;border-top: 4px solid rgb(240,242,245);
+}
+ul#menu-nav li a {color: gray;display: block;height: 2em;padding:1ex;margin: 0}
+ul#menu-nav li:hover {background: gainsboro;border-top: 4px solid rgb(178,206,143)}
+ul#menu-nav ul {width: 100%;background: transparent;visibility:hidden;margin:0;padding:0;padding-top: 8px}
+ul#menu-nav ul li {text-transform: none;background: silver;background: hsla(0,0%,70%,0.9);border-bottom: 4px solid rgb(178,206,143);border-top: 4px solid rgb(240,242,245)}
+ul#menu-nav ul li a {color: white}
+ul#menu-nav li:hover ul {visibility: visible;position: absolute;left: 0;top: 60px}
+
+/** Main **/
+#main{margin-top:1.5ex}
+.reframe{width:1280px;min-width:1280px; margin-left:auto;margin-right:auto;padding-left:10px;padding-right:10px}
+.inner{width:100%}
+
+.halfleft{width:48%;float:left;background:rgb(240,242,245);border-radius:3px;margin-bottom:1em}
+.halfright{width:48%;float:right;background:rgb(240,242,245);border-radius:3px;margin-bottom:1em}
+.halfleft h4, .halfright h4{background:rgb(240,242,245);margin:0;padding:6px;border-top-left-radius:6px;border-top-right-radius:6px}
+.halfleft *, .halfright *{margin:6px;font-size:96%}
+
+.halfbox, .thirdbox{width:29%;float:left;background:rgb(240,242,245);border-radius:3px;margin-bottom:1em;padding:0 1ex;margin:0.5ex;font-size:90%;border:1px solid silver;}
+.halfbox {width: 45%}
+.halfbox h4, .halfbox h5, .thirdbox h4, .thirdbox h5{font-size:1em;margin:0;padding-top:1ex;font-weight:normal;font-weight:bold}
+.half p, .thirdbox p{line-height:130%}
+
+.codebox{width:100%}
+.codebox h6{background:gray;color:white;margin-bottom:0;padding:0 10px;font-size:1em}
+.codebox pre{margin-top:0;border-top-right-radius:0;border-top-left-radius:0;border-top:0}
+#content{background:white;width:870px;float:left;padding:2em 0 2em 0}
+.excerpt{background:rgb(240,242,245);border-radius:4px;padding:2px 20px;line-height:150%}
+
+
+#anmerkung,
+.entry-content{margin: 0.8ex 0 0.8ex 23px}
+#bottomLine{background:black}
+
+#nav-below{clear:both;margin:2em auto;min-height:3em;padding:1ex;background:rgb(240,242,245);border:1px solid gainsboro;border-radius:4px;display:block}
+.nav-previous{float:left;width:45%;padding-left:1em}
+.nav-next{float:right;width:45%;text-align:right;padding-right:1em}
+
+.ankers{background:rgb(178,206,143);margin-right:10px;display:inline-block;padding:2px 6px;border-radius:3px;margin-bottom:1ex;font-size:0.9em}
+.ankers a{color:white}
+.gatoFeatured{background:rgb(240,242,245);border-radius:3px;height:240px;padding-right:30px;padding-top:10px;margin-bottom:10px}
+.gatoHeaderOnly{margin-left:14.7058823529412%}
+.gatoHeaderOnly .post-figure {margin-left:-17.2413793103448%;width:17.2413793103448%;float:left}
+
+article{display:block;margin-bottom:1em}
+.fullwidth {padding-bottom:4em; border-bottom:1px dotted gainsboro}
+figure{margin-left:0; width:100%}
+figcaption{font-style:italic}
+.alignright{float:right}
+.alignleft{float:left}
+.clear{clear:both}
+
+img, .wp-caption{max-width:100%;height:auto}
+
+/** sidebar sec **/
+#secondary{width:340px;float:right;margin-left:10px;padding-top:2em; padding-bottom:4em}
+#secondary ul{list-style-type:none;margin-left:0.4em;padding-left:0.2em;margin-top:0.5ex;display:none}
+#secondary .widget ul{display:block}
+#secondary ul.default{display:block}
+#secondary li{line-height:110%;border-bottom:1px dotted #749CB2}
+#secondary li a{display:block}
+#secondary h4{font-size:1.6em;padding-top:1em;}
+#secondary h4.widget_categories {margin-top:0}
+
+#secondary h5{font-size:1.2em;margin:0;border-bottom:3px solid rgb(220,220,220);padding:1ex 1ex 0.5ex 0;color:rgb(120,120,120);cursor:pointer;}
+#secondary h5:hover{color:rgb(90,90,90);border-bottom:3px solid slategray}
+#secondary h5.default{ color:#6E9147;background:url(/wp-content/themes/cantate/images/hover.png) right no-repeat;border-bottom:3px solid #6E9147}
+.open{color:rgb(90,90,90);border-bottom:3px solid green}
+#secondary p{font-size:0.9em;margin:0.1em 1em 0.1em 0}
+i{color:tomato;font-style:normal;}
+
+#gatotadd{width:100%;height:250px;background: rgb(240,242,245);margin-bottom:1em;text-align:center}
+
+/** Footer **/
+#footer{clear:both;border-top:1em solid rgb(240,242,245);background:rgb(240,242,245);height:230px;}
+#footer .widget{width:32%;float:left;margin-right:2%}
+div#footer div.widget:last-of-type  {float:right;margin-right:0}
+#footer ul{list-style-type:none;margin-left:0;padding-left:0}
+#footer li{border-bottom:1px dotted silver;font-size:0.94em}
+#footer a{color:#4a85a1}
+#footer h4, #footer h5{font-size:1.1em;margin:0 0 1ex 0;padding:1ex 0 0.1ex 0;color:rgb(120,120,120);border-bottom-color:rgb(150,150,150)}
+
+.totop{text-align:center;border-bottom:4px solid rgb(240,242,245);background:rgb(240,242,245);clear:both;}
+.totop a{ display:inline-block;width:100px;height:100px}
+
+#colophon{background:rgb(178,206,143);width:100%;clear:both;padding:1em 0;line-height:150%;text-transform: uppercase;text-align:center;font-size:0.8em;}
+#colophon a{padding:1em;color:#585858;}
+.adds {clear:both;padding-top:1ex;margin-bottom:1em}
+
+/** SUCHEN **/
+#searchform{margin:1em 0}
+#searchform #s{width:96%;font-size:1em;border-radius:0 !IMPORTANT;outline:0;padding:8px 1%}
+/** Kommentare **/
+#comments{clear:both;margin-top:2em}
+ul.commentlist{list-style:none;padding:0;margin:0}
+.commentlist li{float:right;width:70.5882352941176%;background:rgb(250,250,250);border:1px solid gainsboro;border-radius:4px;margin-bottom:1em}
+.comment-meta{float:left;margin-left:-41.6666666666667%;width:-41.6666666666667%}
+.commentlist time{font-size:smaller;line-height:110%}
+.commentlist cite{display:block;line-height:110%}
+.edit-link{display:none}
+.commentlist p{font-size:1.1em;color:lightslategray; margin:0.4em;}
+h3#reply-title, h4.comments-title{clear:both;font-size:1.8em}
+
+.comment-form-comment label{display:block}
+#respond form{float:right;width:70.5882352941176%;background:rgb(240,242,245);border:1px solid gainsboro;border-radius:6px;margin-bottom:1em}
+li a{padding:8px 0}
+.gatogalery, .gatobox{position:relative;min-height:240px}
+.gatoline{background:rgb(180,200,210);background:rgba(180,200,210,.5);width:50px;position:absolute;top:0;right:0;min-height:140px;z-index:100}
+.gatotrigger, .boxtrigger{padding:15px;font-size:3em;color:white;cursor:pointer}
+.gatocaption{padding:0.4ex;margin-top:0.2ex;font-style:italic;line-height:110%;color:rgb(120,120,120)}
+/** ab jetzt **/
+#postheader{margin-left:28.4090909090909%}
+#postheader .entry-header{margin-bottom:1em;margin-left:-39.6825396825397%;width:37%;float:left;padding:0 8px 8px 8px;border-radius:4px}
+#postheader .entry-header h2{margin:0;line-height:130%}
+
+.excerpt:after{content:"eof";clear:both;display:block;visibility:hidden;height:1px}
+.post-half, .post-half-small{width:46%;float:left;min-height:300px}
+.post-half:nth-child(odd), .post-half-small:nth-child(odd) {float:right}
+.post-half .figure{width:135px;float:left}
+.post-half-small{min-height:90px}
+
+.header-only{clear:both;border-bottom:1px dotted silver;padding-bottom:2em}
+#search{display:inline;width:200px;float:right}
+
+#gatoHeader{margin-left:29.4117647058824%;min-height:216px;margin-bottom:1em} 
+#gatoFigure{margin-bottom:2em;margin-left:-41.6666666666667%;width:41.6666666666667%;float:left;text-align:center}
+time,.entry-header p {color:#aaa;font-size:0.92em;line-height:100%;text-transform:uppercase}
+.countchars{color:silver;text-align:center;font-size:10px}
+
+/** Google Ads **/
+.adsresp {max-width:728px;height:90px;border-bottom:1em solid white;}
+#secondary .adsbygoogle { margin-left: auto; margin-right: auto; }
+
+.video{position: relative;padding-bottom: 56.25%;height: 0;overflow: hidden;}
+
+/** GroÃŸe Monitore iPad (1024) **/
+
+@media only screen and (min-width:1281px) {
+.excerpt:after {content:"eof";clear:none}
+}
+
+@media only screen and (min-width:1024px) and (max-width:1280px) {
+body {font-size:96%}
+h1 {margin-bottom: 0}
+h2 {font-size:1.2em}
+p {max-width:38em}
+.reframe {max-width:980px;min-width:980px;padding:0 1ex}
+#content {background:white;width:640px;padding-right:0}
+#secondary {width:300px}
+#anmerkung,
+.entry-content {margin:0px 20px 0 0}
+#postheader {margin-left:0;float:none}
+#postheader .entry-header {margin-left:0;float:left;margin-right:10px;background:rgb(240,242,245)}
+#gatoFigure {padding-left:8px;padding-right:10px}
+.even .inner {margin-right:30px}
+.odd .inner {margin-left:30px}
+.gatoHeaderOnly .post-figure {margin-right:10px}
+.adsresponsive {max-width:728px;margin-left:auto;margin-right:auto;}
+}
+
+/** GroÃŸe Monitore iPad Landscape **/
+@media only screen and (min-width:920px) and (max-width:1023px) {
+body {line-height:140%}
+h2 {font-size:1.1em;font-weight:bold}
+.reframe {max-width:940px;min-width:940px;padding:0 1ex}
+#content {background:white;width:610px;float:left;padding:0}
+#secondary {width:300px}
+#bottomLine {background:firebrick}
+#anmerkung,
+.entry-content {margin:0;padding:0}
+#postheader {margin:0;float:none;padding:0 20px 0 0}
+#postheader .entry-header {margin-left:0;float:left;margin-right:10px;background:rgb(240,242,245)}
+.gatoFeatured {padding-right:10px;margin-bottom:2em}
+.gatoFeatured img {width:150px}
+ul#menu-nav li {width:151px}
+#postheader .entry-header img {float:left;width:160px;margin-right:10px}
+.even .inner {margin-right:30px}
+.odd .inner {margin-left:30px}
+#gatotadd {width:300px;height:250px;background: rgb(240,242,245);float:left}
+object {-webkit-overflow-scrolling:touch}
+
+}
+
+/** iPad PortrÃ¤t **/
+@media only screen and (min-width:600px) and (max-width:919px) {
+h1 {font-size:1.5em;padding-top:12px}
+.adsresponsive {width: 468px}
+pre {font-size:1.3ex}
+body {line-height:140%}
+h2 {font-size:1.1em;font-weight:bold}
+.reframe {width:580px;min-width:580px}
+#content {background:white;width:580px;float:none}
+#secondary {width:580px;padding-top:2em}
+#entry-content, 
+.entry-content {margin:0}
+#postheader {margin-left:0;float:none}
+#postheader .entry-header {margin-left:0;float:left;margin-right:10px;background:rgb(240,242,245)}
+#bottomLine {background:plum}
+.gatoFeatured {padding-right:10px;margin-bottom:2em}
+.gatoFeatured img {width:140px}
+.gatoHeaderOnly .post-figure {margin-right:10px}
+
+ul#menu-nav li {font-size:0.9em;width:192px}
+
+#footer {height:25px}
+#footer .reframe {display:none}
+#text-18 {display:none; }
+}
+
+@media only screen and (min-width:470px) and (max-width:599px) {
+body {line-height:130%}
+.adsresponsive {width: 468px} 
+#main {margin-top:10px}
+pre {font-size:1.2ex}
+.post-half-small{float:none;width:100%;clear:both}
+div.ankers{display:none}
+.reframe {width:440px;min-width:440px;margin-left:auto;margin-right:auto}
+#content {background:white;width:100%;float:none}
+#secondary {width:100%;float:none}
+#secondary .widget, .widget {width:100%;float:none}
+.post-half {width:100%;float:none;clear:both}
+.even .inner {margin-right:auto}
+.odd .inner {margin-left:auto}
+#postheader {margin:0 !IMPORTANT;padding:0;width:100%}
+#postheader .entry-header {margin:0;float:none;width:100%}
+#postheader .entry-content {margin:0}
+.entry-header img {width:30%;float:left;margin-right:8px}
+#gatoFigure  {margin-bottom:0;margin-left:0;margin-right:6px;width:100px;float:left;text-align:center}
+#gatoHeader {margin:0;padding:0 4px}
+.gatoFeatured {padding:8px;height:auto}
+
+h1 {font-size:1.2em; margin-top:20px;line-height:40px}
+h2 {font-size:1em;font-weight:bold}
+h3 {font-weight:bold}
+#bottomLine {background:green}
+
+ul#menu-nav li {font-size:0.86em;height:60px;width:140px;line-height:130%}
+ul#menu-nav ul {margin-top:20px}
+.thirdbox {width:100%;float:none}
+.halfbox {width:100%;float:none}
+
+#text-18 {display:none}
+#footer {display:none}
+
+}
+
+@media only screen and (min-width:320px) and (max-width:469px) {
+.spon { display:none; }
+body {font-family:Helvetica,sans-serif;line-height:130%}
+.top-menu{width:316px;margin-left:auto;margin-right:auto}
+#content{background:white;width:100%;float:none}
+#main{margin-top:10px}
+#secondary{width:100%;float:none}
+.reframe{width:300px;min-width:300px;padding-left:5px;padding-right:5px}
+
+#secondary .widget, .widget {width:100%;float:none}
+
+.adsresponsive {width:320px} 
+pre {font-size:1.4ex}
+#text-18 {display:none}
+#footer {display:none}
+
+.post-half-small {float:none;width:100%;clear:both}
+div.ankers{display:none}
+
+.post-half{width:100%;float:none;clear:both}
+.even .inner{margin-right:auto}
+.odd .inner{margin-left:auto}
+
+#postheader{margin:0 !IMPORTANT;padding:0;width:100%}
+#postheader .entry-header {margin:0;float:none;padding:0;width:100%}
+#postheader .entry-content {margin:0}
+
+.entry-header img{width:30%;float:left;margin-right:8px}
+#gatoFigure{margin-bottom:0;margin-left:0;margin-right:6px;width:100px;float:left;text-align:center}
+
+#gatoHeader{margin:0;padding:0 4px}
+.gatoFeatured{padding:8px;height:auto}
+
+h1{font-size:1.1em}
+h2{font-size:1.4em}
+h3{font-size:1.2em}
+#bottomLine {background:green}
+nav#gatonav {background:none}
+
+ul#menu-nav li {height:70px;width:145px;border-bottom: 2px solid #A4C67D}
+ul#menu-nav ul {display:none}
+time, p[rel="author"] {display:inline}
+
+.thirdbox {width:90%;float:none}
+.halfbox {width:90%;float:none}
+
+.adsresponsive { width: 320px; height: 50px}
+.nav-previous{float:none;width:100%;padding:1ex;font-weight:normal;display:block}
+.nav-next{float:none;width:100%;text-align:left;padding:1ex;font-weight:normal;display:block}
+}
+
+.inads {margin: 1em 0}
+
+
+body {padding:0;margin:0;line-height:146%;color:rgb(90,90,90);font-size:104%; font-family: 'Signika', sans-serif; font-weight: 300;}
+.top-menu{list-style-type:none;margin-top:0;margin-bottom:0;height:40px;background:rgb(178,206,143);width:100%;}
+.top-menu ul {margin-top: 0;padding-top:10px}
+.top-menu li{display:inline}
+.top-menu a{color:white;padding:10px 20px 15px 0;font-size:1.1em}
+.moreNav{width: 50px;height:20px;border-radius:4px;border:3px solid silver;margin-left:auto;margin-right:auto;}
+.inN{ width:30px; height:5px;background:silver;margin:4px auto;border-radius:3px}
+

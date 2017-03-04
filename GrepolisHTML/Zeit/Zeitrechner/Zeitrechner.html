@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../../darstellung.css">
+
+<script type="text/javascript" src="FitIntoFormat.js">
+</script>
+
+<title>Addition und Subtraktion von Zeiten</title>
+</head>
+<body>
+
+<div class="top-menu">
+	<ul class="reframe">
+	<li><a href="../../index.html">Startseite</a></li>
+	<li><a href="../../HowTo.html">Tutorial</a></li>
+	<li><a href="../../Werkzeugkiste.html">Werkzeugkiste</a></li>
+	<li><a href="../../Kontakt.html">Kontakt</a></li>
+	<li id="showresp"></li>
+	</ul>
+	</div>
+
+<h1>Addition und Subtraktion von Uhrzeiten</h1>
+Mit dem folgenden kleinen Programm können Uhrzeiten addiert oder subtrahiert werden.
+
+<h3>Uhrzeit A</h3>
+    <form method="get" name="Form1">
+      
+       Tage:
+      <input type="text" name="tageA"></input>
+      <br>
+      
+       Stunden:
+      <input type="text" name="stundenA"></input>
+      <br>
+    
+      Minuten:
+      <input type="text" name="minutenA"></input>
+      <br>
+      
+      Sekunden:
+      <input type="text" name="sekundenA"></input>
+      <br>
+      
+    </form>
+    
+<h3>Uhrzeit B</h3>
+    <form method="get" name="Form2">
+    
+      Tage:
+      <input type="text" name="tageB"></input>
+      <br>
+      
+       Stunden:
+      <input type="text" name="stundenB"></input>
+      <br>
+    
+      Minuten:
+      <input type="text" name="minutenB"></input>
+      <br>
+      
+      Sekunden:
+      <input type="text" name="sekundenB"></input>
+      <br>
+      
+    </form>
+    
+    <form method="get" name="Form3"> 
+        <h3>Addition oder Subtraktion</h3>
+        <input type="button" name="btnAdd" value="Addition:A+B" onclick="add()"></input>
+        <input type="button" name="btnSub" value="Subtraktion:A-B" onclick="sub()"></input>
+    <br>
+     
+     Tage:
+      <input type="text" name="tageC"></input>
+      <br>
+      
+     Stunden:
+      <input type="text" name="stundenC"></input>
+      <br>
+    
+      Minuten:
+      <input type="text" name="minutenC"></input>
+      <br>
+      
+      Sekunden:
+      <input type="text" name="sekundenC"></input>
+      <br>   
+        
+         
+    </form>
+    
+    <script type="text/javascript">
+	init();
+	</script>
+
+</body>
+</html>
