@@ -1,5 +1,4 @@
 function init_gaps() {
-	alert("test");	
 	var elements = document.getElementsByClassName('Lücke');
 	var e, content, pos1, pos2, hint, solution;
 	for (var i = 0; i < elements.length; i++) {
