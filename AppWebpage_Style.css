@@ -1,0 +1,45 @@
+body {
+    background-image: url("case1");
+}
+b.Lücke {
+    color: red;
+}
+
+b.Lücke-ungelöst {
+    color: blue;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+}
+b.Lücke-gelöst {
+    color: green; 
+    display: none;
+}
+b.Hinweis {
+    color: green;
+}
+.example {
+    background-color: lightgrey;
+}
+button.link 
+{ 
+	background:none;
+	border:none; 
+}
+h1 {
+    color: blue;
+    font-family: courier;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid red;
+}
+h2, h3, h4 {
+    color: red;
+    font-family: courier;
+    padding: 30px;
+    text-align: center;
+}
+p {
+    color: black;
+}

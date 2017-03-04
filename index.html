@@ -1,1 +1,46 @@
-HelloWorld
+<!DOCTYPE html>
+<html lang="hr"> 
+<html>
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="AppWebpage_Style.css">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script>
+$(document).ready(function(){
+//enter code from here
+$(".Exa2").hide();
+	$(".Exa").hover(
+	function(){
+	  $(this).find(".Exa2").fadeIn();     
+	},
+	function(){
+      $(this).find(".Exa2").fadeOut();
+	});
+//to here
+});
+</script>
+</head>
+<body>
+
+<center>
+<img src="cover.jpg" alt="cover.jpg" style="width:800px;height:400px;">
+</center> 
+
+<h1>Chess 4 Elephants</h1>
+
+<img src="ChessPuzzleScreenshot_1.jpg" alt="ChessPuzzleScreenshot_1.jpg" style="width:300px;height:400px;">
+
+<p>  This is a program which aims to make chess tactics training more efficient than traditional study methods by using spaced repetition. You can either greatly decrease your time spent on tactics or greatly increase the amount you learn. (Read also the article about this app on <a href="http://pibulletin.com/effectively-improving-chess-tactics-skills/">Pibulletin</a>.) </p>
+
+<h2>Purpose</h2>
+
+<p>Chess puzzles will be presented to the user repeatedly in varying time intervals according to an editable schedule. This increases the efficiency of the training. The effect is known  as the Spacing effect.
+This app contains around 1900 chess puzzles organized in five puzzle sets. Each puzzle set can be either solved in order or randomly.
+The app is also easy to customize. You can import your own sets of puzzles into the database of the app. You can create your own collection of games etc. For more details we refer to the "About this App" interface of the app. </p>
+
+
+
+</body>
+</html> 
