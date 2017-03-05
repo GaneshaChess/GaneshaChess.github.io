@@ -22,7 +22,7 @@ ul.croatiannav li a {
 }
 
 /* Change background color of links on hover */
-ul.croatiannav li a:hover {background-color: #355;}
+ul.croatiannav li a:hover {background-color: #400;}
 
 /* Hide the list item that contains the link that should open and close the topnav on small screens */
 ul.croatiannav li.icon {display: none;}
