@@ -23,6 +23,18 @@
   <meta charset="utf-8"/>
   <script src="https://www.w3schools.com/lib/w3data.js"></script>
   <script src="https://ganeshachess.github.io/Hrvatski/UbungGenetiv/l%C3%BCckentext.js"></script>
+  
+  
+  <script>
+  $(document).on("pagecreate","#pageone",function(){
+    $("p").on("click",function(){
+      alert("1");
+      mix_text();
+      init_gaps();
+      alert("2");
+    });                       
+  });
+  </script>
 </head>
 <body>
 
@@ -310,14 +322,6 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
 </div>
 
 <div data-role="page" id="genetiv_uebung1">
-  <script>
-    $( document ).live( 'pageload', function(event)
-    {
-      mix_text();
-      init_gaps();
-    });
-   </script>
-   
   <div data-role="main" class="ui-content">
     <a href="https://ganeshachess.github.io/Hrvatski/UbungGenetiv/ÜbungGenetiv3.html">Gen uebung1</a>
     
