@@ -22,6 +22,7 @@
 
   <meta charset="utf-8"/>
   <script src="https://www.w3schools.com/lib/w3data.js"></script>
+  <script src="https://ganeshachess.github.io/Hrvatski/UbungGenetiv/l%C3%BCckentext.js"></script>
 </head>
 <body>
 
@@ -309,8 +310,40 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
 </div>
 
 <div data-role="page" id="genetiv_uebung1">
+  <script>
+    $( document ).live( 'pageload', function(event)
+    {
+      mix_text();
+      init_gaps();
+    });
+   </script>
+   
   <div data-role="main" class="ui-content">
     <a href="https://ganeshachess.github.io/Hrvatski/UbungGenetiv/ÜbungGenetiv3.html">Gen uebung1</a>
+    
+    <h1>Lückentext</h1>
+
+	<div id="Lückentext">
+	Imamo puno <b class="Lücke">novca (novac)</b>, a malo <b class="Lücke">prijatelja (prijatelj)</b>.<br><br>
+	Ima li <b class="Lücke">kruha (kruh)</b>? Nema <b class="Lücke">kruha (kruh)</b>.<br><br>
+	Torta je od <b class="Lücke">sira (sir)</b>.<br><br>
+	Djeca bez <b class="Lücke">roditelja (roditelj, mn.)</b>.<br><br>
+	Bilo je više od 200 000 djece bez <b class="Lücke">doma (dom)</b>.<br><br>
+	Do <b class="Lücke">fakulteta (fakultet)</b> imam samo 200 <b class="Lücke">metara (metar)</b>.<br><br>
+	Stan nije daleko od  <b class="Lücke">centra grada (center grada)</b>.<br><br>
+	Ormarić je pored  <b class="Lücke">kreveta (krevet)</b>.<br><br>
+	Stolice su oko  <b class="Lücke">stola (stol)</b>.<br><br>
+	Tepih je ispod  <b class="Lücke">stola (stol)</b>.<br><br>
+	Kada je <b class="Lücke">umivaonika (umivaonik)</b>.<br><br>
+	Luster je iznad <b class="Lücke">stola (stol)</b>.<br><br>
+	Molim Vas još malo <b class="Lücke">šećera (šećer)</b>.<br><br>
+	Imamo premalo <b class="Lücke">kruha (kruh)</b> za goste.<br><br>
+	</div>
+	<br>
+	<br>
+
+	<button type="button" onclick="change_visibility();">Lösung</button>
+	<button type="button" onclick="check();">Korrektur</button>
   </div>
 </div>
 
