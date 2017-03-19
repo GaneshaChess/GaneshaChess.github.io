@@ -27,22 +27,28 @@
   
   <script>
   $(document).on("pagecreate","#genetiv_uebung1",function(){
+		alert("a");      
       mix_text();
       init_gaps();
+      alert("1");
   });
   </script>
   
   <script>
   $(document).on("pagecreate","#genetiv_uebung2",function(){
+  		alert("b");
       mix_text();
       init_gaps();
+      alert("2");
   });
   </script>
   
   <script>
   $(document).on("pagecreate","#genetiv_uebung3",function(){
+  		alert("c");
       mix_text();
       init_gaps();
+      alert("3");
   });
   </script>
 </head>
