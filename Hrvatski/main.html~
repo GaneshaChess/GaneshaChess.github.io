@@ -38,6 +38,13 @@
       init_gaps();
   });
   </script>
+  
+  <script>
+  $(document).on("pagecreate","#genetiv_uebung3",function(){
+      mix_text();
+      init_gaps();
+  });
+  </script>
 </head>
 <body>
 
@@ -319,7 +326,8 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
 
 <br><br>
  <div align="center">
-  <a href="#genetiv_uebung2">Zu den Übungen</a> 
+  <a href="#genetiv_uebung2">Zu den Übungen 1</a>
+  <a href="#genetiv_uebung3">Zu den Übungen 2</a>  
 </div>  
   </div>
 </div>
@@ -397,6 +405,34 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
 	<button type="button" onclick="init_gaps();">Reset</button>
   </div>
 </div>
+
+<!-- Page Genetiv Uebung 3 -->
+
+<div data-role="page" id="genetiv_uebung3">
+  <div data-role="navbar">
+    	<ul>
+      	<li><a href="#pageone">Sprachgeschichte</a></li>
+      	<li><a href="#Genetiv">Genetiv</a></li>
+      	<li><a href="#dylandog">Lektüre</a></li>
+    	</ul>
+  </div>
+  <div data-role="main" class="ui-content">
+    
+    	<h1>Lückentext</h1>
+
+		<div class=="Lückentext">
+		Ovo je ključ <b class="Lücke">moga prijatelja Branka (meines Freundes Branko)</b>.<br><br>
+		Čija je ovo olovka? Ovo je olovka <b class="Lücke">moje prijateljice (meiner Freundin)</b>.<br><br>
+		</div>
+		<br>
+		<br>
+
+		<button type="button" onclick="change_visibility();">Lösung</button>
+		<button type="button" onclick="check();">Korrektur</button>
+		<button type="button" onclick="init_gaps();">Reset</button>
+  	</div>
+</div>
+<!-- Dylan Dog -->
 
 <div data-role="page" id="dylandog">
   <div data-role="header">
