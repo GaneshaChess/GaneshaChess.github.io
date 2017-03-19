@@ -331,7 +331,7 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
     
     <h1>Lückentext</h1>
 
-	<div class="Lückentext">
+	<div id="Lückentext">
 	Imamo puno <b class="Lücke">novca (novac)</b>, a malo <b class="Lücke">prijatelja (prijatelj)</b>.<br><br>
 	Ima li <b class="Lücke">kruha (kruh)</b>? Nema <b class="Lücke">kruha (kruh)</b>.<br><br>
 	Torta je od <b class="Lücke">sira (sir)</b>.<br><br>
