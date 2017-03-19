@@ -81,7 +81,7 @@ function mix_text(){
 		element = elements[i];
 		var content = element.innerHTML;
 	   var lines = content.split('\n');
-	   shuffle(lines)
+	   shuffle(lines);
 	   element.innerHTML = lines.join('\n');
 	}
 }

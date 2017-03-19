@@ -75,9 +75,13 @@ function shuffle (array) {
 }
 
 function mix_text(){
-	var element = document.getElementById('Lückentext');
-	var content = element.innerHTML;
-	var lines = content.split('\n');
-	shuffle(lines)
-	element.innerHTML = lines.join('\n');
+	var element;
+	var elements = document.getElementsByClassName('Lückentext');
+	for (var i = 0; i < elements.length; i++) {
+		element = elements[i];
+		var content = element.innerHTML;
+	   var lines = content.split('\n');
+	   shuffle(lines)
+	   element.innerHTML = lines.join('\n');
+	}
 }
