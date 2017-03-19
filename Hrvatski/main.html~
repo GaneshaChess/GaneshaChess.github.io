@@ -409,14 +409,18 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
 <!-- Page Genetiv Uebung 3 -->
 
 <div data-role="page" id="genetiv_uebung3">
-  <div data-role="navbar">
-    	<ul>
-      	<li><a href="#pageone">Sprachgeschichte</a></li>
-      	<li><a href="#Genetiv">Genetiv</a></li>
-      	<li><a href="#dylandog">Lektüre</a></li>
-    	</ul>
+	<div data-role="header">
+  		<h1>Genetiv</h1>
+  		<div data-role="navbar">
+    		<ul>
+      		<li><a href="#pageone">Sprachgeschichte</a></li>
+      		<li><a href="#Genetiv">Genetiv</a></li>
+      		<li><a href="#dylandog">Lektüre</a></li>
+    		</ul>
+  		</div>
   </div>
-  <div data-role="main" class="ui-content">
+	
+	<div data-role="main" class="ui-content">
     
     	<h1>Lückentext</h1>
 
@@ -432,6 +436,7 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
 		<button type="button" onclick="init_gaps();">Reset</button>
   	</div>
 </div>
+
 <!-- Dylan Dog -->
 
 <div data-role="page" id="dylandog">
