@@ -48,9 +48,9 @@
   <h1>Sprachgeschichte des Slawischen</h1>
   <div data-role="navbar">
     <ul>
-      <li><a href="http://GaneshaChess.github.io/Hrvatski/DasSlawische.html">Sprachgeschichte</a></li>
-      <li><a href="#Genetiv">Genetiv</a></li>
-      <li><a href="http://GaneshaChess.github.io/Hrvatski/Lekture/DylanDog.html">Lektüre</a></li>
+      	<li><a href="#pageone">Sprachgeschichte</a></li>
+      	<li><a href="#Genetiv">Genetiv</a></li>
+      	<li><a href="#dylandog">Lektüre</a></li>
     </ul>
   </div>
   </div>
@@ -94,9 +94,9 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
   	<h1>Genetiv</h1>
   	<div data-role="navbar">
     	<ul>
-      	<li><a href="http://GaneshaChess.github.io/Hrvatski/DasSlawische.html">Sprachgeschichte</a></li>
+      	<li><a href="#pageone">Sprachgeschichte</a></li>
       	<li><a href="#Genetiv">Genetiv</a></li>
-      	<li><a href="http://GaneshaChess.github.io/Hrvatski/Lekture/DylanDog.html">Lektüre</a></li>
+      	<li><a href="#dylandog">Lektüre</a></li>
     	</ul>
   	</div>
   </div>
@@ -329,9 +329,9 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
 <div data-role="page" id="genetiv_uebung1">
   <div data-role="navbar">
     	<ul>
-      	<li><a href="http://GaneshaChess.github.io/Hrvatski/DasSlawische.html">Sprachgeschichte</a></li>
+      	<li><a href="#pageone">Sprachgeschichte</a></li>
       	<li><a href="#Genetiv">Genetiv</a></li>
-      	<li><a href="http://GaneshaChess.github.io/Hrvatski/Lekture/DylanDog.html">Lektüre</a></li>
+      	<li><a href="#dylandog">Lektüre</a></li>
     	</ul>
   	</div>
   <div data-role="main" class="ui-content">
@@ -368,9 +368,9 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
 <div data-role="page" id="genetiv_uebung2">
   <div data-role="navbar">
     	<ul>
-      	<li><a href="http://GaneshaChess.github.io/Hrvatski/DasSlawische.html">Sprachgeschichte</a></li>
+      	<li><a href="#pageone">Sprachgeschichte</a></li>
       	<li><a href="#Genetiv">Genetiv</a></li>
-      	<li><a href="http://GaneshaChess.github.io/Hrvatski/Lekture/DylanDog.html">Lektüre</a></li>
+      	<li><a href="#dylandog">Lektüre</a></li>
     	</ul>
   	</div>
   <div data-role="main" class="ui-content">
