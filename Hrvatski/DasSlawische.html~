@@ -26,11 +26,9 @@
   
   
   <script>
-  $(document).on("pagecreate","#pageone",function(){
-      alert("1");
+  $(document).on("pagecreate","#genetiv_uebung1",function(){
       mix_text();
       init_gaps();
-      alert("2");                       
   });
   </script>
 </head>
@@ -319,7 +317,15 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
   </div>
 </div>
 
+
 <div data-role="page" id="genetiv_uebung1">
+  <div data-role="navbar">
+    	<ul>
+      	<li><a href="http://GaneshaChess.github.io/Hrvatski/DasSlawische.html">Sprachgeschichte</a></li>
+      	<li><a href="#Genetiv">Genetiv</a></li>
+      	<li><a href="http://GaneshaChess.github.io/Hrvatski/Lekture/DylanDog.html">Lektüre</a></li>
+    	</ul>
+  	</div>
   <div data-role="main" class="ui-content">
     <a href="https://ganeshachess.github.io/Hrvatski/UbungGenetiv/ÜbungGenetiv3.html">Gen uebung1</a>
     
@@ -346,6 +352,7 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
 
 	<button type="button" onclick="change_visibility();">Lösung</button>
 	<button type="button" onclick="check();">Korrektur</button>
+	<button type="button" onclick="init_gaps();">Reset</button>
   </div>
 </div>
 
