@@ -4,7 +4,7 @@ function init_voka() {
     function display_me(){
     	elem1 = this.getElementsByClassName('Exa1')[0];
 		elem2 = this.getElementsByClassName('Exa2')[0];
-      elem2.style.display = "block";
+      elem2.style.display = "inline";
     }
     function hide_me(){
     	elem1 = this.getElementsByClassName('Exa1')[0];
