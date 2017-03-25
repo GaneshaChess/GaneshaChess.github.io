@@ -49,16 +49,17 @@
   $(document).on("pagecreate","#darkwood-dub",function(){
     var elements = document.getElementsByClassName('Exa');
     var elem, sub_elem1, sub_elem2;
-    function() display_me{
+    function display_me(){
     	elem1 = this.getElementsByClassName('Exa1')[0];
 		elem2 = this.getElementsByClassName('Exa2')[0];
       elem2.style.display = "block";
     }
-    function() hide_me{
+    function hide_me(){
     	elem1 = this.getElementsByClassName('Exa1')[0];
 		elem2 = this.getElementsByClassName('Exa2')[0];
       elem2.style.display = "none";
     }
+    alert("ehm");
 	 for (var i = 0; i < elements.length; i++) {
 		elem = elements[i];
 		sub_elem1 = elem.getElementsByClassName('Exa1')[0];

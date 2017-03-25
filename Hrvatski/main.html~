@@ -67,7 +67,7 @@
 		sub_elem2.style.display = 'none';
 		elem.addEventListener("mouseover", display_me);
       elem.addEventListener("mouseout",hide_me);
-      alert("i "+i);
+      alert(i);
 	 }
   });
 </script>  
