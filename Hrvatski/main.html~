@@ -55,9 +55,11 @@
 		sub_elem2 = elem.getElementsByClassName('Exa2')[0];
 		sub_elem2.style.display = 'none';
 		function display_text() {
+		  alert("tesr");
         sub_elem2.style.display = 'block';
       }
       function hide_text() {
+        alert("tesr");
         sub_elem2.style.display = 'none';
       }
       elem.addEventListener("mouseover", display_text);
