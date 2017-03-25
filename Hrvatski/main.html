@@ -45,6 +45,26 @@
       init_gaps();
   });
   </script>
+  <script>
+  $(document).on("pagecreate","#darkwood-dub",function(){
+    var elements = document.getElementsByClassName('Exa');
+    var elem, sub_elem1, sub_elem2;
+	 for (var i = 0; i < elements.length; i++) {
+		elem = elements[i];
+		sub_elem1 = elem.getElementsByClassName('Exa1')[0];
+		sub_elem2 = elem.getElementsByClassName('Exa2')[0];
+		sub_elem2.style.display = 'none';
+		function display_text() {
+        sub_elem2.style.display = 'block';
+      }
+      function hide_text() {
+        sub_elem2.style.display = 'none';
+      }
+      elem.addEventListener("mouseover", display_text);
+      elem.addEventListener("mouseout", hide_text);
+	 }
+  });
+</script>  
 </head>
 <body>
 
