@@ -59,11 +59,12 @@
         sub_elem2.style.display = 'block';
       }
       function hide_text() {
-        alert("tesr");
+        alert("tesr hide");
         sub_elem2.style.display = 'none';
       }
       elem.addEventListener("mouseover", display_text);
       elem.addEventListener("mouseout", hide_text);
+      alert(i);
 	 }
   });
 </script>  
