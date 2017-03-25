@@ -53,6 +53,7 @@
 		elem = elements[i];
 		sub_elem1 = elem.getElementsByClassName('Exa1')[0];
 		sub_elem2 = elem.getElementsByClassName('Exa2')[0];
+		alert(elem.getElementsByClassName('Exa2').length);
 		sub_elem2.style.display = 'none';
 		elem.addEventListener("mouseover", function() {
         sub_elem2.style.display = 'block';
