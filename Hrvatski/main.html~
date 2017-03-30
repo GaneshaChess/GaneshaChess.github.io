@@ -573,6 +573,14 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
   </div>
   
   <div data-role="main" class="ui-content">
+    <h1>Anleitung</h1>
+    Höre dir die jeweiligen Lieder auf mp3 oder auf Youtube an. Du findest
+    unter jedem Lied einen Link zu Youtube. Wenn du den Liedtext beim Abspielen
+    mitliest, bemerkst du, dass einige Wörter markiert sind. Gehst du mit der Maus
+    über diese, erscheint deren Übersetzung. Des Weiteren lassen sich diese Vokabeln
+    jeweils gesammelt in einem Anki-Deck zum jeweiligen Künstler herunterladen.
+    Du kannst dir den Text auch jeweils als Pdf-Datei herunterladen, ausdrucken und zum Beispiel
+    in der U-Bahn hören.
     <h1>Darkwood Dub</h1>
     <div>
 	<br>
@@ -643,8 +651,9 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
 	Izliv osećanja<br> 
 	</div>
 	
+	<h1>Elemental</h1>
 	<div data-role="collapsible">
-	<h2>ELEMENTAL - Iz Dana U Dan</h2>
+	<h2>Iz Dana U Dan</h2>
 
 Koliko nisko idemo, može li uopće niže <br>
 možda nam se <div class="Exa"><div class="Exa1">digao</div><div class="Exa2">dizati, dižem - heben</div></div> <div class="Exa"><div class="Exa1">zanos</div><div class="Exa2">Schwung, Elan</div></div>, al' standard nam se ne dize <br>
