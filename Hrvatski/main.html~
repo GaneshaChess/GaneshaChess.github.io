@@ -588,13 +588,8 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
 			</div>
 		</div>
     	
-    	<div data-role="main" class="ui-content">
 		<div data-role="collapsible">
 			<h2>Präpositionen mit Akkusativ</h2>
-		   <div data-role="collapsible">
-		      <h3>na</h3>
-		   </div>
-		</div>
 		</div>
   	</div>
 </div>
@@ -621,6 +616,26 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
 	<div data-role="main" class="ui-content">
     
     	<h1>Dativ</h1>
+    	
+    	<div data-role="collapsible">
+		   <h2>Formen</h2>
+			<div data-role="collapsible">
+			<h3>Maskulinum</h3>
+			</div>
+			
+			<div data-role="collapsible">
+			<h3>Femininum</h3>
+			</div>
+			
+			<div data-role="collapsible">
+			<h3>Neutrum</h3>
+			</div>
+		</div>
+    	
+		<div data-role="collapsible">
+			<h2>Präpositionen mit Dativ</h2>
+		</div>
+		
   	</div>
 </div>
 
@@ -646,6 +661,24 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
 	<div data-role="main" class="ui-content">
     
     	<h1>Lokativ</h1>
+    	<div data-role="collapsible">
+		   <h2>Formen</h2>
+			<div data-role="collapsible">
+			<h3>Maskulinum</h3>
+			</div>
+			
+			<div data-role="collapsible">
+			<h3>Femininum</h3>
+			</div>
+			
+			<div data-role="collapsible">
+			<h3>Neutrum</h3>
+			</div>
+		</div>
+    	
+		<div data-role="collapsible">
+			<h2>Präpositionen mit Lokativ</h2>
+		</div>
   	</div>
 </div>
 
@@ -671,6 +704,25 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
 	<div data-role="main" class="ui-content">
     
     	<h1>Instrumentalis</h1>
+    	
+    	<div data-role="collapsible">
+		   <h2>Formen</h2>
+			<div data-role="collapsible">
+			<h3>Maskulinum</h3>
+			</div>
+			
+			<div data-role="collapsible">
+			<h3>Femininum</h3>
+			</div>
+			
+			<div data-role="collapsible">
+			<h3>Neutrum</h3>
+			</div>
+		</div>
+    	
+		<div data-role="collapsible">
+			<h2>Präpositionen mit Instrumentalis</h2>
+		</div>
   	</div>
 </div>
 
