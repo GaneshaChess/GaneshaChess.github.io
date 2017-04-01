@@ -572,6 +572,18 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
 	<div data-role="main" class="ui-content">
     
     	<h1>Akkusativ</h1>
+    	
+    	<div data-role="main" class="ui-content">
+		<div data-role="collapsible">
+		<h2>Formen</h2>
+		</div>
+		</div>
+    	
+    	<div data-role="main" class="ui-content">
+		<div data-role="collapsible">
+		<h2>Präpositionen mit Akkusativ</h2>
+		</div>
+		</div>
   	</div>
 </div>
 
