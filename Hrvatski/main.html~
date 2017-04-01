@@ -114,10 +114,14 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
   	
   	<div data-role="navbar">
     	<ul>
-      	<li><a href="#pageone">Sprachgeschichte</a></li>
-      	<li><a href="#Genetiv">Genetiv</a></li>
-      	<li><a href="#dylandog">Lektüre</a></li>
-      	<li><a href="#darkwood-dub">Songtexte</a></li>
+      		<li><a href="#pageone">Sprachgeschichte</a></li>
+      		<li><a href="#Akkusativ">Akkusativ</a></li>
+      		<li><a href="#Genetiv">Genetiv</a></li>
+      		<li><a href="#Instrumentalis">Instrumentalis</a></li>
+      		<li><a href="#Dativ">Dativ</a></li>
+      		<li><a href="#Lokativ">Lokativ</a></li>
+      		<li><a href="#dylandog">Lektüre</a></li>
+      		<li><a href="#darkwood-dub">Songtexte</a></li>
     	</ul>
   	</div>
   </div>
