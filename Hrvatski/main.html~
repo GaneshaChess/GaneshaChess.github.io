@@ -575,11 +575,25 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
     	
 		<div data-role="collapsible">
 		<h2>Formen</h2>
+			<div data-role="collapsible">
+			<h3>Maskulinum</h3>
+			</div>
+			
+			<div data-role="collapsible">
+			<h3>Femininum</h3>
+			</div>
+			
+			<div data-role="collapsible">
+			<h3>Neutrum</h3>
+			</div>
 		</div>
     	
     	<div data-role="main" class="ui-content">
 		<div data-role="collapsible">
-		<h2>Präpositionen mit Akkusativ</h2>
+			<h2>Präpositionen mit Akkusativ</h2>
+		   <div data-role="collapsible">
+		      <h3>na</h3>
+		   </div>
 		</div>
 		</div>
   	</div>
