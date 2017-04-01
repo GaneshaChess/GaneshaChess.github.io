@@ -132,7 +132,6 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
    <a href="AnkiDecks/GenetivPlural.apkg">Genetiv Plural - AnkiDeck</a> herunterladen (Rechtsklick).</p>  	
 	<a href="AnkiDecks/Genitiv.apkg">Genetiv - AnkiDeck</a> herunterladen (Rechtsklick).</p>  
 
-	<div data-role="main" class="ui-content">
 	<div data-role="collapsible">
 	<h2>Präpositionen mit Genetiv</h2>
 	<p>
@@ -193,10 +192,9 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
   </div>
 
 </p>
-</div>
-</div>
+
+	</div>
  
-<div data-role="main" class="ui-content">
 <div data-role="collapsible">
 <h2>Maskulinum: Genitiv</h2>
 <p>
@@ -292,9 +290,7 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
 
 </p>
 </div>
-</div>
 
-<div data-role="main" class="ui-content">
 <div data-role="collapsible">
 <h2>Femininum: Genitiv</h2>
 <p>
@@ -332,9 +328,7 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
 </table>
 </p>
 </div>
-</div>
 
-<div data-role="main" class="ui-content">
 <div data-role="collapsible">
 <h2>Neutrum: Genitiv</h2>
 <p>
@@ -360,9 +354,7 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
 </table>
 </p>
 </div>
-</div>
 
-<div data-role="main" class="ui-content">
 <div data-role="collapsible">
 <h2>Interrogativpronomen</h2>
 <p>
@@ -374,9 +366,7 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
 
 </p>
 </div>
-</div>
 
-<div data-role="main" class="ui-content">
 <div data-role="collapsible">
 <h2>Verben mit Genetiv</h2>
 <p>
@@ -387,9 +377,7 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
 
 </p>
 </div>
-</div>
 
-<div data-role="main" class="ui-content">
 <div data-role="collapsible">
 <h2>Genetiv in Zeitangaben</h2>
 <p>
@@ -411,7 +399,6 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
 </ul>
 
 </p>
-</div>
 </div>
 
 <br><br>
