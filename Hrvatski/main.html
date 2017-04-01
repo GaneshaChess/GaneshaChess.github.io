@@ -26,7 +26,12 @@
   <script src="https://ganeshachess.github.io/Hrvatski/vokabeln.js"></script>
   <link rel="stylesheet" href="https://ganeshachess.github.io/Hrvatski/hrvatski_style.css">
   
-  
+  <script>
+  $(document).on("pagecreate","#Genetiv",function(){
+    init_voka();
+  });
+  </script> 
+
   <script>
   $(document).on("pagecreate","#genetiv_uebung1",function(){
       mix_text();
@@ -47,6 +52,7 @@
       init_gaps();
   });
   </script>
+  
   <script>
   $(document).on("pagecreate","#darkwood-dub",function(){
     init_voka();

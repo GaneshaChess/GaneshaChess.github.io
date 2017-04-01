@@ -293,6 +293,21 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
 			</div>
 		</div>
 
+<div data-role="collapsible">
+<h2>Interrogativpronomen</h2>
+<p>
+
+<ul>
+<li>tko -> koga
+<li>što -> čega
+</ul>
+
+</p>
+</div>
+
+<div data-role="collapsible">
+<h2>Verwendung</h2>
+<p>
 	<div data-role="collapsible">
 	<h2>Präpositionen mit Genetiv</h2>
 	<p>
@@ -355,23 +370,6 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
 </p>
 	</div>
 
-<
-
-<div data-role="collapsible">
-<h2>Interrogativpronomen</h2>
-<p>
-
-<ul>
-<li>tko -> koga
-<li>što -> čega
-</ul>
-
-</p>
-</div>
-
-<div data-role="collapsible">
-<h2>Verwendung</h2>
-<p>
 	<div data-role="collapsible">
 	<h3>Verben mit Genetiv</h3>
 	<p>
@@ -584,7 +582,7 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
 		</div>
     	
 		<div data-role="collapsible">
-			<h2>Präpositionen mit Akkusativ</h2>
+			<h2>Verwendung</h2>
 		</div>
   	</div>
 </div>
@@ -628,7 +626,7 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
 		</div>
     	
 		<div data-role="collapsible">
-			<h2>Präpositionen mit Dativ</h2>
+			<h2>Verwendung</h2>
 		</div>
 		
   	</div>
@@ -672,7 +670,7 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
 		</div>
     	
 		<div data-role="collapsible">
-			<h2>Präpositionen mit Lokativ</h2>
+			<h2>Verwendung</h2>
 		</div>
   	</div>
 </div>
@@ -716,7 +714,7 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
 		</div>
     	
 		<div data-role="collapsible">
-			<h2>Präpositionen mit Instrumentalis</h2>
+			<h2>Verwendung</h2>
 		</div>
   	</div>
 </div>
