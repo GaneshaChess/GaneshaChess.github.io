@@ -690,7 +690,11 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
 			</div>
 		</div>
     	
-		<div data-role="collapsible">
+		<div data-role="collapsible">    	
+		
+		<div align="center">
+  			<a href="#Akkusativ_uebung2">Übung</a> 
+		</div>
 			<h2>Verwendung</h2>
 			<div data-role="collapsible">
 				<h3>Präpositionen</h3>
@@ -728,7 +732,7 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
 
 <div data-role="page" id="Akkusativ_uebung1">
 	<div data-role="header">
-  		<h1>Genetiv</h1>
+  		<h1>Akkusativ</h1>
   		<div data-role="navbar">
     		<ul>
       		<li><a href="#pageone">Sprachgeschichte</a></li>
@@ -764,7 +768,42 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
 		Što vidiš kad gledaš kroz <b class="Lücke">prozor (Fenster)</b>.<br><br>
 		Alergičan sam na <b class="Lücke">sve (alles)</b>.<br><br>
 		Važno je obraćati pažnju na <b class="Lücke">to (dieses)</b>.<br><br>
-		Albina stalno misli na <b class="Lücke">Mirona (Mirona)</b>,<br> a Miron očigledno misli na <b class="Lücke">nju (sie)</b><br><br>
+		Albina stalno misli na <b class="Lücke">Mirona (Miron)</b>,<br> a Miron očigledno ne misli na <b class="Lücke">nju (sie)</b><br><br>
+		</div>
+		<br>
+		<br>
+
+		<button type="button" onclick="change_visibility();">Lösung</button>
+		<button type="button" onclick="check();">Korrektur</button>
+		<button type="button" onclick="init_gaps();">Reset</button>
+  	</div>
+</div>
+
+<!-- Page Akkusativ Uebung 2 -->
+
+<div data-role="page" id="Akkusativ_uebung2">
+	<div data-role="header">
+  		<h1>Akkusativ</h1>
+  		<div data-role="navbar">
+    		<ul>
+      		<li><a href="#pageone">Sprachgeschichte</a></li>
+      		<li><a href="#Akkusativ">Akkusativ</a></li>
+      		<li><a href="#Genetiv">Genetiv</a></li>
+      		<li><a href="#Instrumentalis">Instrumentalis</a></li>
+      		<li><a href="#Dativ">Dativ</a></li>
+      		<li><a href="#Lokativ">Lokativ</a></li>
+      		<li><a href="#dylandog">Lektüre</a></li>
+      		<li><a href="#darkwood-dub">Songtexte</a></li>
+    		</ul>
+  		</div>
+  </div>
+	
+	<div data-role="main" class="ui-content">
+    
+    	<h1>Lückentext</h1>
+
+		<div class=="Lückentext">
+		Kupujem ovo za <b class="Lücke">prijatelja (Freund)</b>.<br><br>
 		</div>
 		<br>
 		<br>
