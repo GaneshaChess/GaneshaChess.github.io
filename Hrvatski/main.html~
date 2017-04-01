@@ -31,6 +31,12 @@
     init_voka();
   });
   </script> 
+  
+  <script>
+  $(document).on("pagecreate","#Akkusativ",function(){
+    init_voka();
+  });
+  </script> 
 
   <script>
   $(document).on("pagecreate","#genetiv_uebung1",function(){
