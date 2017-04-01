@@ -698,6 +698,41 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
   	</div>
 </div>
 
+<!-- Page Akkusativ Uebung 1 -->
+
+<div data-role="page" id="akkusativ_uebung1">
+	<div data-role="header">
+  		<h1>Genetiv</h1>
+  		<div data-role="navbar">
+    		<ul>
+      		<li><a href="#pageone">Sprachgeschichte</a></li>
+      		<li><a href="#Akkusativ">Akkusativ</a></li>
+      		<li><a href="#Genetiv">Genetiv</a></li>
+      		<li><a href="#Instrumentalis">Instrumentalis</a></li>
+      		<li><a href="#Dativ">Dativ</a></li>
+      		<li><a href="#Lokativ">Lokativ</a></li>
+      		<li><a href="#dylandog">Lektüre</a></li>
+      		<li><a href="#darkwood-dub">Songtexte</a></li>
+    		</ul>
+  		</div>
+  </div>
+	
+	<div data-role="main" class="ui-content">
+    
+    	<h1>Lückentext</h1>
+
+		<div class=="Lückentext">
+		Kupujem ovo za <b class="Lücke">prijatelja (Freund)</b>.<br><br>
+		</div>
+		<br>
+		<br>
+
+		<button type="button" onclick="change_visibility();">Lösung</button>
+		<button type="button" onclick="check();">Korrektur</button>
+		<button type="button" onclick="init_gaps();">Reset</button>
+  	</div>
+</div>
+
 <!-- Dativ -->
 
 <div data-role="page" id="Dativ">
