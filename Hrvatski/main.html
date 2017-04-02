@@ -51,6 +51,13 @@
       init_gaps();
   });
   </script>
+  
+  <script>
+  $(document).on("pagecreate","#Akkusativ_uebung3",function(){
+      mix_text();
+      init_gaps();
+  });
+  </script>
 
   <script>
   $(document).on("pagecreate","#genetiv_uebung1",function(){
@@ -732,7 +739,11 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
     				<td>ga, njega</td>
   				</tr>
   			</table>
-  			<table>
+  			<table>  			
+  			
+  			<div align="center">
+  				<a href="#Akkusativ_uebung3">Übung</a> 
+			</div>
   				<tr>
     				<th>mi</th>
     				<th>vi</th>
@@ -830,6 +841,7 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
 		Alergičan sam na <b class="Lücke">sve (alles)</b>.<br><br>
 		Važno je obraćati pažnju na <b class="Lücke">to (dieses)</b>.<br><br>
 		Albina stalno misli na <b class="Lücke">Mirona (Miron)</b>,<br> a Miron očigledno ne misli na <b class="Lücke">nju (sie)</b><br><br>
+		Kamo Hrvati idu zimi? Neki Hrvati zimi idu na <b class="Lücke">skijanje (Skilaufen)</b> u <b class="Lücke">susjedne zemlja (benachbarten Länder)</b>.<br><br>		
 		</div>
 		<br>
 		<br>
@@ -878,6 +890,47 @@ Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorg
 		 Zato mora ići u <b class="Lücke">trgovinu (Geschäft)</b> po mlijeko i čokoladu.<br><br>
 	    Kamo idete po <b class="Lücke">namirnice (Lebensmittel)</b> ?<br><br>
 		Idem u trgovinu po <b class="Lücke">vino (Wein)</b>.<br><br>
+		</div>
+		<br>
+		<br>
+
+		<button type="button" onclick="change_visibility();">Lösung</button>
+		<button type="button" onclick="check();">Korrektur</button>
+		<button type="button" onclick="init_gaps();">Reset</button>
+  	</div>
+</div>
+
+<!-- Page Akkusativ Uebung 3 -->
+
+<div data-role="page" id="Akkusativ_uebung3">
+	<div data-role="header">
+  		<h1>Akkusativ</h1>
+  		<div data-role="navbar">
+    		<ul>
+      		<li><a href="#pageone">Sprachgeschichte</a></li>
+      		<li><a href="#Akkusativ">Akkusativ</a></li>
+      		<li><a href="#Genetiv">Genetiv</a></li>
+      		<li><a href="#Instrumentalis">Instrumentalis</a></li>
+      		<li><a href="#Dativ">Dativ</a></li>
+      		<li><a href="#Lokativ">Lokativ</a></li>
+      		<li><a href="#dylandog">Lektüre</a></li>
+      		<li><a href="#darkwood-dub">Songtexte</a></li>
+    		</ul>
+  		</div>
+  </div>
+	
+	<div data-role="main" class="ui-content">
+    
+    	<h1>Lückentext</h1>
+
+		<div class=="Lückentext">
+		Zanima <b class="Lücke">nas (uns)</b> Film.<br><br>
+		Zanimaju <b class="Lücke">ga (ihn)</b> kompjutori.<br><br>
+		Zanima <b class="Lücke">me (mir)</b> svedska kuhinja.<br><br>
+		Zanima <b class="Lücke">ga (ihn)</b> sport.<br><br>
+		Zanima <b class="Lücke">je (sie)</b> moda.<br><br>
+		Zanimaju <b class="Lücke">nas (uns)</b> nacionalni parkovi.<br><br>
+		Zanimaju <b class="Lücke">ih (ihnen)</b> putovanje.<br><br>
 		</div>
 		<br>
 		<br>
