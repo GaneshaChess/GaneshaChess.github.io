@@ -1,322 +1,150 @@
 <!DOCTYPE html>
-<html  lang="hr">
-<head>
- <meta charset="utf-8"/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey">
 
-  ga('create', 'UA-93063108-1', 'auto');
-  ga('send', 'pageview');
-</script>
-<script src="l%C3%BCckentext2.js"></script>
-<script src="vokabeln.js"></script> 
-<script>
- $( document ).ready(function() {
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
 
-});
-$(document).ready(function(){
-    init_voka();
-    mix_text();
-    init_gaps();
-});
-  </script> 
-</head>
-<body>
-<a href="/Uebungen/Genetiv1.html">Genetiv Übung</a>
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>MY BLOG</b></h1>
+  <p>Welcome to the blog of <span class="w3-tag">unknown</span></p>
+</header>
 
+<!-- Grid -->
+<div class="w3-row">
 
-   <h1>Der Genetiv im Kroatischen</h1>
-    
-   <a href="AnkiDecks/GenetivPlural.apkg">Genetiv Plural - AnkiDeck</a> herunterladen (Rechtsklick).</p>  	
-	<a href="AnkiDecks/Genitiv.apkg">Genetiv - AnkiDeck</a> herunterladen (Rechtsklick).</p>  
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="/w3images/woods.jpg" alt="Nature" style="width:100%">
+    <div class="w3-container">
+      <h3><b>TITLE HEADING</b></h3>
+      <h5>Title description, <span class="w3-opacity">April 7, 2014</span></h5>
+    </div>
 
-	  <div data-role="collapsible">
-		   <h2>Formen</h2>
-			<div data-role="collapsible">
-			<h3>Maskulinum</h3>
-			<p>
+    <div class="w3-container">
+      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
 
-			<h4>Regelmäßige Formen</h4>
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+  <img src="/w3images/bridge.jpg" alt="Norway" style="width:100%">
+    <div class="w3-container">
+      <h3><b>BLOG ENTRY</b></h3>
+      <h5>Title description, <span class="w3-opacity">April 2, 2014</span></h5>
+    </div>
 
-			<table>
-  <tr>
-    <th>Nominativ Sg.</th>
-    <th>Nominativ Pl.</th>
-    <th>Genetiv Sg.</th>
-    <th>Genetiv Pl.</th>
-  </tr>
-  <tr>
-    <td><div class="Exa"><p class="Exa1">sir</p><p class="Exa2">(Käse)</p></div></td>
-    <td>-</td>
-    <td>sira</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td><div class="Exa"><p class="Exa1">posao</p><p class="Exa2">(Arbeit)</p></div></td>
-    <td>poslovi</td>
-    <td>posla</td>
-    <td>poslova</td>
-  </tr>
-  <tr>
-    <td><div class="Exa"><p class="Exa1">napredak</p><p class="Exa2">(Fortschritt)</p></div></td>
-    <td>napredci</td>
-    <td>napretka</td>
-    <td>napredaka</td>
-  </tr>
-  <tr>
-    <td><div class="Exa"><p class="Exa1">zaključak</p><p class="Exa2">(Schlussfolgerung)</p></div></td>
-    <td>zaključci</td>
-    <td>zaključka</td>
-    <td>zaključaka</td>
-  </tr>
-  <tr>
-    <td><div class="Exa"><p class="Exa1">student</p><p class="Exa2">(Student)</p></div></td>
-    <td>studenti</td>
-    <td>studenta</td>
-    <td>studenata</td>
-  </tr>
-  <tr>
-    <td><div class="Exa"><p class="Exa1">muškarac</p><p class="Exa2">(Mann)</p></div></td>
-    <td>muškarci</td>
-    <td>muškarca</td>
-    <td>muškaraca</td>
-  </tr>
-  <tr>
-    <td><div class="Exa"><p class="Exa1">glumac</p><p class="Exa2">(Schauspieler)</p></div></td>
-    <td>glumci</td>
-    <td>glumca</td>
-    <td>glumaca</td>
-  </tr>
-  <tr>
-    <td><div class="Exa"><p class="Exa1">mjesec</p><p class="Exa2">(Monat)</p></div></td>
-    <td>mjeseci</td>
-    <td>mjeseca</td>
-    <td>mjeseci</td>
-  </tr>
-</table>
-
-			<h4>Unregelmäßige Formen</h4>
-
-			<table>
-  <tr>
-    <th>Nominativ Sg.</th>
-    <th>Nominativ Pl.</th>
-    <th>Genetiv Sg.</th>
-    <th>Genetiv Pl.</th>
-  </tr>
-  <tr>
-    <td><div class="Exa"><p class="Exa1">brat</p><p class="Exa2">(Bruder)</p></div></td>
-    <td>braća</td>
-    <td>brata</td>
-    <td>braće</td>
-  </tr>
-  <tr>
-    <td><div class="Exa"><p class="Exa1">otac</p><p class="Exa2">(Vater)</p></div></td>
-    <td>očevi</td>
-    <td>oca</td>
-    <td>očeva</td>
-  </tr>
-</table>
-
-			<br><br>
-		   <div align="center">
-  <a href="#genetiv_uebung1">Übung 1</a>
-</div>  
-			</p>
-			<p>
-			</div>
-			
-			<div data-role="collapsible">
-			<h3>Femininum</h3>
-			<p>
-			<table>
-  <tr>
-    <th>Nominativ Sg.</th>
-    <th>Nominativ Pl.</th>
-    <th>Genetiv Sg.</th>
-    <th>Genetiv Pl.</th>
-  </tr>
-  <tr>
-    <td><div class="Exa"><p class="Exa1">djevojka</p><p class="Exa2">(Frau)</p></div></td>
-    <td>djevojke</td>
-    <td>djevojke</td>
-    <td>djevojaka</td>
-  </tr>
-  <tr>
-    <td>slatka ideja</td>
-    <td>slatke ideje</td>
-    <td>slatke ideje</td>
-    <td>slatkih ideja</td>
-  </tr>
-  <tr>
-    <td>majka</td>
-    <td>majke</td>
-    <td>majke</td>
-    <td>majki</td>
-  </tr>
-  <tr>
-    <td>borba</td>
-    <td>borbe</td>
-    <td>borbe</td>
-    <td>borbi</td>
-  </tr>
-</table>
-			</p>
-			</div>
-			
-			<div data-role="collapsible">
-			<h3>Neutrum</h3>
-			<p>
-<table>
-  <tr>
-    <th>Nominativ Sg.</th>
-    <th>Nominativ Pl.</th>
-    <th>Genetiv Sg.</th>
-    <th>Genetiv Pl.</th>
-  </tr>
-  <tr>
-    <td>loše selo</td>
-    <td>loša sela</td>
-    <td>lošeg sela</td>
-    <td>loših sela</td>
-  </tr>
-  <tr>
-    <td>pismo</td>
-    <td>pisma</td>
-    <td>pisma</td>
-    <td>pisama</td>
-  </tr>
-</table>
-</p>
-			</div>
-		</div>
-
-<div data-role="collapsible">
-<h2>Interrogativpronomen</h2>
-<p>
-
-<ul>
-<li>tko -> koga
-<li>što -> čega
-</ul>
-
-</p>
+    <div class="w3-container">
+      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END BLOG ENTRIES -->
 </div>
 
-<div data-role="collapsible">
-<h2>Verwendung</h2>
-<p>
-	<div data-role="collapsible">
-	<h2>Präpositionen mit Genetiv</h2>
-	<p>
-
-	<div data-role="main" class="ui-content">
-    	<div data-role="collapsible">
-      	<h3>protiv</h3>
-      	<p class="example">Ja sam protiv tebe.</p>
-    	</div>
-  	</div>
-<div data-role="main" class="ui-content">
-    <div data-role="collapsible">
-      <h3>kod</h3>
-      <p class="example">Gdje je moja knjiga? Tu kod mene je.</p>
+<!-- Introduction menu -->
+<div class="w3-col l4">
+  <!-- About Card -->
+  <div class="w3-card-2 w3-margin w3-margin-top">
+  <img src="/w3images/avatar_g.jpg" style="width:100%">
+    <div class="w3-container w3-white">
+      <h4><b>My Name</b></h4>
+      <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
     </div>
-</div>
-<div data-role="main" class="ui-content">
-      <div data-role="collapsible">
-      <h3>iz</h3>
-      <p class="example">1. Danijela pije iz majčine čaše. <br>2. Oni su iz Zagreba.</p>
+  </div><hr>
+  
+  <!-- Posts -->
+  <div class="w3-card-2 w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Popular Posts</h4>
+    </div>
+    <ul class="w3-ul w3-hoverable w3-white">
+      <li class="w3-padding-16">
+        <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Lorem</span><br>
+        <span>Sed mattis nunc</span>
+      </li>
+      <li class="w3-padding-16">
+        <img src="/w3images/gondol.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Ipsum</span><br>
+        <span>Praes tinci sed</span>
+      </li> 
+      <li class="w3-padding-16">
+        <img src="/w3images/skies.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Dorum</span><br>
+        <span>Ultricies congue</span>
+      </li>   
+      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+        <img src="/w3images/rock.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Mingsum</span><br>
+        <span>Lorem ipsum dipsum</span>
+      </li>  
+    </ul>
+  </div>
+  <hr> 
+ 
+  <!-- Labels / tags -->
+  <div class="w3-card-2 w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Tags</h4>
+    </div>
+    <div class="w3-container w3-white">
+    <p><span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
+    </p>
     </div>
   </div>
-<div data-role="main" class="ui-content">
-      <div data-role="collapsible">
-      <h3>od</h3>
-      <p class="example">1. Ovo pismo je od njene sestre. <br>2. Ovo je zemlja sastavljena od tri djela.</p>
-    </div>
-  </div>
-<div data-role="main" class="ui-content">
-      <div data-role="collapsible">
-      <h3>do</h3>
-      <p class="example">1. Oni rade od jutra do mraka. <br>2. Želim da čujem sve, od početka do kraja.</p>
-    </div>
-  </div>
-<div data-role="main" class="ui-content">
-      <div data-role="collapsible">
-      <h3>pored</h3>
-      <p class="example">1. Tvoja čaša je tamo, pored prozora. <br>2. Naprotiv. Tu je, pored mene. <br>3. I to je važno pored ostalog.</p>
-    </div>
-  </div>
-<div data-role="main" class="ui-content">
-      <div data-role="collapsible">
-      <h3>bez</h3>
-      <p class="example">Ne mogu živjeti bez tebe.</p>
-    </div>
-  </div>
-<div data-role="main" class="ui-content">
-      <div data-role="collapsible">
-      <h3>između</h3>
-      <p class="example">Prostor između nas</p>
-    </div>
-  </div>
-<div data-role="main" class="ui-content">
-      <div data-role="collapsible">
-      <h3>oko</h3>
-      <p class="example">Na koju osobinu vašeg horoskopskog znaka padaju svi oko vas?</p>
-    </div>
-  </div>
-
-</p>
-	</div>
-
-	<div data-role="collapsible">
-	<h3>Verben mit Genetiv</h3>
-	<p>
-
-<ul>
-<li> ToDo
-</ul>
-
-</p>
-	</div>
-	
-	<div data-role="collapsible">
-	<h3>Genetiv in Zeitangaben</h3>
-	<p>
-
-	<h4>Koliko dugo učiš hrvatski?</h4>
-	<ul>
-		<li> jedan mjesec
-		<li> dva/tri/četiri mjeseca
-		<li> pet/šest/sedam/ ... mjeseci
-		<li> puno/nekoliko par/ ... mjeseci
-	</ul>
-
-	<h4>Koliko dugo živiš u Zagrebu?</h4>
-	<ul>
-		<li> jednu godinu
-		<li> dvije/tri/četiri godine
-		<li> pet/šest/sedam godina
-		<li> nekoliko par/puno/malo godina
-	</ul>
-
-</p>
+  
+<!-- END Introduction Menu -->
 </div>
 
-</p>
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
 </div>
 
-<br><br>
- <div align="center">
-  <a href="#genetiv_uebung2">Zu den Übungen 1</a><br>
-  <a href="#genetiv_uebung3">Zu den Übungen 2</a>  
-</div>  
-  </div>
-</div>
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+  <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
 
 </body>
 </html>
+
 
