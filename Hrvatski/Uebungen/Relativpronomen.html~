@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html  lang="hr">
+<head>
+<script type="text/javascript">
+alert("test");
+</script>
+<script src="l%C3%BCckentext.js"></script>
+<script type="text/javascript">
+alert("tes2");
+</script>
+<script src="vokabeln.js"></script> 
+<script>
+ $( document ).ready(function() {
+ 	alert("sdads");
+    init_voka();
+    alert("sdads2");
+    mix_text();
+    alert("sdads3");
+    init_gaps();
+    alert("sdads4");
+});
+  </script> 
+</head>
+<body>
+
+    
+    	<h1>Lückentext</h1>
+
+		<div class=="Lückentext">
+		Ovo je ključ <b class="Lücke">moga prijatelja Branka (meines Freundes Branko)</b>.<br><br>
+		Čija je ovo olovka? Ovo je olovka <b class="Lücke">moje prijateljice (meiner Freundin)</b>.<br><br>
+		A pas Tony? Čije je on? Tony je pas <b class="Lücke">onoga Engleza (dieses Engländers)</b>.<br><br>
+		A čija je mačka Maca? Maca je mačka <b class="Lücke">one djevojke (dieser Frau (dort))</b>.<br><br>
+		Ovo nije auto <b class="Lücke">one studentice Ankice (dieser Studentin Ankica)</b>.<br><br>
+		Evo, izvoli čašu <b class="Lücke">vode (Wasser)</b>.<br><br>
+		Molim jednu jabuku. Imamo <b class="Lücke">ih (von ihnen)</b>.<br><br>
+		Ja sam do <b class="Lücke">prozora (Fenster)</b>.<br><br>
+		Bosna i Hercegovina se sastoji od <b class="Lücke">dva dijela (zwei Teile)</b>.<br><br>
+		Može se slobodno putovati od <b class="Lücke">jednog (den einen)</b> do <b class="Lücke">drugog dijela (den anderen Teil)</b> bez <b class="Lücke">putovnice (Reisepass)</b>.<br><br>
+		</div>
+		<br>
+		<br>
+
+		<button type="button" onclick="change_visibility();">Lösung</button>
+		<button type="button" onclick="check();">Korrektur</button>
+		<button type="button" onclick="init_gaps();">Reset</button>
+  	</div>
+</div>
+</body>
+</html>
+
