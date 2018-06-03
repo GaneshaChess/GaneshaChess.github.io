@@ -1,150 +1,1140 @@
 <!DOCTYPE html>
-<html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<style>
-body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-</style>
-<body class="w3-light-grey">
+<html  lang="hr">
+<head>
+  <!-- Include meta tag to ensure proper rendering and touch zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Include jQuery Mobile stylesheets -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <!-- Include the jQuery library -->
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <!-- Include the jQuery Mobile library -->
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <!-- Google analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-<!-- w3-content defines a container for fixed size centered content, 
-and is wrapped around the whole page content, except for the footer in this example -->
-<div class="w3-content" style="max-width:1400px">
+  ga('create', 'UA-93063108-1', 'auto');
+  ga('send', 'pageview');
+  </script>
 
-<!-- Header -->
-<header class="w3-container w3-center w3-padding-32"> 
-  <h1><b>MY BLOG</b></h1>
-  <p>Welcome to the blog of <span class="w3-tag">unknown</span></p>
-</header>
-
-<!-- Grid -->
-<div class="w3-row">
-
-<!-- Blog entries -->
-<div class="w3-col l8 s12">
-  <!-- Blog entry -->
-  <div class="w3-card-4 w3-margin w3-white">
-    <img src="/w3images/woods.jpg" alt="Nature" style="width:100%">
-    <div class="w3-container">
-      <h3><b>TITLE HEADING</b></h3>
-      <h5>Title description, <span class="w3-opacity">April 7, 2014</span></h5>
-    </div>
-
-    <div class="w3-container">
-      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      <div class="w3-row">
-        <div class="w3-col m8 s12">
-          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
-        </div>
-        <div class="w3-col m4 w3-hide-small">
-          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <hr>
-
-  <!-- Blog entry -->
-  <div class="w3-card-4 w3-margin w3-white">
-  <img src="/w3images/bridge.jpg" alt="Norway" style="width:100%">
-    <div class="w3-container">
-      <h3><b>BLOG ENTRY</b></h3>
-      <h5>Title description, <span class="w3-opacity">April 2, 2014</span></h5>
-    </div>
-
-    <div class="w3-container">
-      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      <div class="w3-row">
-        <div class="w3-col m8 s12">
-          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
-        </div>
-        <div class="w3-col m4 w3-hide-small">
-          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
-        </div>
-      </div>
-    </div>
-  </div>
-<!-- END BLOG ENTRIES -->
-</div>
-
-<!-- Introduction menu -->
-<div class="w3-col l4">
-  <!-- About Card -->
-  <div class="w3-card-2 w3-margin w3-margin-top">
-  <img src="/w3images/avatar_g.jpg" style="width:100%">
-    <div class="w3-container w3-white">
-      <h4><b>My Name</b></h4>
-      <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
-    </div>
-  </div><hr>
+  <meta charset="utf-8"/>
+  <script src="https://www.w3schools.com/lib/w3data.js"></script>
+  <script src="https://ganeshachess.github.io/Hrvatski/UbungGenetiv/l%C3%BCckentext.js"></script>
+  <script src="https://ganeshachess.github.io/Hrvatski/vokabeln.js"></script>
+  <link rel="stylesheet" href="https://ganeshachess.github.io/Hrvatski/hrvatski_style.css">
   
-  <!-- Posts -->
-  <div class="w3-card-2 w3-margin">
-    <div class="w3-container w3-padding">
-      <h4>Popular Posts</h4>
-    </div>
-    <ul class="w3-ul w3-hoverable w3-white">
-      <li class="w3-padding-16">
-        <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Lorem</span><br>
-        <span>Sed mattis nunc</span>
-      </li>
-      <li class="w3-padding-16">
-        <img src="/w3images/gondol.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Ipsum</span><br>
-        <span>Praes tinci sed</span>
-      </li> 
-      <li class="w3-padding-16">
-        <img src="/w3images/skies.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Dorum</span><br>
-        <span>Ultricies congue</span>
-      </li>   
-      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
-        <img src="/w3images/rock.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Mingsum</span><br>
-        <span>Lorem ipsum dipsum</span>
-      </li>  
+  <script>
+  $(document).on("pagecreate","#Genetiv",function(){
+    init_voka();
+  });
+  </script> 
+  
+  <script>
+  $(document).on("pagecreate","#Akkusativ",function(){
+    init_voka();
+  });
+  </script> 
+  
+  <script>
+  $(document).on("pagecreate","#Instrumentalis",function(){
+    init_voka();
+  });
+  </script> 
+  
+  <script>
+  $(document).on("pagecreate","#Instrumentalis_uebung1",function(){
+    mix_text();
+    init_gaps();
+  });
+  </script> 
+  
+  <script>
+  $(document).on("pagecreate","#Akkusativ_uebung1",function(){
+      mix_text();
+      init_gaps();
+  });
+  </script>
+  
+  <script>
+  $(document).on("pagecreate","#Akkusativ_uebung2",function(){
+      mix_text();
+      init_gaps();
+  });
+  </script>
+  
+  <script>
+  $(document).on("pagecreate","#Akkusativ_uebung3",function(){
+      mix_text();
+      init_gaps();
+  });
+  </script>
+
+  <script>
+  $(document).on("pagecreate","#genetiv_uebung1",function(){
+      mix_text();
+      init_gaps();
+  });
+  </script>
+  
+  <script>
+  $(document).on("pagecreate","#genetiv_uebung2",function(){
+      mix_text();
+      init_gaps();
+  });
+  </script>
+  
+  <script>
+  $(document).on("pagecreate","#genetiv_uebung3",function(){
+      mix_text();
+      init_gaps();
+  });
+  </script>
+  
+  <script>
+  $(document).on("pagecreate","#darkwood-dub",function(){
+    init_voka();
+  });
+</script>  
+</head>
+<body>
+
+
+<!-- Page Sprachgeschichte -->
+<div data-role="page" id="pageone">
+  <div data-role="header">
+  <h1>Sprachgeschichte des Slawischen</h1>
+  <div data-role="navbar">
+    <ul>
+      		<li><a href="#pageone">Sprachgeschichte</a></li>
+      		<li><a href="#Akkusativ">Akkusativ</a></li>
+      		<li><a href="#Genetiv">Genetiv</a></li>
+      		<li><a href="#Instrumentalis">Instrumentalis</a></li>
+      		<li><a href="#Dativ">Dativ</a></li>
+      		<li><a href="#Lokativ">Lokativ</a></li>
+      		<li><a href="#dylandog">Lektüre</a></li>
+      		<li><a href="#darkwood-dub">Songtexte</a></li>
     </ul>
   </div>
-  <hr> 
- 
-  <!-- Labels / tags -->
-  <div class="w3-card-2 w3-margin">
-    <div class="w3-container w3-padding">
-      <h4>Tags</h4>
+  </div>
+
+  <div data-role="main" class="ui-content">
+  <h2>Das Protoslawische</h2>
+  Das Slawische ist ein Hauptzweig des Indogermanischen mit etwa 320 Millionen Muttersprachlern und 100 Millionen Zweitsprechern. Die Hälfte aller Muttersprachler entfallen auf das Russische. Es folgen Polnisch mit 55 Millionen und Ukrainisch mit 40 Millionen Sprechern. Der jüngste gemeinsame Vorfahre der slawischen Sprachen wird Protoslawisch oder Urslawisch genannt. Das bis ins 9. Jh. zurückreichende Altkirchenslawisch kommt dieser Sprache sowohl zeitlich als auch sprachlich am nächsten. Die meißten Sprachwissenschaftler nehmen an, dass sich das Urslawische vor etwa 3000 Jahren vom Indogermanischen abgespalten hat. Das Slawische ist mit dem Baltischen nahe verwandt.
+Das Slawische wird in drei Stämme unterteilt:<br>
+
+<ul>
+<li>Ostslawisch
+<li>Westslawisch
+<li>Südslawisch
+</ul>
+
+<br>
+Man geht davon aus, dass sich diese während des 1. Jt. n. Chr. aus dem Urslawischen entwickelt haben. Ähnlich wie die romanischen Sprachen sind die slawischen Sprachen eine relativ homogene Sprachfamilie.
+<br>
+Drei Alphabetische Schriftsysteme werden im slawischen Sprachraum verwendet:
+
+<ul>
+<li>Glagolitisch
+<li>Kyrillisch
+<li>Lateinisch
+</ul>
+
+<br>
+Den Kern des Siedlungsgebietes der Slawen in der letzten Phase ihrer sprachlichen Einheit umfasst das sogenannte Wolhynienen.
+<br>
+Quelle:  Click <a href="https://www.amazon.de/Die-indogermanischen-Sprachen-Vorgeschichte-Gegenwart/dp/3875486129/ref=sr_1_1?ie=UTF8&qid=1488124109&sr=8-1&keywords=indoeurop%C3%A4ische+sprachen#reader_3875486129">here</a>  Kapitel 7</p>
+  </div>
+
+  <div data-role="footer">
+  <h1>Footer Text</h1>
+  </div>
+</div> 
+
+<!-- Page Genetiv -->
+<div data-role="page" id="Genetiv">
+  <div data-role="header">
+  	<h1>Genetiv</h1>	
+  	
+  	<div data-role="navbar">
+    	<ul>
+      		<li><a href="#pageone">Sprachgeschichte</a></li>
+      		<li><a href="#Akkusativ">Akkusativ</a></li>
+      		<li><a href="#Genetiv">Genetiv</a></li>
+      		<li><a href="#Instrumentalis">Instrumentalis</a></li>
+      		<li><a href="#Dativ">Dativ</a></li>
+      		<li><a href="#Lokativ">Lokativ</a></li>
+      		<li><a href="#dylandog">Lektüre</a></li>
+      		<li><a href="#darkwood-dub">Songtexte</a></li>
+    	</ul>
+  	</div>
+  </div>
+  <div data-role="main" class="ui-content">
+		
+    <h1>Der Genetiv im Kroatischen</h1>
+    
+   <a href="AnkiDecks/GenetivPlural.apkg">Genetiv Plural - AnkiDeck</a> herunterladen (Rechtsklick).</p>  	
+	<a href="AnkiDecks/Genitiv.apkg">Genetiv - AnkiDeck</a> herunterladen (Rechtsklick).</p>  
+
+	  <div data-role="collapsible">
+		   <h2>Formen</h2>
+			<div data-role="collapsible">
+			<h3>Maskulinum</h3>
+			<p>
+
+			<h4>Regelmäßige Formen</h4>
+
+			<table>
+  <tr>
+    <th>Nominativ Sg.</th>
+    <th>Nominativ Pl.</th>
+    <th>Genetiv Sg.</th>
+    <th>Genetiv Pl.</th>
+  </tr>
+  <tr>
+    <td><div class="Exa"><p class="Exa1">sir</p><p class="Exa2">(Käse)</p></div></td>
+    <td>-</td>
+    <td>sira</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td><div class="Exa"><p class="Exa1">posao</p><p class="Exa2">(Arbeit)</p></div></td>
+    <td>poslovi</td>
+    <td>posla</td>
+    <td>poslova</td>
+  </tr>
+  <tr>
+    <td><div class="Exa"><p class="Exa1">napredak</p><p class="Exa2">(Fortschritt)</p></div></td>
+    <td>napredci</td>
+    <td>napretka</td>
+    <td>napredaka</td>
+  </tr>
+  <tr>
+    <td><div class="Exa"><p class="Exa1">zaključak</p><p class="Exa2">(Schlussfolgerung)</p></div></td>
+    <td>zaključci</td>
+    <td>zaključka</td>
+    <td>zaključaka</td>
+  </tr>
+  <tr>
+    <td><div class="Exa"><p class="Exa1">student</p><p class="Exa2">(Student)</p></div></td>
+    <td>studenti</td>
+    <td>studenta</td>
+    <td>studenata</td>
+  </tr>
+  <tr>
+    <td><div class="Exa"><p class="Exa1">muškarac</p><p class="Exa2">(Mann)</p></div></td>
+    <td>muškarci</td>
+    <td>muškarca</td>
+    <td>muškaraca</td>
+  </tr>
+  <tr>
+    <td><div class="Exa"><p class="Exa1">glumac</p><p class="Exa2">(Schauspieler)</p></div></td>
+    <td>glumci</td>
+    <td>glumca</td>
+    <td>glumaca</td>
+  </tr>
+  <tr>
+    <td><div class="Exa"><p class="Exa1">mjesec</p><p class="Exa2">(Monat)</p></div></td>
+    <td>mjeseci</td>
+    <td>mjeseca</td>
+    <td>mjeseci</td>
+  </tr>
+</table>
+
+			<h4>Unregelmäßige Formen</h4>
+
+			<table>
+  <tr>
+    <th>Nominativ Sg.</th>
+    <th>Nominativ Pl.</th>
+    <th>Genetiv Sg.</th>
+    <th>Genetiv Pl.</th>
+  </tr>
+  <tr>
+    <td><div class="Exa"><p class="Exa1">brat</p><p class="Exa2">(Bruder)</p></div></td>
+    <td>braća</td>
+    <td>brata</td>
+    <td>braće</td>
+  </tr>
+  <tr>
+    <td><div class="Exa"><p class="Exa1">otac</p><p class="Exa2">(Vater)</p></div></td>
+    <td>očevi</td>
+    <td>oca</td>
+    <td>očeva</td>
+  </tr>
+</table>
+
+			<br><br>
+		   <div align="center">
+  <a href="#genetiv_uebung1">Übung 1</a>
+</div>  
+			</p>
+			<p>
+			</div>
+			
+			<div data-role="collapsible">
+			<h3>Femininum</h3>
+			<p>
+			<table>
+  <tr>
+    <th>Nominativ Sg.</th>
+    <th>Nominativ Pl.</th>
+    <th>Genetiv Sg.</th>
+    <th>Genetiv Pl.</th>
+  </tr>
+  <tr>
+    <td><div class="Exa"><p class="Exa1">djevojka</p><p class="Exa2">(Frau)</p></div></td>
+    <td>djevojke</td>
+    <td>djevojke</td>
+    <td>djevojaka</td>
+  </tr>
+  <tr>
+    <td>slatka ideja</td>
+    <td>slatke ideje</td>
+    <td>slatke ideje</td>
+    <td>slatkih ideja</td>
+  </tr>
+  <tr>
+    <td>majka</td>
+    <td>majke</td>
+    <td>majke</td>
+    <td>majki</td>
+  </tr>
+  <tr>
+    <td>borba</td>
+    <td>borbe</td>
+    <td>borbe</td>
+    <td>borbi</td>
+  </tr>
+</table>
+			</p>
+			</div>
+			
+			<div data-role="collapsible">
+			<h3>Neutrum</h3>
+			<p>
+<table>
+  <tr>
+    <th>Nominativ Sg.</th>
+    <th>Nominativ Pl.</th>
+    <th>Genetiv Sg.</th>
+    <th>Genetiv Pl.</th>
+  </tr>
+  <tr>
+    <td>loše selo</td>
+    <td>loša sela</td>
+    <td>lošeg sela</td>
+    <td>loših sela</td>
+  </tr>
+  <tr>
+    <td>pismo</td>
+    <td>pisma</td>
+    <td>pisma</td>
+    <td>pisama</td>
+  </tr>
+</table>
+</p>
+			</div>
+		</div>
+
+<div data-role="collapsible">
+<h2>Interrogativpronomen</h2>
+<p>
+
+<ul>
+<li>tko -> koga
+<li>što -> čega
+</ul>
+
+</p>
+</div>
+
+<div data-role="collapsible">
+<h2>Verwendung</h2>
+<p>
+	<div data-role="collapsible">
+	<h2>Präpositionen mit Genetiv</h2>
+	<p>
+
+	<div data-role="main" class="ui-content">
+    	<div data-role="collapsible">
+      	<h3>protiv</h3>
+      	<p class="example">Ja sam protiv tebe.</p>
+    	</div>
+  	</div>
+<div data-role="main" class="ui-content">
+    <div data-role="collapsible">
+      <h3>kod</h3>
+      <p class="example">Gdje je moja knjiga? Tu kod mene je.</p>
     </div>
-    <div class="w3-container w3-white">
-    <p><span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
-    </p>
+</div>
+<div data-role="main" class="ui-content">
+      <div data-role="collapsible">
+      <h3>iz</h3>
+      <p class="example">1. Danijela pije iz majčine čaše. <br>2. Oni su iz Zagreba.</p>
     </div>
   </div>
+<div data-role="main" class="ui-content">
+      <div data-role="collapsible">
+      <h3>od</h3>
+      <p class="example">1. Ovo pismo je od njene sestre. <br>2. Ovo je zemlja sastavljena od tri djela.</p>
+    </div>
+  </div>
+<div data-role="main" class="ui-content">
+      <div data-role="collapsible">
+      <h3>do</h3>
+      <p class="example">1. Oni rade od jutra do mraka. <br>2. Želim da čujem sve, od početka do kraja.</p>
+    </div>
+  </div>
+<div data-role="main" class="ui-content">
+      <div data-role="collapsible">
+      <h3>pored</h3>
+      <p class="example">1. Tvoja čaša je tamo, pored prozora. <br>2. Naprotiv. Tu je, pored mene. <br>3. I to je važno pored ostalog.</p>
+    </div>
+  </div>
+<div data-role="main" class="ui-content">
+      <div data-role="collapsible">
+      <h3>bez</h3>
+      <p class="example">Ne mogu živjeti bez tebe.</p>
+    </div>
+  </div>
+<div data-role="main" class="ui-content">
+      <div data-role="collapsible">
+      <h3>između</h3>
+      <p class="example">Prostor između nas</p>
+    </div>
+  </div>
+<div data-role="main" class="ui-content">
+      <div data-role="collapsible">
+      <h3>oko</h3>
+      <p class="example">Na koju osobinu vašeg horoskopskog znaka padaju svi oko vas?</p>
+    </div>
+  </div>
+
+</p>
+	</div>
+
+	<div data-role="collapsible">
+	<h3>Verben mit Genetiv</h3>
+	<p>
+
+<ul>
+<li> ToDo
+</ul>
+
+</p>
+	</div>
+	
+	<div data-role="collapsible">
+	<h3>Genetiv in Zeitangaben</h3>
+	<p>
+
+	<h4>Koliko dugo učiš hrvatski?</h4>
+	<ul>
+		<li> jedan mjesec
+		<li> dva/tri/četiri mjeseca
+		<li> pet/šest/sedam/ ... mjeseci
+		<li> puno/nekoliko par/ ... mjeseci
+	</ul>
+
+	<h4>Koliko dugo živiš u Zagrebu?</h4>
+	<ul>
+		<li> jednu godinu
+		<li> dvije/tri/četiri godine
+		<li> pet/šest/sedam godina
+		<li> nekoliko par/puno/malo godina
+	</ul>
+
+</p>
+</div>
+
+</p>
+</div>
+
+<br><br>
+ <div align="center">
+  <a href="#genetiv_uebung2">Zu den Übungen 1</a><br>
+  <a href="#genetiv_uebung3">Zu den Übungen 2</a>  
+</div>  
+  </div>
+</div>
+
+<!-- Akkusativ -->
+
+<div data-role="page" id="Akkusativ">
+	<div data-role="header">
+  		<h1>Akkusativ</h1>
+  		<div data-role="navbar">
+    		<ul>
+      		<li><a href="#pageone">Sprachgeschichte</a></li>
+      		<li><a href="#Akkusativ">Akkusativ</a></li>
+      		<li><a href="#Genetiv">Genetiv</a></li>
+      		<li><a href="#Instrumentalis">Instrumentalis</a></li>
+      		<li><a href="#Dativ">Dativ</a></li>
+      		<li><a href="#Lokativ">Lokativ</a></li>
+      		<li><a href="#dylandog">Lektüre</a></li>
+      		<li><a href="#darkwood-dub">Songtexte</a></li>
+    		</ul>
+  		</div>
+  </div>
+	
+	<div data-role="main" class="ui-content">
+    
+    	<h1>Akkusativ</h1>
+    	
+		<div data-role="collapsible">
+		<h2>Formen</h2>
+			<div data-role="collapsible">
+			<h3>Maskulinum</h3>
+			Im Maskulinum wird im Akkusativ Sg. zwischen belebten und unbelebten Nomen
+			unterschieden. Unbelebte Nomen ćndern sich im Akkusativ Sg. nicht. Belebte
+			Nomen hingegen ähneln dem Genetiv in ihrer Form. 
+			<h4>Belebte Nomen</h4>
+			<table>
+  				<tr>
+    				<th>Nominativ Sg.</th>
+    				<th>Nominativ Pl.</th>
+    				<th>Akkusativ Sg.</th>
+    				<th>Akkusativ Pl.</th>
+  				</tr>
+  				<tr>
+    				<td><div class="Exa"><p class="Exa1">smeđi pas</p><p class="Exa2">brauner Hund</p></div></td>
+    				<td>smeđi psi</td>
+    				<td>smeđeg psa</td>
+    				<td>smeđe pse</td>
+  				</tr>
+  				<tr>
+    				<td><div class="Exa"><p class="Exa1">maleni vrabac</p><p class="Exa2">kleiner Spatz</p></div></td>
+    				<td>maleni vrapci</td>
+    				<td>malenog vrapca</td>
+    				<td>smalene vrapce</td>
+  				</tr>
+  			</table>
+			<h4>Unbelebte Nomen</h4>
+			<table>
+  				<tr>
+    				<th>Nominativ Sg.</th>
+    				<th>Nominativ Pl.</th>
+    				<th>Akkusativ Sg.</th>
+    				<th>Akkusativ Pl.</th>
+  				</tr>
+  				<tr>
+    				<td><div class="Exa"><p class="Exa1">siv grad</p><p class="Exa2">graue Stadt</p></div></td>
+    				<td>sivi gradovi</td>
+    				<td>siv grad</td>
+    				<td>sive gradove</td>
+  				</tr>
+  			</table>
+			</div>
+			
+			<div data-role="collapsible">
+			<h3>Femininum</h3>
+			<table>
+  				<tr>
+    				<th>Nominativ Sg.</th>
+    				<th>Nominativ Pl.</th>
+    				<th>Akkusativ Sg.</th>
+    				<th>Akkusativ Pl.</th>
+  				</tr>
+  				<tr>
+    				<td><div class="Exa"><p class="Exa1">dobra žena</p><p class="Exa2">gute Frau</p></div></td>
+    				<td>dobre žene</td>
+    				<td>dobru ženu</td>
+    				<td>dobre žene</td>
+  				</tr>
+  			</table>
+			</div>
+			
+			<div data-role="collapsible">						
+			
+			<div data-role="collapsible">
+			 <h3>Femininum</h3>
+			 <table>
+  				<tr>
+    				<th>Nominativ Sg.</th>
+    				<th>Nominativ Pl.</th>
+    				<th>Akkusativ Sg.</th>
+    				<th>Akkusativ Pl.</th>
+  				</tr>
+  				<tr>
+    				<td><div class="Exa"><p class="Exa1">dobra žena</p><p class="Exa2">gute Frau</p></div></td>
+    				<td>dobre žene</td>
+    				<td>dobru ženu</td>
+    				<td>dobre žene</td>
+  				</tr>
+  			 </table>
+			</div>
+			<h3>Neutrum</h3>
+			Der Akkusativ Plural ist mit dem Nominativ Plural identisch. Insbesondere werden alle unregelmäßigen
+			Formen vererbt. Die Nomen <div class="Exa"><p class="Exa1">ime</p><p class="Exa2">Name</p></div>,
+			<div class="Exa"><p class="Exa1">breme</p><p class="Exa2">Last</p></div> und
+			<div class="Exa"><p class="Exa1">vrijeme</p><p class="Exa2">Zeit, Wetter</p></div> erhalten
+			im Akk. Pl. daher eine zusätzliche Silbe.
+			<table>
+  				<tr>
+    				<th>Nominativ Sg.</th>
+    				<th>Nominativ Pl.</th>
+    				<th>Akkusativ Sg.</th>
+    				<th>Akkusativ Pl.</th>
+  				</tr>
+  				<tr>
+    				<td><div class="Exa"><p class="Exa1">dugo pismo</p><p class="Exa2">langer Brief</p></div></td>
+    				<td>duga pisma</td>
+    				<td>dugo pismo</td>
+    				<td>duga pisma</td>
+  				</tr>
+  				<tr>
+    				<td><div class="Exa"><p class="Exa1">dobro ime</p><p class="Exa2">guter Name</p></div></td>
+    				<td>dobra imena</td>
+    				<td>dobro ime</td>
+    				<td>dobra imena</td>
+  				</tr>
+  				<tr>
+    				<td><div class="Exa"><p class="Exa1">teško breme</p><p class="Exa2">schwere Last</p></div></td>
+    				<td>teška bremena</td>
+    				<td>teško breme</td>
+    				<td>teška bremena</td>
+  				</tr>
+  				<tr>
+    				<td><div class="Exa"><p class="Exa1">loše vrijeme</p><p class="Exa2">schlechtes Wetter</p></div></td>
+    				<td>loša vremena</td>
+    				<td>loše vrijeme</td>
+    				<td>loša vremena</td>
+  				</tr>
+  			</table>
+			</div>
+		
+			<div data-role="collapsible">
+			<h3>Pronomen</h3>
+			<table>
+  				<tr>
+    				<th>ja</th>
+    				<th>ti</th>
+    				<th>on</th>
+    				<th>ona</th>
+    				<th>ono</th>
+  				</tr>
+  				<tr>
+    				<td>me, mene</td>
+    				<td>te, tebe</td>
+    				<td>ga, njega</td>
+    				<td>je/ju, nju</td>
+    				<td>ga, njega</td>
+  				</tr>
+  			</table>
+  			<table>  			
+  			
+  			<div align="center">
+  				<a href="#Akkusativ_uebung3">Übung</a> 
+			</div>
+  				<tr>
+    				<th>mi</th>
+    				<th>vi</th>
+    				<th>oni</th>
+    				<th>one</th>
+    				<th>ona</th>
+  				</tr>
+  				<tr>
+    				<td>nas</td>
+    				<td>vas</td>
+    				<td>ih, njih</td>
+    				<td>ih, njih</td>
+    				<td>ih, njih</td>
+  				</tr>
+  			</table>
+			</div>		
+		</div>
+    	
+		<div data-role="collapsible">    	
+		
+		<div align="center">
+  			<a href="#Akkusativ_uebung2">Übung</a> 
+		</div>
+			<h2>Verwendung</h2>
+			<div data-role="collapsible">
+				<h3>Präpositionen</h3>
+				<p>
+    			<div data-role="collapsible">
+      			<h3>za - für</h3>
+      			<p class="example">Kupujem ovo za prijatelja.</p>
+    			</div>
+    			
+    		   <div data-role="collapsible">
+      			<h3>u - am</h3>
+      			<p class="example">Vidimo se u petak onda.</p>
+    			</div>
+    			
+    			<div data-role="collapsible">
+      			<h3>na - auf</h3>
+      			<p class="example">Ne znam odgovor na vaše pitanje.</p>
+    			</div>
+    			
+    			<div data-role="collapsible">
+      			<h3>kroz - durch</h3>
+      			<p class="example">Često gledam kroz prozor.</p>
+    			</div>
+    			
+    			<div align="center">
+  					<a href="#Akkusativ_uebung1">Übung</a> 
+				</div>
+				</p>
+			</div>
+		</div>
+  	</div>
+</div>
+
+<!-- Dativ -->
+
+<div data-role="page" id="Dativ">
+	<div data-role="header">
+  		<h1>Dativ</h1>
+  		<div data-role="navbar">
+    		<ul>
+      		<li><a href="#pageone">Sprachgeschichte</a></li>
+      		<li><a href="#Akkusativ">Akkusativ</a></li>
+      		<li><a href="#Genetiv">Genetiv</a></li>
+      		<li><a href="#Instrumentalis">Instrumentalis</a></li>
+      		<li><a href="#Dativ">Dativ</a></li>
+      		<li><a href="#Lokativ">Lokativ</a></li>
+      		<li><a href="#dylandog">Lektüre</a></li>
+      		<li><a href="#darkwood-dub">Songtexte</a></li>
+    		</ul>
+  		</div>
+  </div>
+	
+	<div data-role="main" class="ui-content">
+    
+    	<h1>Dativ</h1>
+    	
+    	<div data-role="collapsible">
+		   <h2>Formen</h2>
+			<div data-role="collapsible">
+			<h3>Maskulinum</h3>
+			</div>
+			
+			<div data-role="collapsible">
+			<h3>Femininum</h3>
+			</div>
+			
+			<div data-role="collapsible">
+			<h3>Neutrum</h3>
+			</div>
+		</div>
+    	
+		<div data-role="collapsible">
+			<h2>Verwendung</h2>
+		</div>
+		
+  	</div>
+</div>
+
+<!-- Lokativ -->
+
+<div data-role="page" id="Lokativ">
+	<div data-role="header">
+  		<h1>Dativ</h1>
+  		<div data-role="navbar">
+    		<ul>
+      		<li><a href="#pageone">Sprachgeschichte</a></li>
+      		<li><a href="#Akkusativ">Akkusativ</a></li>
+      		<li><a href="#Genetiv">Genetiv</a></li>
+      		<li><a href="#Instrumentalis">Instrumentalis</a></li>
+      		<li><a href="#Dativ">Dativ</a></li>
+      		<li><a href="#Lokativ">Lokativ</a></li>
+      		<li><a href="#dylandog">Lektüre</a></li>
+      		<li><a href="#darkwood-dub">Songtexte</a></li>
+    		</ul>
+  		</div>
+  </div>
+	
+	<div data-role="main" class="ui-content">
+    
+    	<h1>Lokativ</h1>
+    	<div data-role="collapsible">
+		   <h2>Formen</h2>
+			<div data-role="collapsible">
+			<h3>Maskulinum</h3>
+			</div>
+			
+			<div data-role="collapsible">
+			<h3>Femininum</h3>
+			</div>
+			
+			<div data-role="collapsible">
+			<h3>Neutrum</h3>
+			</div>
+		</div>
+    	
+		<div data-role="collapsible">
+			<h2>Verwendung</h2>
+		</div>
+  	</div>
+</div>
+
+<!-- Instrumentalis -->
+
+<div data-role="page" id="Instrumentalis">
+	<div data-role="header">
+  		<h1>Dativ</h1>
+  		<div data-role="navbar">
+    		<ul>
+      		<li><a href="#pageone">Sprachgeschichte</a></li>
+      		<li><a href="#Akkusativ">Akkusativ</a></li>
+      		<li><a href="#Genetiv">Genetiv</a></li>
+      		<li><a href="#Instrumentalis">Instrumentalis</a></li>
+      		<li><a href="#Dativ">Dativ</a></li>
+      		<li><a href="#Lokativ">Lokativ</a></li>
+      		<li><a href="#dylandog">Lektüre</a></li>
+      		<li><a href="#darkwood-dub">Songtexte</a></li>
+    		</ul>
+  		</div>
+  </div>
+	
+	<div data-role="main" class="ui-content">
+    
+    	<h1>Instrumentalis</h1>
+    	
+    	<div data-role="collapsible">
+		   <h2>Formen</h2>
+			<div data-role="collapsible">
+			<h3>Maskulinum</h3>
+			<table>
+  				<tr>
+    				<th>Nominativ Sg.</th>
+    				<th>Nominativ Pl.</th>
+    				<th>Instr. Sg.</th>
+    				<th>Instr. Pl.</th>
+  				</tr>
+  				<tr>
+    				<td><div class="Exa"><p class="Exa1">dobar pas</p><p class="Exa2">guter Hund</p></div></td>
+    				<td>dobri psi</td>
+    				<td>dobrim psom</td>
+    				<td>dobrim psima</td>
+  				</tr>
+  				<tr>
+    				<td><div class="Exa"><p class="Exa1">jak muž</p><p class="Exa2">starker Mann</p></div></td>
+    				<td>jaki muževi</td>
+    				<td>jakim mužem</td>
+    				<td>jakim muževima</td>
+  				</tr>
+  			</table>
+			</div>
+			
+			<div data-role="collapsible">
+			<h3>Femininum</h3>
+			<table>
+  				<tr>
+    				<th>Nominativ Sg.</th>
+    				<th>Nominativ Pl.</th>
+    				<th>Instr. Sg.</th>
+    				<th>Instr. Pl.</th>
+  				</tr>
+  				<tr>
+    				<td><div class="Exa"><p class="Exa1">velika knjiga</p><p class="Exa2">großes Buch</p></div></td>
+    				<td>velike knjige</td>
+    				<td>dobrom knjigom</td>
+    				<td>dobrim knjigama</td>
+  				</tr>
+  				<tr>
+    				<td><div class="Exa"><p class="Exa1">loša ideja</p><p class="Exa2">schlechte Idee</p></div></td>
+    				<td>loše ideje</td>
+    				<td>lošom idejom</td>
+    				<td>lošim idejima</td>
+  				</tr>
+  				<tr>
+    				<td><div class="Exa"><p class="Exa1">slatka stvar</p><p class="Exa2">süße Idee</p></div></td>
+    				<td>slatke stvari</td>
+    				<td>slatkom stvari</td>
+    				<td>slatkim stvarima</td>
+  				</tr>
+  			</table>
+			</div>
+			
+			<div data-role="collapsible">
+			<h3>Neutrum</h3>
+			<table>
+  				<tr>
+    				<th>Nominativ Sg.</th>
+    				<th>Nominativ Pl.</th>
+    				<th>Instr. Sg.</th>
+    				<th>Instr. Pl.</th>
+  				</tr>
+  				<tr>
+    				<td><div class="Exa"><p class="Exa1">veliko selo</p><p class="Exa2">großes Dorf</p></div></td>
+    				<td>velika sela</td>
+    				<td>velikim selom</td>
+    				<td>velikim selima</td>
+  				</tr>
+  				<tr>
+    				<td><div class="Exa"><p class="Exa1">veliko ime</p><p class="Exa2">großer Name</p></div></td>
+    				<td>velika imena</td>
+    				<td>velikim imeno</td>
+    				<td>velikim imenima</td>
+  				</tr>
+  				<tr>
+    				<td><div class="Exa"><p class="Exa1">bijelo jaje</p><p class="Exa2">weißes Ei</p></div></td>
+    				<td>bijela jaja</td>
+    				<td>bijelim jajetom</td>
+    				<td>bijelim jajima</td>
+  				</tr>
+  			</table>
+			</div>
+		</div>
+    	
+		<div data-role="collapsible">
+			<h2>Verwendung</h2>
+		</div>
+		
+		<div data-role="collapsible">
+			<h2>Übungen</h2>
+			<div align="center">
+  				<a href="#Instrumentalis_uebung1">Übung</a> 
+			</div>
+		</div>
+  	</div>
+</div>
+
+<!-- Dylan Dog -->
+
+<div data-role="page" id="dylandog">
+  <div data-role="header">
+  	<h1>Lektüre: Dylan Dog</h1>
+  	<div data-role="navbar">
+    	<ul>
+      		<li><a href="#pageone">Sprachgeschichte</a></li>
+      		<li><a href="#Akkusativ">Akkusativ</a></li>
+      		<li><a href="#Genetiv">Genetiv</a></li>
+      		<li><a href="#Instrumentalis">Instrumentalis</a></li>
+      		<li><a href="#Dativ">Dativ</a></li>
+      		<li><a href="#Lokativ">Lokativ</a></li>
+      		<li><a href="#dylandog">Lektüre</a></li>
+      		<li><a href="#darkwood-dub">Songtexte</a></li>
+    	</ul>
+  	</div>
+  </div>
   
-<!-- END Introduction Menu -->
+  <div data-role="main" class="ui-content">
+    <h1>Comics</h1>
+
+	<p>Comics sind ein guter Einstieg in das Lesen von Texten in einer Fremdsprache. Für jeden der hier aufgelisteten Comics, kannst du eine Vokabelsammlung herunterlanden, die du mit <a href="https://apps.ankiweb.net/">Anki</a> lernen kannst. Die Vokabelsammlungen werden als Dateien mit der Endung ".apkg" gespeichert. In der Anki-App findest du unter dem Reiter "Datei" die Option "Import...". Importiere die Sammlung und lerne sie anschließend auf dem Computer oder Smartphone mit der Anki-App.
+
+	<h2>Mjesečari - Dylan Dog</h2>
+
+	<p>"Dylan Dog" (1986) ist eine italienische Comic-Serie von Tiziano Sclavi für den italienischen Comicverlag Sergio Bonelli Editore (international: Bonelli Comics).
+	 Der serbische Verlag <a href="http://www.veselicetvrtak.com/">veselicetvrtak</a> übersetzte die Reihe ins Serbokroatische.
+	  Das zum Comic gehörige Anki-Deck kannst du dir unter diesem Link <a href="Lekture/Dylan Dog - Mjesačari.apkg">Dylan Dog - Mjesačari - AnkiDeck</a> herunterladen.</p> Die Karten sind teilweise mit Audioaufnahmen von kroatischen Muttersprachlern versehen, die aber nicht immer unter optimalen Aufnahmebedingungen entstanden sind. Den überwiegende Anzahl der Karteikarten, die Verben enthalten, haben Beispielsätzen und Informationen über den Aspekt des Verbs.
+
+	<center>
+	<img src="Lekture/coverDylanDog.jpg" alt="Lekture/coverDylanDog.jpg" style="width:600px;height:800px;">
+	</center>
+  </div>
 </div>
 
-<!-- END GRID -->
-</div><br>
+<!-- Dylan Dog -->
 
-<!-- END w3-content -->
+<div data-role="page" id="darkwood-dub">
+  <div data-role="header">
+  	<h1>Darkwood Dub</h1>
+  	<div data-role="navbar">
+    	<ul>
+      		<li><a href="#pageone">Sprachgeschichte</a></li>
+      		<li><a href="#Akkusativ">Akkusativ</a></li>
+      		<li><a href="#Genetiv">Genetiv</a></li>
+      		<li><a href="#Instrumentalis">Instrumentalis</a></li>
+      		<li><a href="#Dativ">Dativ</a></li>
+      		<li><a href="#Lokativ">Lokativ</a></li>
+      		<li><a href="#dylandog">Lektüre</a></li>
+      		<li><a href="#darkwood-dub">Songtexte</a></li>
+    	</ul>
+  	</div>
+  </div>
+  
+  <div data-role="main" class="ui-content">
+    <h1>Anleitung</h1>
+    
+    Höre dir die jeweiligen Lieder auf mp3 oder auf Youtube an. Du findest
+    unter jedem Lied einen Link zu Youtube. Wenn du den Liedtext beim Abspielen
+    mitliest, bemerkst du, dass einige Wörter markiert sind. Gehst du mit der Maus
+    über diese, erscheint deren Übersetzung. Des Weiteren lassen sich diese Vokabeln
+    jeweils gesammelt in einem Anki-Deck zum jeweiligen Künstler herunterladen.
+    Du kannst dir den Text auch jeweils als Pdf-Datei herunterladen, ausdrucken und zum Beispiel
+    in der U-Bahn hören.
+    
+    <h1>Darkwood Dub</h1>
+    <div>
+	<br>
+	<a href="https://www.youtube.com/results?search_query=darkwood+dub+kolote%C4%8Dina&spfreload=10">Youtube: Darkwood Dub - kolotečina</a>
+	<br>    
+	<br>  
+	<div data-role="collapsible">
+	<h2>Kolotečina</h2>
+    
+    Iz <div class="Exa"><p class="Exa1">kolotečine</p><p class="Exa2">(kolotečina - Wagenspur)</p></div><br>
+	<div class="Exa"><p class="Exa1">Istupiću</p><p class="Exa2">(istupiti - hervortreten)</p></div> <div class="Exa"><p class="Exa1">hrabro</p><p class="Exa2">(mutig)</p></div><br>
+	Uspavane <div class="Exa"><p class="Exa1">dne</p><p class="Exa2">(dno - Boden, Grund)</p></div><br>
+	Probudiću tajnom<br>
+	Loše programe<br>
+	Isključiću <div class="Exa"><p class="Exa1">trajno</p><p class="Exa2">(dauerhaft)</p></div><br>
+	Iz kolotečine<br>
+	Istupiću hrabro<br>
+
+
+	<div class="Exa"><p class="Exa1">U pravcu</p><p class="Exa2">(In Richtung)</p></div> pustinje<br>
+	Ispred oluje<br>
+	U pravcu pustinje<br>
+	Autoputem<br>
+	U pravcu pustinje<br>
+	Brzinom pravom<br>
+	U pravcu pustinje<br>
+	Sa punim rezervoarom<br>
+	U pravcu pustinje<br>
+	Ti si pored mene<br>
+	U pravcu pustinje<br>
+	Ja sam pored tebe<br>
+	U pravcu pustinje<br>
+	I noć je duga<br>
+	U pravcu pustinje<br>
+	Noć je duga senka ispred nas<br>
+
+	Iz kolotečine<br>
+	Istupiću hrabro<br>
+	Uspavane dne<br>
+	Probudiću tajnom<br>
+	Loše programe<br>
+	Isključiću trajno<br>
+	Iz kolotečine<br>
+	Istupiću hrabro<br>
+
+	Gde je?<br>
+	Gde je?<br>
+	Gde je?<br>
+	Gde je?<br>
+	
+	</div>
+	
+	<a href="https://www.youtube.com/results?search_query=Darkwood+Dub+-+Baobab&spfreload=10">Youtube: Darkwood Dub - Baobab</a>
+	
+	<div data-role="collapsible">
+	<h2>Baobab</h2>
+	Znaci pored puta<br>
+	Bez mnogo smisla<br>
+	<div class="Exa"><div class="Exa1">Nakrivljene</div><div class="Exa2">verbogen</div></div> zgrade<br>
+	Kilometri kabla<br>
+	<div class="Exa"><p class="Exa1">Prigušene</p><p class="Exa2">dumpf</p></div> <div class="Exa"><p class="Exa1">trube</p><p class="Exa2">(truba - Hupe)</p></div><br>
+	Automobila<br>
+	Pogled u suton<br>
+	Događaj dana..<br>
+
+	Blizu divljih zveri i retkih ptica<br>
+	Ispod kupole nebeskog svoda<br>
+	Večita dilema na parčetu papira<br>
+	Čista kao suza<br>
+	Izliv osećanja<br> 
+	</div>
+	
+	<h1>Elemental</h1>
+	
+	<a href="AnkiDecks/Elemental.apkg">Elemental - AnkiDeck</a> herunterladen (Rechtsklick).</p>
+	
+	<a href="https://www.youtube.com/results?search_query=Elemental+-+Iz+Dana+U+Dan&spfreload=10">Youtube: Elemental - Iz Dana U Dan</a>
+	
+	<div data-role="collapsible">
+	<h2>Iz Dana U Dan</h2>
+
+Koliko nisko idemo, može li uopće niže <br>
+možda nam se <div class="Exa"><div class="Exa1">digao</div><div class="Exa2">dizati, dižem - heben</div></div> <div class="Exa"><div class="Exa1">zanos</div><div class="Exa2">Schwung, Elan</div></div>, al' standard nam se ne dize <br>
+dani ponosa i slave i minusa na tekucem <br>
+mi ne zivimo, mi preživljavamo <br>
+sta ostavljamo nasem buducem narastaju <br>
+dugove, racune, rate kredita nas guse <br>
+a nemamo ni kune <br>
+kombiniramo kako <div class="Exa"><div class="Exa1">odgoditi</div><div class="Exa2"> (sv.) aufschieben</div></div> placanje, bar za desetak dana <br>
+jebo zivot kad na karticu se kupuje hrana <br>
+di smo sad, stara stednja se otopila <br>
+osla na ono bitno, pojela se i popila <br>
+bez svega smo ostali, prenaglo nas je pogodilo <br>
+ko uopće zna što se to preko noći dogodilo <br>
+
+Koga da pitam, brate <br>
+ko ce mi dat' odgovore <br>
+reci bilo šta osim <br>
+da je moglo biti gore <br>
+
+Sve te tisuce, hiljadarke, konjanici i rudari <br>
+stavljali davno na stranu, za neki san da se ostvari <br>
+nestali u brojkama, brojke ko snijeg okopnile <br>
+dok mi smo prezivljavali, zivotne stvari poskupile <br>
+i di smo sad <br>
+<div class="Exa"><div class="Exa1">napokon</div><div class="Exa2"> endlich</div></div> mirni, napokon slobodni, napokon u svojoj drzavi <br>
+al' sad smo siromašni <br>
+dali smo svoje <div class="Exa"><div class="Exa1">snove</div><div class="Exa2"> san, snovi - Träume</div></div> za ovu zemlju i nije nam zao <br>
+al' usput se nasao <div class="Exa"><div class="Exa1">domoljub</div><div class="Exa2"> Patriot</div></div> veći od nas <br>
+pa pokrao sav visak <br>
+radili, al' nisu nas <div class="Exa"><div class="Exa1">cijenili</div><div class="Exa2"> cijeniti (nesv.) - achten, respektieren</div></div> <br>
+mjesecima čekali da plate <div class="Exa"><div class="Exa1">trud</div><div class="Exa2"> Mühe, Anstrengung</div></div> što smo <div class="Exa"><div class="Exa1">uložili</div><div class="Exa2"> uložiti (sv.)) - einsetzen, investieren</div></div> <br>
+di smo sad, opet sve ispocetka <br>
+za koliko nisko idemo, od ponedeljka do petka <br>
+koliko danas vrijedi nas rad <br>
+imali smo, sad nemamo, di smo sad? <br>
+
+Samo živimo iz dana u dan <br>
+i svaki san davno nestao je izbrisan <br>
+koga da pitam, brate <br>
+ko ce mi dat' odgovore <br>
+reci bilo šta osim da je moglo biti gore <br>
+
+I di smo sad? <br>
+jos čekamo bolje sutra <br>
+mozda naivno se nadamo istim stvarima <br>
+dok <div class="Exa"><div class="Exa1">iznutra</div><div class="Exa2"> von Innen heraus</div></div> cijeli sistem <div class="Exa"><div class="Exa1">zakazuje</div><div class="Exa2"> zakazati, zakazujem (sv.) - versagen</div></div> <br>
+nema <div class="Exa"><div class="Exa1">pravde</div><div class="Exa2"> pravda - Gerechtigkeit</div></div> da nas <div class="Exa"><div class="Exa1">štiti</div><div class="Exa2"> štititi, štiti (nesv.) - wahren, schützen</div></div> <br>
+nema postene vlasti, sve sami konvertiti <br>
+obecanja su jeftina a zivot je tako skup <br>
+pa su <div class="Exa"><div class="Exa1">uzor</div><div class="Exa2"> Vorbild</div></div> kriminalci, sta ćes, nije narod glup <br>
+hoće standard, hoće lovu, hoće ziviti, hoće sve <br>
+a to čekaju i čekaju, i čekaju i popizde <br>
+jer nema smisla, rezije su visoke <br>
+minus je <div class="Exa"><div class="Exa1">preduboko</div><div class="Exa2"> dubok - tief</div></div> <br>
+sve to traje predugo, narod puk'o <br>
+jedni <div class="Exa"><div class="Exa1">kukaju</div><div class="Exa2"> kukati (nesv.) - jammern</div></div> što jucer bilo bolje neo danas <br>
+drugi divljaju, galame dok ih puca nacionalni zanos <br>
+i pitam te, pitam te di smo sad <br>
+dalje radimo na crno ispod cijene, al' do kad <br>
+ko ce vratiti <div class="Exa"><div class="Exa1">dostojanstvo</div><div class="Exa2"> Würde</div></div>, ko ce platit' punu cijenu <br>
+dat' nam tol'ko kol'ko vrijedimo <br>
+da stvari jednom krenu <br>
+vise gubimo strpljenje, samo brojimo probleme <br>
+sve sto imali smo nemamo, i teško nam je <div class="Exa"><div class="Exa1">breme</div><div class="Exa2"> Last</div></div> <br>
+pa na kraju svatko zapita se <br>
+kolko nisko spao sam <br>
+pa kako onda ostat' ponosan <br>
+
+Samo zivimo iz dana u dan <br>
+i svaki san davno nestao je izbrisan <br>
+koga da pitam, brate <br>
+ko ce mi dat' odgovore <br>
+reci bilo sta osim da je moglo biti gore <br>
+
+I reci mi da smo mogli promijeniti svijet <br>
+(reci mi, molim te) <br>
+i da ce djeca sto dolaze imat' nasljedje za ponijet' <br>
+i reci mi da nismo sve dobro unistili <br>
+i da cu moci <br>
+mirno spavati.. od savjesti <br>
+
+Reci mi da mozemo <div class="Exa"><div class="Exa1">izgraditi</div><div class="Exa2"> aufbauen</div></div>, da nije prekasno <br>
+i ako zakazem daj mi snage, stvorit' nesto prekrasno <br>
+i vec sutra volio bih otvorit' oci, pa da budem zahvalan <br>
+al' ne mogu pa stisnem zube, i hodam iz dana u dan <br>
+
+	</div>
+
+    </div>
+  </div>
 </div>
-
-<!-- Footer -->
-<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
-  <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
-  <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
 
 </body>
 </html>
-
 
