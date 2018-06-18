@@ -7,10 +7,12 @@ function init_gaps() {
 		pos1 = content.indexOf("(");
 		pos2 = content.indexOf(")");
 		hint = content.slice(pos1+1, pos2);
+		additional_information_for_solution = "";
 		//if the cell has the form ...(bla#alb) then filter out the second part
 		pos = hint.indexOf("#");
 		if (pos != -1) {
-		    hint = hint.slice(0, pos-1);
+		    hint = hint.slice(0, pos);
+		    additional_information_for_solution = content.slice(pos1+pos+1, pos2);
 		}
 
 		solution = content.slice(0, pos1-1);
@@ -23,6 +25,7 @@ function init_gaps() {
 		//e.innerHTML = "<b class='Lücke-ungelöst' contenteditable='true'>?</b>"
 		e.innerHTML += "<b class='Hinweis'> ("+hint+")</b>"
 		e.innerHTML += "<b class='Lücke-gelöst'>"+solution+"</b>"
+		e.innerHTML += "<b class='Lücke-gelöst-add-info'>"+additional_information_for_solution+"</b>"
 	}
 	elements = document.getElementsByClassName('Lücke');
 	for (var i = 0; i < elements.length; i++) {
@@ -30,10 +33,12 @@ function init_gaps() {
 		unsolved = e.getElementsByClassName('Lücke-ungelöst')[0];
 		solved = e.getElementsByClassName('Lücke-gelöst')[0];
 		hint = e.getElementsByClassName('Hinweis')[0];
+		add_info = e.getElementsByClassName('Lücke-gelöst-add-info')[0];
 
 		unsolved.style.display = 'inline';
 		hint.style.display = 'inline';
 		solved.style.display = 'none';
+		add_info.style.display = 'none';
 	}
 }
 
@@ -43,9 +48,12 @@ function correct(event) {
       	   unsolved = e.getElementsByClassName('Lücke-ungelöst')[0];
 	   solved = e.getElementsByClassName('Lücke-gelöst')[0];
 	   hint = e.getElementsByClassName('Hinweis')[0];
+	   add_info = e.getElementsByClassName('Lücke-gelöst-add-info')[0];
 	   solution_attempt = unsolved.value;
 	   solution = solved.innerHTML;
+	   additional_info = add_info.innerHTML;
 	   if (solution_attempt == solution) {
+	        solved.innerHTML += " ("+additional_info+")";
 		solved.style.display = 'inline';
 		unsolved.style.display = 'none';
 		hint.style.display = 'none';
