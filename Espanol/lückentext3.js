@@ -7,10 +7,17 @@ function init_gaps() {
 		pos1 = content.indexOf("(");
 		pos2 = content.indexOf(")");
 		hint = content.slice(pos1+1, pos2);
-		solution = content.slice(0, pos1-1);
-		pos = solution.indexOf("#")
+		//if the cell has the form ...(bla#alb) then filter out the second part
+		pos = hint.indexOf("#");
 		if (pos != -1) {
-		    solution = content.slice(0, pos-1);
+		    hint = hint.slice(0, pos-1);
+		}
+
+		solution = content.slice(0, pos1-1);
+		//if the cell has the form ...(bla#alb) then filter out the second part
+		pos = solution.indexOf("#");
+		if (pos != -1) {
+		    solution = solution.slice(0, pos-1);
 		}
 		e.innerHTML = '<input type="text" class="Lücke-ungelöst" onfocusout="correct(event)">'
 		//e.innerHTML = "<b class='Lücke-ungelöst' contenteditable='true'>?</b>"
