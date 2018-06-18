@@ -13,7 +13,6 @@ function init_gaps() {
 		if (pos != -1) {
 		    hint = hint.slice(0, pos);
 		    additional_information_for_solution = content.slice(pos1+pos+2, pos2);
-		    alert(additional_information_for_solution);
 		}
 
 		solution = content.slice(0, pos1-1);
