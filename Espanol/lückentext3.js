@@ -13,13 +13,14 @@ function init_gaps() {
 		if (pos != -1) {
 		    hint = hint.slice(0, pos);
 		    additional_information_for_solution = content.slice(pos1+pos+1, pos2);
+		    alert(additional_information_for_solution);
 		}
 
 		solution = content.slice(0, pos1-1);
 		//if the cell has the form ...(bla#alb) then filter out the second part
 		pos = solution.indexOf("#");
 		if (pos != -1) {
-		    solution = solution.slice(0, pos-1);
+		    solution = solution.slice(0, pos);
 		}
 		e.innerHTML = '<input type="text" class="Lücke-ungelöst" onfocusout="correct(event)">'
 		//e.innerHTML = "<b class='Lücke-ungelöst' contenteditable='true'>?</b>"
