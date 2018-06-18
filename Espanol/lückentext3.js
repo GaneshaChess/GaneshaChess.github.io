@@ -12,7 +12,7 @@ function init_gaps() {
 		pos = hint.indexOf("#");
 		if (pos != -1) {
 		    hint = hint.slice(0, pos);
-		    additional_information_for_solution = content.slice(pos1+pos+1, pos2);
+		    additional_information_for_solution = content.slice(pos1+pos+2, pos2);
 		    alert(additional_information_for_solution);
 		}
 
