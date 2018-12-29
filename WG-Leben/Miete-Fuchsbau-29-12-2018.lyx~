@@ -1,0 +1,1141 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass amsart
+\begin_preamble
+\usepackage{tikz} 
+\usepackage{pgfplots}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Moneten im Fuchsbau
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hspace{}
+\length 20text%
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../../../../../../Privates/Fuchsbau/Miete/DboG0TPXcAAKyCm.jpg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Nebenkosten
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{luacode} 
+\end_layout
+
+\begin_layout Plain Layout
+
+tex.print(math.random()) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{luacode}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Die Nebenkosten setzen sich aus Strom, GEZ, Internet, Netflix, Heiz und
+ Warmwasserkosten zusammen.
+\end_layout
+
+\begin_layout Itemize
+Strom 
+\begin_inset Formula $86$
+\end_inset
+
+ Euro pro Monat; wird von MIKRO Konto abgebucht
+\end_layout
+
+\begin_layout Itemize
+GEZ 
+\begin_inset Formula $53$
+\end_inset
+
+ Euro fuer 
+\begin_inset Formula $3$
+\end_inset
+
+ Monate => Also 
+\begin_inset Formula $17.66666\dots$
+\end_inset
+
+ pro Monat; wird von MIKRO's Konto abgebucht
+\end_layout
+
+\begin_layout Itemize
+Netflix: 
+\begin_inset Formula $10.99$
+\end_inset
+
+; wird von ROBTROX's Konto abgebucht
+\end_layout
+
+\begin_layout Itemize
+Internet 
+\begin_inset Formula $32,98$
+\end_inset
+
+; wird von ROBTROX's Konto abgebucht
+\end_layout
+
+\begin_layout Itemize
+Vorauszahlung an VERMITRIX fuer Heiz und Warmwasserkosten: 
+\begin_inset Formula $130$
+\end_inset
+
+ Euro
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $130$
+\end_inset
+
+ Euro kalte Betriebskosten (Schornsteinfeger und so was) an VERMITRIX
+\end_layout
+
+\begin_layout Standard
+Insgesamt belaufen sich die Nebenkosten auf 
+\begin_inset Formula $407,63666$
+\end_inset
+
+ Euro.
+\end_layout
+
+\begin_layout Subsection
+Nebenkosten pro Zimmer
+\end_layout
+
+\begin_layout Standard
+Die Nebenkosten werden nicht nach Zimmergroesse berechnet 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ also einfach durch drei geteilt.
+\end_layout
+
+\begin_layout Itemize
+Jeder Mitbewohner muss 
+\begin_inset Formula $407,63666/3=135,878886667$
+\end_inset
+
+ Euro Nebenkosten zahlen.
+\end_layout
+
+\begin_layout Section
+Kaltmiete
+\end_layout
+
+\begin_layout Enumerate
+Gesamtquadratmeteranzahl: 
+\begin_inset Formula $75$
+\end_inset
+
+ 
+\begin_inset Formula $m^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Vorauszahlung an VERMITRIX fuer Heiz und Warmwasserkosten: 
+\begin_inset Formula $130$
+\end_inset
+
+ Euro
+\end_layout
+
+\begin_layout Enumerate
+Kaltmiete 
+\begin_inset Formula $530$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Insgesamt an VERMITRIX: 
+\begin_inset Formula $790$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Kaltmiete pro Zimmer
+\end_layout
+
+\begin_layout Standard
+Die kann man auf verschiedene Arten berechnen.
+ Wenn die Gemeinschaftsflaeche keine Rolle spielen soll, dann so:
+\end_layout
+
+\begin_layout Subsubsection
+Rechnung ohne Gemeinschaftsraum
+\end_layout
+
+\begin_layout Standard
+Wir benutzen die folgende Formel:
+\begin_inset Formula 
+\[
+\text{individuelle Kaltmiete}=\frac{\text{individuelle Wohnflaeche}}{\text{gesamte Wohnflaeche}}\cdot\text{gesamte Kaltmiete}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+ROBTROX's Zimmer: Quadratmeter: 
+\begin_inset Formula $15.228m^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $50,3335074\%$
+\end_inset
+
+ der Schlafflaeche 
+\begin_inset Formula $\Rightarrow530\cdot0.503335074=266.76758922$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+ELTROX's (das mittlere) Zimmer: 
+\begin_inset Formula $6.5070m^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $21.5\%$
+\end_inset
+
+ der Schlafflaeche 
+\begin_inset Formula $\Rightarrow530\cdot0.215=113.95$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+MACROX's Zimmer (Kueche): 
+\begin_inset Formula $8.5262m^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $0,281753533\%$
+\end_inset
+
+ der Schlafflaeche 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+
+\begin_inset Formula $530\cdot0,281753533=149.329372265$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Price Bending mit der Gemeinschaftsflaeche
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hspace{}
+\length 20text%
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../../../../../../Privates/Fuchsbau/Miete/Avatar-Leyenda-Aang-ppal-650x325.jpg
+	width 60text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Wenn man die Gemeinschaftsflaeche mit einbeziehen will, dann nimmt die Formel
+ hier:
+\begin_inset Formula 
+\[
+\text{Anteil an der Kaltmiete}=\frac{\text{individuelle Wohnflaeche+\frac{1}{3}\cdot\text{Nutzungsfaktor\cdot geteilte Wohnflaeche}}}{\text{gesamte Wohnflaeche+Nutzungsfaktor\cdot geteilte Wohnflaeche}}
+\]
+
+\end_inset
+
+Wenn der 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Nutzungsfaktor (der geteilten Flaeche)
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ hoch ist, dann zahlen groeszere Zimmer anteilig weniger.
+ Wenn der 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Nutzungsfaktor (der geteilten Flaeche)
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ klein ist, dann zahlen kleinere Zimmer anteilig weniger.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Im Fuchsbau haben wir:
+\begin_inset Formula 
+\begin{align*}
+\text{gesamte Wohnflaeche} & =\underbrace{(15.228+6.5070+8.5262)}_{\text{Groesse aller Zimmer}}\\
+ & =30.2612\\
+\text{geteilte Wohnflaeche} & =\underbrace{75}_{\text{Groesze des Fuchsbaus}}-\underbrace{30.2612}_{\text{gesamte Wohnflaeche}}\\
+ & =44.7388
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+ROBTROX's Zimmer (Groszes Zimmer)
+\end_layout
+
+\end_inset
+
+Hier haben wir dann
+\begin_inset Formula 
+\[
+\text{Anteil an der Kaltmiete}=\frac{15.228+\frac{1}{3}\cdot\text{\text{Nutzungsfaktor}}\cdot44.7388}{30.2612+\text{Nutzungsfaktor}\cdot44.7388}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture} [scale=0.8]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{axis}[xmin=0,xmax=1,ymax=1, samples=100, xlabel={Nutzungsfaktor},
+ ylabel={Anteil an der Kaltmiete}]   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addplot[blue, ultra thick] {(15.228+1/3*x*44.7388)/(30.2612+x*44.7388)};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture} [scale=0.8]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{axis}[xmin=0,xmax=1, samples=100, xlabel={Nutzungsfaktor}, ylabel={Kaltmie
+te}]   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addplot[blue, ultra thick] {(15.228+1/3*x*44.7388)/(30.2612+x*44.7388)*530};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Miete in Abhaengigkeit des Nutzungsfaktors fuer das grosze Zimmer.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+MACROX's Zimmer/(Kueche-Zimmer)
+\end_layout
+
+\end_inset
+
+Hier haben wir dann
+\begin_inset Formula 
+\[
+\text{Anteil an der Kaltmiete}=\frac{8.5262+\frac{1}{3}\cdot\text{\text{Nutzungsfaktor}}\cdot44.7388}{30.2612+\text{Nutzungsfaktor}\cdot44.7388}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+ELTROX's Zimmer/(Zimmer in der Mitte)
+\end_layout
+
+\end_inset
+
+Hier haben wir dann
+\begin_inset Formula 
+\[
+\text{Anteil an der Kaltmiete}=\frac{6.5070+\frac{1}{3}\cdot\text{\text{Nutzungsfaktor}}\cdot44.7388}{30.2612+\text{Nutzungsfaktor}\cdot44.7388}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture} [scale=0.8]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{axis}[xmin=0,xmax=1, samples=100, xlabel={Nutzungsfaktor}, ylabel={Kaltmie
+te}]   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addplot[blue, ultra thick] {(8.5262+1/3*x*44.7388)/(30.2612+x*44.7388)*530};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Miete in Abhaengigkeit des Nutzungsfaktors fuer die ehem.
+ Kueche.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture} [scale=0.8]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{axis}[xmin=0,xmax=1, samples=100, xlabel={Nutzungsfaktor}, ylabel={Kaltmie
+te}]   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addplot[blue, ultra thick] {(6.5070+1/3*x*44.7388)/(30.2612+x*44.7388)*530};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Miete in Abhaengigkeit des Nutzungsfaktors fuer das Zimmer in der Mitte.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Warmmieten
+\end_layout
+
+\begin_layout Subsection
+Grosze Zimmer
+\end_layout
+
+\begin_layout Standard
+Warmmiete ist 
+\begin_inset Formula $135,878886667+266.76758922=402,646475887$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Zimmer in der Mitte
+\end_layout
+
+\begin_layout Standard
+Warmmiete ist 
+\begin_inset Formula $135,878886667+113.95=249,828886667$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Zimmer in der Kueche
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Warmmiete ist 
+\begin_inset Formula $135,878886667+149.329372265=285,208258932$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Alles zusammen (zur Kontrolle)
+\end_layout
+
+\begin_layout Standard
+Die Gesamtmiete betraegt daher 
+\begin_inset Formula $402,646475887+249,828886667+285,208258932=937,683621486$
+\end_inset
+
+ Euro
+\end_layout
+
+\begin_layout Section
+Wer muss an wen was zahlen
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hspace{}
+\length 20text%
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../../../../../../Privates/Fuchsbau/Miete/lauch2.png
+	width 60text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+VERMITRIX bekommt 
+\begin_inset Formula $790$
+\end_inset
+
+ pro Monat von MIKRO
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../../../Privates/Fuchsbau/Miete/visser.jpeg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Frau VERMITRIX bekommt 790 Euro.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+MIKRO bekommt 
+\begin_inset Formula $790$
+\end_inset
+
+ Miete + 
+\begin_inset Formula $86$
+\end_inset
+
+ Strom + 
+\begin_inset Formula $17.66666$
+\end_inset
+
+ GEZ = 
+\begin_inset Formula $893,666666$
+\end_inset
+
+ von ROBTROX
+\end_layout
+
+\begin_layout Itemize
+ROBTROX bekommt 
+\begin_inset Formula $249,828886667$
+\end_inset
+
+ Euro von ELTROX
+\end_layout
+
+\begin_layout Itemize
+ROBTROX bekommt 
+\begin_inset Formula $285,208258932$
+\end_inset
+
+ Euro von MACROX
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node (VERMITRIX) at (6, 3) {VERMITRIX};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node (MIKRO) at (3, 3) {MIKRO};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node (ROBTROX) at (0, 3) {ROBTROX};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node (ELTROX) at (-3, 2) {ELTROX};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node (MACROX) at (-3, 4) {MACROX};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [->, dashed] (MIKRO) edge node[above, align=left]  {$790$ Euro} (VERMITRIX)
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [->, dashed] (ROBTROX) edge node[above, align=left]  {$893.666$ Euro}
+ (MIKRO);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [->, dashed] (ELTROX) to (ROBTROX);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [->, dashed] (MACROX) to (ROBTROX);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Kautionen
+\end_layout
+
+\begin_layout Itemize
+1000 Euro Kaution an VERMITRIX wurde von ROBTROX bezahlt
+\end_layout
+
+\begin_layout Itemize
+400 Euro Kaution von MACROX fuer die Zwischenmiete
+\end_layout
+
+\begin_layout Section
+Bemerkung zum Januar
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $460+484=944$
+\end_inset
+
+ hat ROBTROX an MIKRO ueberwiesen.
+ D.h.
+ MIKRO gibt 
+\begin_inset Formula $944+\underbrace{17}_{\text{die 17 Euro}}-\underbrace{893,666666}_{\text{Summe die ich eigentlich an dich geben muss}}=67,333334$
+\end_inset
+
+ Euro an ROBTROX und laesst die Miete von ELTROX im Fuchsbau.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
