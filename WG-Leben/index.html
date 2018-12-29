@@ -33,6 +33,8 @@ w3IncludeHTML();
 
 <h1>Rechner</h1>
 
+Der Nutzungsfaktor gibt an wie sehr die Gemeinschaftsflaeche genutzt wird. Der Wert 0 heiszt, dass sie gar nicht benutzt wird. Der Wert 1 bedeutet, dass man sich nur in der Gemeinschaftsflaeche aufhaelt.<br><br>
+
 Quadratmeter der Wohnung: <input name="Quadratmeter der Wohnung" id="AlleQuadratmeter" type="text" value="75">
 <br>Gemeinsam genutzte Flaeche: <input name="Gemeinsam genutzte Flaeche" id="GemGenutzteQuadratmeter" type="text" value="44.7388">
 <br>Deine Zimmergroesze: <input name="Deine Zimmergroesze" id="Zimmergroesze" type="text" value="15.228">
@@ -81,9 +83,10 @@ function ausrechnen(){
 	var Kaltmiete = Number(dataoriginale);
 
 	var individuelle_Wohnflaeche_aller_Bewohner = AlleQuadratmeter-GemGenutzteQuadratmeter;
-	var Kaltmiete_dein_Zimmer = (Zimmergroesze+1/3*Nutzungsfaktor*GemGenutzteQuadratmeter)/(individuelle_Wohnflaeche_aller_Bewohner+Nutzungsfaktor*GemGenutzteQuadratmeter);
+	var Kaltmiete_dein_Zimmer = Kaltmiete*(Zimmergroesze+1/3*Nutzungsfaktor*GemGenutzteQuadratmeter)/(individuelle_Wohnflaeche_aller_Bewohner+Nutzungsfaktor*GemGenutzteQuadratmeter);
 
 	document.getElementById("Kaltmiete_pro_Zimmer").value = Kaltmiete_dein_Zimmer;
+	document.getElementById("Miete_pro_Zimmer").value = Kaltmiete_dein_Zimmer+Nebenkosten_pro_Mitbewohner;
 }
 </script>
 
