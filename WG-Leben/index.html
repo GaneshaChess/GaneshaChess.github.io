@@ -42,7 +42,7 @@ Quadratmeter der Wohnung: <input name="Quadratmeter der Wohnung" id="AlleQuadrat
 <br>Anzahl der Bewohner: <input name="Anzahl der Bewohner" id="Anzahl_der_Bewohner" type="text" value="3">
 <br> <button onclick="ausrechnen()">Ausrechnen:</button>
 <br>Nebenkosten pro Zimmer: <input name="Nebenkosten pro Zimmer" id="Nebenkosten_pro_Zimmer" type="text" value="Zum Ausrechnen klicken">
-<br>Kaltmiete pro Zimmer: <input name="Kaltmiete pro Zimmer" id="Kaltmiete_pro_Zimmer" type="text" value="Zum Ausrechnen klicken">
+<br>Kaltmiete fuer dein Zimmer: <input name="Kaltmiete fuer dein Zimmer" id="Kaltmiete_pro_Zimmer" type="text" value="Zum Ausrechnen klicken">
 <br>Miete pro Zimmer: <input name="Miete pro Zimmer" id="Miete_pro_Zimmer" type="text" value="Zum Ausrechnen klicken">
 
 <script>
@@ -67,6 +67,23 @@ function ausrechnen(){
 
 	var dataoriginale = document.getElementById("AlleQuadratmeter").value;
 	var AlleQuadratmeter = Number(dataoriginale);
+
+	var dataoriginale = document.getElementById("GemGenutzteQuadratmeter").value;
+	var GemGenutzteQuadratmeter = Number(dataoriginale);
+
+	var dataoriginale = document.getElementById("Zimmergroesze").value;
+	var Zimmergroesze = Number(dataoriginale);
+
+	var dataoriginale = document.getElementById("Nutzungsfaktor").value;
+	var Nutzungsfaktor = Number(dataoriginale);
+
+	var dataoriginale = document.getElementById("Kaltmiete").value;
+	var Kaltmiete = Number(dataoriginale);
+
+	var individuelle_Wohnflaeche_aller_Bewohner = AlleQuadratmeter-GemGenutzteQuadratmeter;
+	var Kaltmiete_dein_Zimmer = (Zimmergroesze+1/3*Nutzungsfaktor*GemGenutzteQuadratmeter)/(individuelle_Wohnflaeche_aller_Bewohner+Nutzungsfaktor*GemGenutzteQuadratmeter);
+
+	document.getElementById("Kaltmiete_pro_Zimmer").value = Kaltmiete_dein_Zimmer;
 }
 </script>
 
