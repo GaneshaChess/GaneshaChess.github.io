@@ -54,10 +54,19 @@ function multiply_quantities(multiplikator) {
     }
 }
 function ausrechnen(){
+
+	var dataoriginale = document.getElementById("Nebenkosten").value;
+	var Nebenkosten = Number(dataoriginale);
+
+	var dataoriginale = document.getElementById("Anzahl_der_Bewohner").value;
+	var Anzahl_der_Bewohner = Number(dataoriginale);
+
+	var Nebenkosten_pro_Mitbewohner = Nebenkosten/Anzahl_der_Bewohner;
+	
+	document.getElementById("Nebenkosten_pro_Zimmer").value = Nebenkosten_pro_Mitbewohner;
+
 	var dataoriginale = document.getElementById("AlleQuadratmeter").value;
 	var AlleQuadratmeter = Number(dataoriginale);
-	
-	document.getElementById("Nebenkosten_pro_Zimmer").value = AlleQuadratmeter;
 }
 </script>
 
