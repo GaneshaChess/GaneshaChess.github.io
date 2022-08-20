@@ -20,7 +20,7 @@
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
-<body>
+<body onload="adjust_quantities()">
 
 <div w3-include-html="https://ganeshachess.github.io/navigationBar.html"></div>
 <script>
@@ -47,47 +47,263 @@ function multiply_quantities(multiplikator) {
     	mengenangabe[i].innerHTML = Number(mengenangabe[i].innerHTML)*multiplikator;
     }
 }
+
+  function update_shooping_list(week){
+    ingredient_after_one_week("spinach", week);
+    ingredient_after_one_week("almondmilk", week);
+    ingredient_after_one_week("black_beans", week);
+    ingredient_after_one_week("green_beans", week);
+    ingredient_after_one_week("white_beans", week);
+    ingredient_after_one_week("chickpeas", week);
+    ingredient_after_one_week("pasta", week);
+    ingredient_after_one_week("coconutmilk", week);
+    ingredient_after_one_week("walnuts", week);
+    ingredient_after_one_week("hazelnuts", week);
+    ingredient_after_one_week("rice", week);
+    ingredient_after_one_week("toast", week);
+    ingredient_after_one_week("wholemeal_weizen_bread", week);
+    ingredient_after_one_week("broccoli", week);
+    ingredient_after_one_week("brussels_sprouts", week);
+    ingredient_after_one_week("other_leafy_greens", week);
+    ingredient_after_one_week("tomatoes", week);
+    ingredient_after_one_week("zuccini", week);
+    ingredient_after_one_week("pekannuts", week);
+    ingredient_after_one_week("soup_vegetables", week);
+    ingredient_after_one_week("nutmilk", week);
+    ingredient_after_one_week("fish", week);
+    ingredient_after_one_week("olives", week);
+    ingredient_after_one_week("almond", week);
+    ingredient_after_one_week("feta", week);
+    ingredient_after_one_week("carrot", week);
+    ingredient_after_one_week("squid", week);
+    ingredient_after_one_week("mussels", week);
+    ingredient_after_one_week("pumpkin", week);
+    ingredient_after_one_week("tuna", week);
+    ingredient_after_one_week("peas", week);
+    ingredient_after_one_week("prawns", week);
+    ingredient_after_one_week("sardinas", week);
+    ingredient_after_one_week("pizzadow", week);
+    ingredient_after_one_week("focaccia", week);
+    ingredient_after_one_week("pine_nuts", week);
+    ingredient_after_one_week("raisins", week);
+    ingredient_after_one_week("Dinkelzwieback", week);
+    ingredient_after_one_week("dried_blueberries", week);
+    ingredient_after_one_week("blueberrymarmelade", week);
+    ingredient_after_one_week("strawberrymarmelade", week);
+    ingredient_after_one_week("Waldfruchtmarmelade", week);
+    ingredient_after_one_week("Aprikosenmarmelade", week);
+    ingredient_after_one_week("paprika", week);
+    ingredient_after_one_week("pistachio", week);
+    ingredient_after_one_week("mushrooms", week);
+    ingredient_after_one_week("raisinbread", week);
+    ingredient_after_one_week("asparagus", week);
+    ingredient_after_one_week("dried_fruits", week);
+    ingredient_after_one_week("spelt", week);
+  }
+
 function adjust_quantities(){
 	var dataoriginale = document.getElementById("faktor").value;
 	var faktor = Number(dataoriginale);
-	multiply_quantities(faktor)
+	  multiply_quantities(faktor);
+    update_shooping_list("week_1");
+    update_shooping_list("week_2");
+}
+
+  function ingredient_after_one_week(name_of_ingredient, week_str){
+  var week = document.getElementById(week_str);
+  var mengenangabe = week.getElementsByClassName(name_of_ingredient);
+  var total = 0;
+  var i;
+  for (i = 0; i < mengenangabe.length; i++) {
+    total = total+Number(mengenangabe[i].getElementsByClassName("menge")[0].innerHTML);
+  }
+  var name_of_element = "total_"+name_of_ingredient+"_"+week_str;
+  var el = document.getElementById(name_of_element);
+  el.innerHTML = total;
 }
 </script>
 
 
 <h1>Beispiel-Diet</h1>
 
+<h2>Unvollstaendige Einkaufsliste Woche 1</h2>
+<ul>
+<li>Spinat: <b id="total_spinach_week_1">0</b> g</li>
+<li>Anderes Blattgemüse (z.B. Mangold): <b id="total_other_leafy_greens_week_1">0</b> g</li>
+<li>Mandelmilch: <b id="total_almondmilk_week_1">0</b> ml (1000 ml entsspricht einer Packung im Supermarkt)</li>
+<li>Schwarze Bohnen: <b id="total_black_beans_week_1">0</b> g (240 g entsprechen einer Konservendose)</li>
+<li>Grüne Bohnen: <b id="total_green_beans_week_1">0</b> g (300 g entsprechen einer Tiefkühl-Packung)</li>
+<li>Kichererbsen: <b id="total_chickpeas_week_1">0</b> g (240 g entsprechen einer Konservendose)</li>
+<li>Weiße Bohnen: <b id="total_white_beans_week_1">0</b> g (240 g entsprechen einer Konservendose)</li>
+<li>Nudeln: <b id="total_pasta_week_1">0</b> g (500 g Packungen sind zum Bsp. erhaeltlich)</li>
+<li>Kokosmilch: <b id="total_coconutmilk_week_1">0</b> ml (1000 ml entsspricht einer Packung im Supermarkt)</li>
+<li>Nussmilch: <b id="total_nutmilk_week_1">0</b> ml (1000 ml entsspricht einer Packung im Supermarkt)</li>
+<li>Walnuss: <b id="total_walnuts_week_1">0</b> g (150 g Packungen sind zum Bsp. erhaeltlich)</li>
+<li>Haselnuss: <b id="total_hazelnuts_week_1">0</b> g</li>
+<li>Reis: <b id="total_rice_week_1">0</b> g</li>
+<li>Vollkorntoast: <b id="total_toast_week_1">0</b> Scheibe</li>
+<li>Vollkornweizenbrot: <b id="total_wholemeal_weizen_bread_week_1">0</b> g</li>
+<li>Brokkoli: <b id="total_broccoli_week_1">0</b> g</li>
+<li>Rosenkohl: <b id="total_brussels_sprouts_week_1">0</b> g</li>
+<li>Tomaten: <b id="total_tomatoes_week_1">0</b> g + variable Menge in Salaten</li>
+<li>Zuccini: <b id="total_zuccini_week_1">0</b> g</li>
+<li>Pekannüsse <b id="total_pekannuts_week_1">0</b> g</li>
+<li>Suppengemüse <b id="total_soup_vegetables_week_1">0</b> g</li>
+<li>Fisch <b id="total_fish_week_1">0</b> g</li>
+<li>Oliven <b id="total_olives_week_1">0</b> g</li>
+<li>Mandeln <b id="total_almond_week_1">0</b> g</li>
+<li>Feta <b id="total_feta_week_1">0</b> g</li>
+<li>Moehre <b id="total_carrot_week_1">0</b> g</li>
+<li>Tintenfisch <b id="total_squid_week_1">0</b> g</li>
+<li>Venus- und Miesmuscheln <b id="total_mussels_week_1">0</b> g</li>
+<li>Kürbis <b id="total_pumpkin_week_1">0</b> g</li>
+<li>Thunfisch <b id="total_tuna_week_1">0</b> g</li>
+<li>Erbsen <b id="total_peas_week_1">0</b> g</li>
+<li>Garnelen <b id="total_prawns_week_1">0</b> g</li>
+<li>Sardinen und Sardellen: <b id="total_sardinas_week_1">0</b> g</li>
+<li>Pizzateig: <b id="total_pizzadow_week_1">0</b> g</li>
+<li>Vollkorn Focaccia: <b id="total_focaccia_week_1">0</b> g</li>
+<li>Pinienkerne: <b id="total_pine_nuts_week_1">0</b> EL</li>
+<li>Rosinen: <b id="total_raisins_week_1">0</b> EL</li>
+<li>Zwieback oder Vollkornknäckebrot: <b id="total_Dinkelzwieback_week_1">0</b> g</li>
+<li>Getrocknete Heidelbeeren: <b id="total_dried_blueberries_week_1">0</b> g</li>
+<li>Heidelbeermarmelade: <b id="total_blueberrymarmelade_week_1">0</b> EL</li>
+<li>Erdbeermarmelade: <b id="total_strawberrymarmelade_week_1">0</b> EL</li>
+<li>Waldfruchtmarmelade: <b id="total_Waldfruchtmarmelade_week_1">0</b> EL</li>
+<li>Aprikosenmarmelade: <b id="total_Aprikosenmarmelade_week_1">0</b> EL</li>
+<li>Paprika: <b id="total_paprika_week_1">0</b> g</li>
+<li>Pistazien: <b id="total_pistachio_week_1">0</b> g</li>
+<li>Pilze: <b id="total_mushrooms_week_1">0</b> g</li>
+<li>Rosinenbrot: <b id="total_raisinbread_week_1">0</b> g</li>
+<li>Spargel: <b id="total_asparagus_week_1">0</b> g</li>
+<li>Getrocknetes Obst: <b id="total_dried_fruits_week_1">0</b> g</li>
+<li>Dinkel: <b id="total_spelt_week_1">0</b> g</li>
+
+</ul>
+
+<h3>Sonstiges</h3>
+<ul>
+<li>Knoblauch</li>
+<li>Chilischote</li>
+<li>Salz</li>
+<li>Pfeffer</li>
+<li>Zwiebeln</li>
+<li>Olivenöl</li>
+<li>Parmesan</li>
+<li>Schwarzer und grüner Tee</li>
+<li>Zitronen</li>
+<li>Basilikum</li>
+<li>Petersilie</li>
+</ul>
+
+<h3>Frisches für Salate</h3>
+Tomaten, Karotten, Fenchel, Paprika,...
+
+<h2>Unvollstaendige Einkaufsliste Woche 2</h2>
+<ul>
+<li>Spinat: <b id="total_spinach_week_2">0</b> g</li>
+<li>Anderes Blattgemüse (z.B. Mangold): <b id="total_other_leafy_greens_week_2">0</b> g</li>
+<li>Mandelmilch: <b id="total_almondmilk_week_2">0</b> ml (1000 ml entsspricht einer Packung im Supermarkt)</li>
+<li>Schwarze Bohnen: <b id="total_black_beans_week_2">0</b> g (240 g entsprechen einer Konservendose)</li>
+<li>Grüne Bohnen: <b id="total_green_beans_week_2">0</b> g (300 g entsprechen einer Tiefkühl-Packung)</li>
+<li>Kichererbsen: <b id="total_chickpeas_week_2">0</b> g (240 g entsprechen einer Konservendose)</li>
+<li>Weiße Bohnen: <b id="total_white_beans_week_2">0</b> g (240 g entsprechen einer Konservendose)</li>
+<li>Nudeln: <b id="total_pasta_week_2">0</b> g (500 g Packungen sind zum Bsp. erhaeltlich)</li>
+<li>Kokosmilch: <b id="total_coconutmilk_week_2">0</b> ml (1000 ml entsspricht einer Packung im Supermarkt)</li>
+<li>Nussmilch: <b id="total_nutmilk_week_2">0</b> ml (1000 ml entsspricht einer Packung im Supermarkt)</li>
+<li>Walnuss: <b id="total_walnuts_week_2">0</b> g (150 g Packungen sind zum Bsp. erhaeltlich)</li>
+<li>Haselnuss: <b id="total_hazelnuts_week_2">0</b> g</li>
+<li>Reis: <b id="total_rice_week_2">0</b> g</li>
+<li>Vollkorntoast: <b id="total_toast_week_2">0</b> Scheibe</li>
+<li>Vollkornweizenbrot: <b id="total_wholemeal_weizen_bread_week_2">0</b> g</li>
+<li>Brokkoli: <b id="total_broccoli_week_2">0</b> g</li>
+<li>Rosenkohl: <b id="total_brussels_sprouts_week_2">0</b> g</li>
+<li>Tomaten: <b id="total_tomatoes_week_2">0</b> g + variable Menge in Salaten</li>
+<li>Zuccini: <b id="total_zuccini_week_2">0</b> g</li>
+<li>Pekannüsse <b id="total_pekannuts_week_2">0</b> g</li>
+<li>Suppengemüse <b id="total_soup_vegetables_week_2">0</b> g</li>
+<li>Fisch <b id="total_fish_week_2">0</b> g</li>
+<li>Oliven <b id="total_olives_week_2">0</b> g</li>
+<li>Mandeln <b id="total_almond_week_2">0</b> g</li>
+<li>Feta <b id="total_feta_week_2">0</b> g</li>
+<li>Moehre <b id="total_carrot_week_2">0</b></li>
+<li>Tintenfisch <b id="total_squid_week_2">0</b> g</li>
+<li>Venus- und Miesmuscheln <b id="total_mussels_week_2">0</b> g</li>
+<li>Kürbis <b id="total_pumpkin_week_2">0</b> g</li>
+<li>Thunfisch <b id="total_tuna_week_2">0</b> g</li>
+<li>Erbsen <b id="total_peas_week_2">0</b> g</li>
+<li>Garnelen <b id="total_prawns_week_2">0</b> g</li>
+<li>Sardinen und Sardellen: <b id="total_sardinas_week_2">0</b> g</li>
+<li>Pizzateig: <b id="total_pizzadow_week_2">0</b> g</li>
+<li>Vollkorn Focaccia: <b id="total_focaccia_week_2">0</b> g</li>
+<li>Pinienkerne: <b id="total_pine_nuts_week_2">0</b> EL</li>
+<li>Rosinen: <b id="total_raisins_week_2">0</b> EL</li>
+<li>Zwieback oder Vollkornknäckebrot: <b id="total_Dinkelzwieback_week_2">0</b> g</li>
+<li>Getrocknete Heidelbeeren: <b id="total_dried_blueberries_week_2">0</b> g</li>
+<li>Heidelbeermarmelade: <b id="total_blueberrymarmelade_week_2">0</b> EL</li>
+<li>Erdbeermarmelade: <b id="total_strawberrymarmelade_week_2">0</b> EL</li>
+<li>Waldfruchtmarmelade: <b id="total_Waldfruchtmarmelade_week_2">0</b> EL</li>
+<li>Aprikosenmarmelade: <b id="total_Aprikosenmarmelade_week_2">0</b> EL</li>
+<li>Paprika: <b id="total_paprika_week_2">0</b> g</li>
+<li>Pistazien: <b id="total_pistachio_week_2">0</b> g</li>
+<li>Pilze: <b id="total_mushrooms_week_2">0</b> g</li>
+<li>Rosinenbrot: <b id="total_raisinbread_week_2">0</b> g</li>
+<li>Spargel: <b id="total_asparagus_week_2">0</b> g</li>
+<li>Getrocknetes Obst: <b id="total_dried_fruits_week_2">0</b> g</li>
+<li>Dinkel: <b id="total_spelt_week_2">0</b> g</li>
+
+</ul>
+
+<h3>Sonstiges</h3>
+<ul>
+<li>Knoblauch</li>
+<li>Chilischote</li>
+<li>Salz</li>
+<li>Pfeffer</li>
+<li>Zwiebeln</li>
+<li>Olivenöl</li>
+<li>Parmesan</li>
+<li>Schwarzer und grüner Tee</li>
+<li>Zitronen</li>
+<li>Basilikum</li>
+<li>Petersilie</li>
+</ul>
+
+<h3>Frisches für Salate</h3>
+Tomaten, Karotten, Fenchel, Paprika,...
+
+<div id="week_1">
 <h2>Woche 1</h2>
 
 <h3>Tag 1</h3>
 <p>Frühstück</p>
 <ul>
-<li>Mandelmilch: <b class="menge">240</b> ml (etwa ein Glas) ohne Zuckerzusatz, mit Kalzium & Vitamin B12, B2, und D angereichert</li>
-<li>Vollkorn Focaccia: <b class="menge">60</b>g</li>
+<li>Mandelmilch: <b class="almondmilk"><b class="menge">240</b></b> ml (etwa ein Glas) ohne Zuckerzusatz, mit Kalzium & Vitamin B12, B2, und D angereichert</li>
+<li>Vollkorn Focaccia: <b class="focaccia"><b class="menge">60</b></b>g</li>
 <li>natives Olivenöl</li>
-<li>Heidelbeermarmelade: <b class="menge">1</b>EL ohne Zuckerzusatz</li>
+<li>Heidelbeermarmelade: <b class="blueberrymarmelade"><b class="menge">1</b></b>EL ohne Zuckerzusatz</li>
 </ul>
 
 <p>Mittagessen</p>
 <ul>
-<li>Spinat: <b class="menge">150</b> g</li>
-<li>Pinienkerne: <b class="menge">1</b> EL</li>
-<li>Rosinen: <b class="menge">1</b> EL</li>
-<li>Dinkelzwieback: <b class="menge">30</b> g</li>
+<li>Spinat: <b class="spinach"><b class="menge">150</b></b>g</li>
+<li>Pinienkerne: <b class="pine_nuts"><b class="menge">1</b></b> EL</li>
+<li>Rosinen: <b class="raisins"><b class="menge">1</b></b> EL</li>
+<li>Dinkelzwieback: <b class="Dinkelzwieback"><b class="menge">30</b></b> g</li>
 <li>Olivenöl: <b class="menge">1</b> EL</li>
 </ul>
 
 <p>Snack</p>
 <ul>
-<li>Kokosmilch: <b class="menge">240</b> ml</li>
-<li>Schokonuss-Müsliriegel (geringer Zuckeranteil, Zartbitterschokolade, ohne Milch): <b class="menge">240</b> ml</li>
+<li>Kokosmilch: <b class="coconutmilk"><b class="menge">240</b></b> ml</li>
+<li>Schokonuss-Müsliriegel (geringer Zuckeranteil, Zartbitterschokolade, ohne Milch): <b class="menge">240</b> g</li>
 </ul>
 
 <p>Abendessen</p>
 <ul>
-<li>gekochte schwarze Bohnen: <b class="menge">200</b> g (Aptropfgewicht)</li>
-<li>Brokkoli: <b class="menge">200</b> g</li>
-<li>Vollkornnudeln: <b class="menge">40</b> g</li>
+<li>gekochte schwarze Bohnen: <b class="black_beans"><b class="menge">200</b></b> g (Aptropfgewicht)</li>
+<li>Brokkoli: <b class="broccoli"><b class="menge">200</b></b> g</li>
+<li>Vollkornnudeln: <b class="pasta"><b class="menge">40</b></b> g</li>
 <li>Olivenöl: <b class="menge">2</b> EL</li>
 <li>Knoblauch, Chilischote, Salz, Pfeffer</li>
 <li>Parmesan  <b class="menge">1</b> TL</li>
@@ -99,31 +315,31 @@ function adjust_quantities(){
 
 <p>Dessert</p>
 <ul>
-<li>Walnüsse: <b class="menge">25</b> g</li>
-<li>getrocknetes Obst: <b class="menge">20</b> g</li>
+<li>Walnüsse: <b class="walnuts"><b class="menge">25</b></b> g</li>
+<li>getrocknetes Obst: <b class="dried_fruits"><b class="menge">20</b></b> g</li>
 </ul>
 
 <h3>Tag 2</h3>
 <p>Frühstück</p>
 <ul>
 <li>Schwarzer und grüner Tee mit Zitronensaft</li>
-<li>Vollkorntoast: <b class="menge">1</b>Scheibe</li>
-<li>Erdbeermarmelade: <b class="menge">1</b>EL ohne Zuckerzusatz</li>
+<li>Vollkorntoast: <b class="toast"><b class="menge">1</b></b>Scheibe</li>
+<li>Erdbeermarmelade: <b class="strawberrymarmelade"><b class="menge">1</b></b>EL ohne Zuckerzusatz</li>
 </ul>
 
 <p>Mittagessen</p>
 <ul>
-<li>grüne Bohnen: <b class="menge">150</b> g</li>
-<li>frische Tomaten: <b class="menge">150</b> g</li>
+<li>grüne Bohnen: <b class="green_beans"><b class="menge">150</b></b> g</li>
+<li>frische Tomaten: <b class="tomatoes"><b class="menge">150</b></b> g</li>
 <li>Knoblauch</li>
-<li>Naturreis: <b class="menge">40</b> g</li>
+<li>Naturreis: <b class="rice"><b class="menge">40</b></b> g</li>
 <li>Olivenöl: <b class="menge">1</b> EL</li>
 <li>Basilikum, Salz und Pfeffer</li>
 </ul>
 
 Als Beilage:
 <ul>
-<li>Blattgemüse (z.B. Chicoree oder Mangold): <b class="menge">200</b> g</li>
+<li>Blattgemüse (z.B. Chicoree oder Mangold): <b class="other_leafy_greens"><b class="menge">200</b></b> g</li>
 <li>Olivenöl</li>
 </ul>
 
@@ -133,17 +349,17 @@ Als Beilage:
 
 <p>Snack</p>
 <ul>
-<li>Mandelmilch: <b class="menge">240</b> ml</li>
+<li>Mandelmilch: <b class="almondmilk"><b class="menge">240</b></b> ml</li>
 <li>Schokonuss-Müsliriegel</li>
 </ul>
 
 <p>Abendessen</p>
 <ul>
-<li>Lachs: <b class="menge">150</b> g</li>
-<li>Spargel: <b class="menge">300</b> g</li>
+<li>Lachs: <b class="fish"><b class="menge">150</b></b> g</li>
+<li>Spargel: <b class="asparagus"><b class="menge">300</b></b> g</li>
 <li>Olivenöl: <b class="menge">1</b> EL</li>
 <li>Zitronensaft</li>
-<li>Vollkornweizenbrot: <b class="menge">60</b> g</li>
+<li>Vollkornweizenbrot: <b class="wholemeal_weizen_bread"><b class="menge">60</b></b> g</li>
 <li>Salz, Pfeffer</li>
 </ul>
 
@@ -161,8 +377,8 @@ Beilage
 Desert
 
 <ul>
-<li>Haselnüsse: <b class="menge">25</b> g</li>
-<li>getrocknetes Obst: <b class="menge">20</b> g</li>
+<li>Haselnüsse: <b class="hazelnuts"><b class="menge">25</b></b> g</li>
+<li>getrocknetes Obst: <b class="dried_fruits"><b class="menge">20</b></b> g</li>
 </ul>
 
 <h3>Tag 3</h3>
@@ -171,22 +387,22 @@ Desert
 
 <ul>
 <li>Kaffee oder Tee</li>
-<li>Weizenvollkornbrot: <b class="menge">50</b> g</li>
-<li>Waldfruchtmarmelade: <b class="menge">1</b> EL</li>
+<li>Weizenvollkornbrot: <b class="wholemeal_weizen_bread"><b class="menge">50</b></b> g</li>
+<li>Waldfruchtmarmelade: <b class="Waldfruchtmarmelade"><b class="menge">1</b></b> EL</li>
 </ul>
 
 <p>Mittagessen</p>
 
 <ul>
-<li>Dinkel: <b class="menge">30</b> g</li>
-<li>Zuccini: <b class="menge">300</b> g</li>
+<li>Dinkel: <b class="spelt"><b class="menge">30</b></b> g</li>
+<li>Zuccini: <b class="zuccini"><b class="menge">300</b></b> g</li>
 <li>Knoblauch</li>
-<li>Kirschtomaten: <b class="menge">100</b> g</li>
-<li>Oliven: <b class="menge">25</b> g</li>
+<li>Kirschtomaten: <b class="tomatoes"><b class="menge">100</b></b> g</li>
+<li>Oliven: <b class="olives"><b class="menge">25</b></b> g</li>
 <li>Olivenöl: <b class="menge">1</b> EL</li>
 <li>Petersilie, Salz, Pfeffer</li>
 Dazu
-<li>Blattgemüse (Mangold): <b class="menge">200</b> g</li>
+<li>Blattgemüse (Mangold): <b class="other_leafy_greens"><b class="menge">200</b></b> g</li>
 <li>Olivenöl, Zitronensaft</li>
 </ul>
 
@@ -200,9 +416,9 @@ Dazu
 <p>Abendessen</p>
 
 <ul>
-<li>Nudeln: <b class="menge">40</b> g</li>
-<li>Suppengemüse: <b class="menge">250</b> g</li>
-<li>gekochte Kichererbsen: <b class="menge">200</b> g (Abtropfgewicht)</li>
+<li>Nudeln: <b class="pasta"><b class="menge">40</b></b> g</li>
+<li>Suppengemüse: <b class="soup_vegetables"><b class="menge">250</b></b> g</li>
+<li>gekochte Kichererbsen: <b class="chickpeas"><b class="menge">200</b></b> g (Abtropfgewicht)</li>
 <li>Olivenöl: <b class="menge">2</b> EL</li>
 <li>geriebener Parmesan: <b class="menge">1</b> TL</li>
 <li>Salz und Pfeffer</li>
@@ -220,20 +436,20 @@ Desert
 
 <ul>
 <li>Kaffee oder Tee</li>
-<li>Zwieback/Vollkornknäckebrot: <b class="menge">80</b> g</li>
-<li>Aprikosenmarmelade: <b class="menge">1</b> EL</li>
+<li>Zwieback/Vollkornknäckebrot: <b class="Dinkelzwieback"><b class="menge">80</b></b> g</li>
+<li>Aprikosenmarmelade: <b class="Aprikosenmarmelade"><b class="menge">1</b></b> EL</li>
 </ul>
 
 <p>Mittagessen</p>
 
 <ul>
 <li>Gerste: <b class="menge">30</b> g</li>
-<li>Tomate: <b class="menge">150</b> g</li>
-<li>rohe Pilze: <b class="menge">75</b> g</li>
+<li>Tomate: <b class="tomatoes"><b class="menge">150</b></b> g</li>
+<li>rohe Pilze: <b class="mushrooms"><b class="menge">75</b></b> g</li>
 <li>rohe Paprika: <b class="menge">150</b> g</li>
 <li>Mais: <b class="menge">10</b> g</li>
 <li>eingelegtes Gemüse (Artischockenherzen, Cornichons, Silberzwiebeln): <b class="menge">150</b> g</li>
-<li>Pekannüsse: <b class="menge">9</b> g</li>
+<li>Pekannüsse: <b class="pekannuts"><b class="menge">9</b></b> g</li>
 <li>Olivenöl: <b class="menge">1</b> EL</li>
 <li>Salz, Pfeffer, Kräuter</li>
 </ul>
@@ -241,7 +457,7 @@ Desert
 <p>Snack</p>
 
 <ul>
-<li>Nussmilch: <b class="menge">240</b> ml bzw. <b class="menge">1</b> Glas</li>
+<li>Nussmilch: <b class="nutmilk"><b class="menge">240</b></b> ml bzw. <b class="menge">1</b> Glas</li>
 <li>Schokonuss-Müsliriegel</li>
 </ul>
 
@@ -251,7 +467,7 @@ Desert
 <li>eingeweichte Linsen<b class="menge">150</b> g (Aptropfgewicht)</li>
 <li>Nudeln<b class="menge">40</b> g</li>
 <li>mittelgroße Kartoffel<b class="menge">1</b></li>
-<li>Karotte<b class="menge">1</b> </li>
+<li>Karotte<b class="carrot"><b class="menge">1</b></b> </li>
 <li>mittelgroße Tomate<b class="menge">1</b> </li>
 <li>Olivenöl<b class="menge">2</b> EL</li>
 <li>Knoblauchzehen<b class="menge">2</b> </li>
@@ -259,8 +475,8 @@ Desert
 
 Dessert:
 
-<li>Ananas<b class="menge">100</b> g oder getrocknete Heidelbeeren<b class="menge">20</b> g</li>
-<li>Walnüsse<b class="menge">25</b> g</li>
+<li>Ananas<b class="menge">100</b> g oder getrocknete Heidelbeeren<b class="dried_blueberries"><b class="menge">20</b></b> g</li>
+<li>Walnüsse<b class="walnuts"><b class="menge">25</b></b> g</li>
 
 </ul>
 
@@ -271,7 +487,7 @@ Dessert:
 <ul>
 <li>schwarzer Kaffee</li>
 <li>Müsli: <b class="menge">80</b> g</li>
-<li>Mandelmilch: <b class="menge">240</b> ml</li>
+<li>Mandelmilch: <b class="almondmilk"><b class="menge">240</b></b> ml</li>
 <li>Honig: <b class="menge">1</b> TL</li>
 </ul>
 
@@ -279,12 +495,12 @@ Dessert:
 
 <ul>
 <li>Endivie (oder Mönchsbart): <b class="menge">150</b> g</li>
-<li>Pinienkerne: <b class="menge">1</b> EL</li>
-<li>Kirschtomaten: <b class="menge">150</b> g</li>
+<li>Pinienkerne: <b class="pine_nuts"><b class="menge">1</b></b> EL</li>
+<li>Kirschtomaten: <b class="tomatoes"><b class="menge">150</b></b> g</li>
 <li>Oliven: <b class="menge">20</b> g</li>
 <li>Olivenöl: <b class="menge">1</b> EL</li>
 <li>Basilikumblätter: <b class="menge">5</b></li>
-<li>Vollkornbrot: <b class="menge">20</b> g</li>
+<li>Vollkornbrot: <b class="wholemeal_weizen_bread"><b class="menge">20</b></b> g</li>
 
 Beilage:
 <li>rohe Karotten mit öl, Salz, Zitronensaft: <b class="menge">150</b> g</li>
@@ -293,26 +509,26 @@ Beilage:
 <p>Snack</p>
 
 <ul>
-<li>Nussmilch: <b class="menge">240</b> ml</li>
+<li>Nussmilch: <b class="nutmilk"><b class="menge">240</b></b> ml</li>
 <li>Schokonuss-Müsliriegel</li>
 </ul>
 
 <p>Abendessen</p>
 
 <ul>
-<li>Tintenfisch <b class="menge">80</b> g</li>
+<li>Tintenfisch <b class="squid"><b class="menge">80</b></b> g</li>
 <li>mittelgroße Kartoffel <b class="menge">1</b></li>
-<li>Kirschtomaten <b class="menge">150</b> g</li>
+<li>Kirschtomaten <b class="tomatoes"><b class="menge">150</b></b> g</li>
 <li>Oliven <b class="menge">20</b> g</li>
 <li>Olivenöl <b class="menge">2</b> EL</li>
 <li>Petersilie, Zitronensaft, Salz</li>
-<li>Vollkornbrot <b class="menge">40</b> g</li>
+<li>Vollkornbrot <b class="wholemeal_weizen_bread"><b class="menge">40</b></b> g</li>
 
 Beilage
 <li>grüner Salat (Gurke, Tomate, Karotte) mit Balsamessig angemacht<b class="menge">200</b> g</li>
 Dessert
 <li><b class="menge">50</b> g frische oder <b class="menge">20</b> g getrocknete rote Johannsbeeren</li>
-<li>Mandeln<b class="menge">25</b> g</li>
+<li>Mandeln <b class="almond"><b class="menge">25</b></b> g</li>
 </ul>
 
 <h3>Tag 6</h3>
@@ -322,7 +538,7 @@ Dessert
 <ul>
 <li>Kaffee oder Tee</li>
 <li>Vollkornfladenbrot mit Olivenöl (Schiacciata): <b class="menge">60</b> g</li>
-<li>oder Weizenvollkornbrot: <b class="menge">60</b> ml</li>
+<li>oder Weizenvollkornbrot: <b class="wholemeal_weizen_bread"><b class="menge">60</b></b> g</li>
 <li>frisches Obst (z.B. Apfel und Erdbeeren)</li>
 </ul>
 
@@ -330,8 +546,8 @@ Dessert
 
 <ul>
 <li>Auberginen: <b class="menge">250</b> g</li>
-<li>Kirschtomaten: <b class="menge">150</b> g</li>
-<li>Feta: <b class="menge">20</b> g</li>
+<li>Kirschtomaten: <b class="tomatoes"><b class="menge">150</b></b> g</li>
+<li>Feta: <b class="feta"><b class="menge">20</b></b> g</li>
 <li>Olivenöl: <b class="menge">1</b> EL</li>
 <li>Roggenkräcker: <b class="menge">20</b> g</li>
 <li>Basilikum, Salz, Pfeffer</li>
@@ -340,18 +556,18 @@ Dessert
 <p>Snack</p>
 
 <ul>
-<li>Mandelmilch: <b class="menge">240</b> ml</li>
+<li>Mandelmilch: <b class="almondmilk"><b class="menge">240</b></b> ml</li>
 <li>Schokonuss-Müsliriegel: <b class="menge">1</b></li>
 </ul>
 
 <p>Abendessen</p>
 
 <ul>
-<li>Nudeln: <b class="menge">40</b> g</li>
-<li>eingeweichte weiße Bohnen: <b class="menge">200</b> g (Abtropfgewicht)</li>
-<li>grüne Bohnen <b class="menge">150</b> g</li>
-<li>mittelgroße Karotten <b class="menge">2</b></li>
-<li>Zuccini <b class="menge">150</b> g</li>
+<li>Nudeln: <b class="pasta"><b class="menge">40</b></b> g</li>
+<li>eingeweichte weiße Bohnen: <b class="white_beans"><b class="menge">200</b></b> g (Abtropfgewicht)</li>
+<li>grüne Bohnen <b class="green_beans"><b class="menge">150</b></b> g</li>
+<li>mittelgroße Karotten <b class="carrot"><b class="menge">2</b></b></li>
+<li>Zuccini <b class="zuccini"><b class="menge">150</b></b> g</li>
 <li>mittelgroße Kartoffel <b class="menge">1</b></li>
 <li>Knoblauchzehen</li>
 <li>Basilikumblätter <b class="menge">5</b></li>
@@ -361,8 +577,8 @@ Dessert
 Beilage
 <li>gemischter Salat aus Tomaten, Karotten, Mais, Gurke mit öl und Zitronensaft <b class="menge">200</b> g</li>
 Desert
-<li>Haselnüsse <b class="menge">25</b> g</li>
-<li>getrocknete Heidelbeeren <b class="menge">20</b> g</li>
+<li>Haselnüsse <b class="hazelnuts"><b class="menge">25</b></b> g</li>
+<li>getrocknete Heidelbeeren <b class="dried_blueberries"><b class="menge">20</b></b> g</li>
 </ul>
 
 <br>
@@ -375,7 +591,7 @@ Desert
 
 <ul>
 <li>schwarzer Kaffee</li>
-<li>Mandelmilch: <b class="menge">240</b> ml</li>
+<li>Mandelmilch: <b class="almondmilk"><b class="menge">240</b></b> ml</li>
 <li>Getreideflocken mit Trockenobst mit Nüssen: <b class="menge">60</b> g</li>
 <li>frisches Obst</li>
 </ul>
@@ -383,14 +599,14 @@ Desert
 <p>Mittagessen</p>
 
 <ul>
-<li>Rosenkohl: <b class="menge">250</b> g</li>
-<li>Pinienkerne: <b class="menge">1</b> EL</li>
+<li>Rosenkohl: <b class="brussels_sprouts"><b class="menge">250</b></b> g</li>
+<li>Pinienkerne: <b class="pine_nuts"><b class="menge">1</b></b> EL</li>
 <li>Olivenöl: <b class="menge">1</b> EL</li>
 <li>Knoblauchzehen: <b class="menge">2</b></li>
 <li>Chili</li>
 <li>geriebener Parmesan: <b class="menge">1</b> TL</li>
 <li>Salz, Pfeffer</li>
-<li>Weizenvollkornbrot: <b class="menge">1</b> TL</li>
+<li>Weizenvollkornbrot: <b class="wholemeal_weizen_bread"><b class="menge">20</b></b> g</li>
 Beilage
 <li>gemischter Salat aus Paprika, Tomaten, Karotten, Pilzen, Balsamessig: <b class="menge">200</b> g</li>
 </ul>
@@ -399,14 +615,14 @@ Beilage
 
 <ul>
 <li>Ziegenjoghurt: <b class="menge">125</b> g</li>
-<li>Schockonuss-Müsliiegel: <b class="menge">8</b> g</li>
+<li>Schockonuss-Müsliregel: <b class="menge">8</b> g</li>
 </ul>
 
 <p>Abendessen</p>
 
 <ul>
-<li>Spaghetti: <b class="menge">40</b> g</li>
-<li>Venus- und Miesmuscheln: <b class="menge">80</b> g</li>
+<li>Spaghetti: <b class="pasta"><b class="menge">40</b></b> g</li>
+<li>Venus- und Miesmuscheln: <b class="mussels"><b class="menge">80</b></b> g</li>
 <li>Tomate: <b class="menge">1</b></li>
 <li>Knoblauchzehen: <b class="menge">2</b></li>
 <li>Weißwein: <b class="menge">40</b> ml</li>
@@ -416,12 +632,14 @@ Beilage
 <li>Olivenöl: <b class="menge">2</b> EL</li>
 <li>Salz und Pfeffer</li>
 Beilage:
-<li>Blattgemüse: <b class="menge">150</b> g</li>
+<li>Blattgemüse: <b class="other_leafy_greens"><b class="menge">150</b></b> g</li>
 Dessert:
 <li>Datteln: <b class="menge">20</b> g</li>
-<li>Haselnüsse: <b class="menge">20</b> g</li>
+<li>Haselnüsse: <b class="hazelnuts"><b class="menge">20</b></b> g</li>
 </ul>
 
+</div>
+<div id="week_2">
 <h2>Woche 2</h2>
 
 <h3>Tag 1</h3>
@@ -430,40 +648,40 @@ Dessert:
 <ul>
 <li>schwarzer Kaffee</li>
 <li>Müsli: <b class="menge">80</b>g</li>
-<li>Mandelmilch ohne Zuckerzusatz: <b class="menge">240</b>ml</li>
+<li>Mandelmilch ohne Zuckerzusatz: <b class="almondmilk"><b class="menge">240</b></b>ml</li>
 <li>Honig: <b class="menge">1</b>TL</li>
 </ul>
 
 <p>Mittagessen</p>
 <ul>
 <li>gemischter Salat: <b class="menge">150</b>g</li>
-<li>Feta: <b class="menge">20</b>g</li>
+<li>Feta: <b class="feta"><b class="menge">20</b></b>g</li>
 <li>rote und grüne Paprika: <b class="menge">200</b> g</li>
-<li>Kirschtomaten: <b class="menge">150</b> g</li>
+<li>Kirschtomaten: <b class="tomatoes"><b class="menge">150</b></b> g</li>
 <li>Zwiebeln</li>
 <li>Salz und Pfeffer</li>
-<li>Oliven: <b class="menge">20</b> g</li>
+<li>Oliven: <b class="olives"><b class="menge">20</b></b> g</li>
 <li>Olivenöl: <b class="menge">1</b> EL</li>
-<li>Vollkornbrot: <b class="menge">20</b> g</li>
+<li>Vollkornbrot: <b class="wholemeal_weizen_bread"><b class="menge">20</b></b> g</li>
 </ul>
 
 <p>Snack</p>
 <ul>
-<li>Nussmilch: <b class="menge">240</b>ml</li>
+<li>Nussmilch: <b class="nutmilk"><b class="menge">240</b></b>ml</li>
 <li>Schokonuss-Müsliriegel: <b class="menge">1</b></li>
 </ul>
 
 <p>Abendessen</p>
 <ul>
-<li>gekochte Kichererbsen: <b class="menge">200</b>g (Abtropfgewicht)</li>
-<li>Spinat: <b class="menge">200</b>g</li>
+<li>gekochte Kichererbsen: <b class="chickpeas"><b class="menge">200</b></b>g (Abtropfgewicht)</li>
+<li>Spinat: <b class="spinach"><b class="menge">200</b></b>g</li>
 <li>Olivenöl: <b class="menge">2</b>EL</li>
 <li>Zwiebeln</li>
 <li>Zwitronensaft</li>
 <li>Salz und Pfeffer</li>
 <li>Kichererbsen-Farinata: <b class="menge">60</b>g</li>
 Desert
-<li>Pekannüsse: <b class="menge">25</b>g</li>
+<li>Pekannüsse: <b class="pekannuts"><b class="menge">25</b></b>g</li>
 <li>Datteln: <b class="menge">20</b>g</li>
 </ul>
 
@@ -476,14 +694,14 @@ Desert
 <p>Frühstück</p>
 <ul>
 <li>Kaffee oder Tee</li>
-<li>Nussmilch: <b class="menge">240</b> ml</li>
-<li>Walnussbrot: <b class="menge">60</b> g</li>
-<li>Erdbeermarmelade: <b class="menge">1</b>EL</li>
+<li>Nussmilch: <b class="nutmilk"><b class="menge">240</b></b> ml</li>
+<li>Walnussbrot: <b class="wholemeal_weizen_bread"><b class="menge">60</b></b> g</li>
+<li>Erdbeermarmelade: <b class="strawberrymarmelade"><b class="menge">1</b></b>EL</li>
 </ul>
 
 <p>Mittagessen</p>
 <ul>
-<li>Kürbis: <b class="menge">300</b> g</li>
+<li>Kürbis: <b class="pumpkin"><b class="menge">300</b></b> g</li>
 <li>Olivenöl: <b class="menge">1</b> EL</li>
 <li>Zwiebeln</li>
 <li>Petersilie, Chili (nach Belieben)</li>
@@ -492,37 +710,37 @@ Desert
 <li>Kürbiskerne: <b class="menge">1</b> TL</li>
 Beilage
 <li>gemischter Salat aus Gurke, Karotte, Tomate: <b class="menge">200</b> g</li>
-<li>Vollkornbrot: <b class="menge">40</b> g</li>
+<li>Vollkornbrot: <b class="wholemeal_weizen_bread"><b class="menge">40</b></b> g</li>
 </ul>
 
 
-<img src="https://ganeshachess.github.io/ernaehrung/Woche_2_tag_2_Mittagessen_1.jpg" alt="Ingredients" width="600" height=auto>
-<img src="https://ganeshachess.github.io/ernaehrung/Woche_2_tag_2_Mittagessen_2.jpg" alt="Ingredients" width="600" height=auto>
+<img src="https://ganeshachess.github.io/ernaehrung/Woche_2_Tag_2_Mittagessen_1.jpg" alt="Ingredients" width="600" height=auto>
+<img src="https://ganeshachess.github.io/ernaehrung/Woche_2_Tag_2_Mittagessen_2.jpg" alt="Ingredients" width="600" height=auto>
 
 <p>Snack</p>
 <ul>
 Shake aus
 <li>gemischte Waldbeeren: <b class="menge">150</b> g</li>
 <li>mittelgroße Banane: <b class="menge">1</b></li>
-<li>Mandelmilch: <b class="menge">240</b> ml</li>
+<li>Mandelmilch: <b class="almondmilk"><b class="menge">240</b></b> ml</li>
 </ul>
 
 <p>Abendessen</p>
 <ul>
-<li>Nudeln: <b class="menge">40</b> g</li>
-<li>Thunfisch: <b class="menge">80</b> g</li>
-<li>Tomaten: <b class="menge">150</b> g</li>
+<li>Nudeln: <b class="pasta"><b class="menge">40</b></b> g</li>
+<li>Thunfisch: <b class="tuna"><b class="menge">80</b></b> g</li>
+<li>Tomaten:<b class="tomatoes"> <b class="menge">150</b></b> g</li>
 <li>Olivenöl: <b class="menge">2</b> EL</li>
-<li>Oliven: <b class="menge">20</b> g</li>
+<li>Oliven: <b class="olives"><b class="menge">20</b></b> g</li>
 <li>Kapern: <b class="menge">20</b> g</li>
 <li>Knoblauch</li>
 
 Beilage
 <li>gekochte Artischocken: <b class="menge">150</b> g</li>
-<li>Vollkornbrot: <b class="menge">40</b> g</li>
+<li>Vollkornbrot: <b class="wholemeal_weizen_bread"><b class="menge">40</b></b> g</li>
 Dessert
-<li>Mandeln: <b class="menge">25</b> g</li>
-<li>Weintrauben: <b class="menge">100</b> g oder Rosinen: <b class="menge">20</b> g </li>
+<li>Mandeln: <b class="almond"><b class="menge">25</b></b> g</li>
+<li>Weintrauben: <b class="menge">100</b> g oder Rosinen: <b class="raisins"><b class="menge">20</b></b> g </li>
 </ul>
 
 <h3>Tag 3</h3>
@@ -530,15 +748,15 @@ Dessert
 <p>Frühstück</p>
 <ul>
 <li>Kaffee oder Tee</li>
-<li>Zwieback oder Vollkornknäckebrot: <b class="menge">60</b> g</li>
+<li>Zwieback oder Vollkornknäckebrot: <b class="Dinkelzwieback"><b class="menge">60</b></b> g</li>
 <li>Pflaumenmus: <b class="menge">1</b> EL</li>
 </ul>
 
 <p>Mittagessen</p>
 <ul>
-<li>Reis: <b class="menge">40</b> g</li>
-<li>Zucchini: <b class="menge">250</b> g</li>
-<li>Erbsen: <b class="menge">100</b> g</li>
+<li>Reis: <b class="rice"><b class="menge">40</b></b> g</li>
+<li>Zucchini: <b class="zuccini"><b class="menge">250</b></b> g</li>
+<li>Erbsen: <b class="peas"><b class="menge">100</b></b> g</li>
 <li>Zwiebel</li>
 <li>Olivenöl: <b class="menge">1</b> EL</li>
 <li>Pesto: <b class="menge">1</b> TL</li>
@@ -549,23 +767,23 @@ Beilage
 
 <p>Snack</p>
 <ul>
-<li>Kokosmilch: <b class="menge">240</b> ml</li>
+<li>Kokosmilch: <b class="coconutmilk"><b class="menge">240</b></b> ml</li>
 <li>Schokonuss-Müsliriegel: <b class="menge">1</b></li>
 </ul>
 
 <p>Abendessen</p>
 <ul>
-<li>gekochte weiße Bohnen: <b class="menge">200</b> g</li>
+<li>gekochte weiße Bohnen: <b class="white_beans"><b class="menge">200</b></b> g</li>
 <li>Chicoree (oder anderes Blattgemüse): <b class="menge">180</b> g</li>
 <li>Olivenöl: <b class="menge">2</b> EL</li>
-<li>Kirschtomaten: <b class="menge">40</b> g</li>
+<li>Kirschtomaten: <b class="tomatoes"><b class="menge">40</b></b> g</li>
 <li>Chili</li>
 <li>Zwiebeln und Rosmarin</li>
 <li>Knoblauchzehe: <b class="menge">1</b> EL</li>
 <li>Vollkornfladenbrot mit Olivenöl: <b class="menge">50</b> g</li>
 <li>Salz und Pfeffer</li>
 Dessert:
-<li>Mandeln: <b class="menge">25</b> g</li>
+<li>Mandeln: <b class="almond"><b class="menge">25</b></b> g</li>
 <li>frische Kirschen: <b class="menge">80</b> g oder getrocknete Kirschen: <b class="menge">20</b> g</li>
 </ul>
 
@@ -574,7 +792,7 @@ Dessert:
 <p>Frühstück</p>
 <ul>
 <li>Kaffee</li>
-<li>Mandelmilch: <b class="menge">240</b> ml</li>
+<li>Mandelmilch: <b class="almond_milk"><b class="menge">240</b></b> ml</li>
 <li>Rosinen-Nuss-Brot: <b class="menge">40</b> g</li>
 <li>mittelgroße Banane: <b class="menge">1</b> </li>
 </ul>
@@ -583,14 +801,14 @@ Dessert:
 <ul>
 <li>Vollkornfladenbrot mit Olivenöl: <b class="menge">40</b> g</li>
 <li>Fenchel: <b class="menge">150</b> g</li>
-<li>Kirschtomaten: <b class="menge">150</b> g</li>
+<li>Kirschtomaten: <b class="tomatoes"><b class="menge">150</b></b> g</li>
 <li>mittelgroße Karotten: <b class="menge">1</b></li>
-<li>Oliven: <b class="menge">20</b> g</li>
+<li>Oliven: <b class="olives"><b class="menge">20</b></b> g</li>
 <li>Zwiebel: <b class="menge">1</b></li>
 <li>Olivenöl: <b class="menge">1</b> EL</li>
 <li>Petersilie, Salz und Pfeffer</li>
 Beilage
-<li>Chicoree (oder anderes Blattgemüse): <b class="menge">200</b> g</li>
+<li>Chicoree (oder anderes Blattgemüse): <b class="other_leafy_greens"><b class="menge">200</b></b> g</li>
 </ul>
 
 <p>Snack</p>
@@ -602,9 +820,9 @@ Beilage
 <p>Abendessen</p>
 <ul>
 <li>schwarzer Reis: <b class="menge">40</b> g</li>
-<li>Zuccini: <b class="menge">250</b> g</li>
-<li>Garnelen: <b class="menge">80</b> g</li>
-<li>Kirschtomaten: <b class="menge">150</b> g</li>
+<li>Zuccini: <b class="zuccini"><b class="menge">250</b></b> g</li>
+<li>Garnelen: <b class="prawns"><b class="menge">80</b></b> g</li>
+<li>Kirschtomaten: <b class="tomatoes"><b class="menge">150</b></b> g</li>
 <li>Olivenöl: <b class="menge">2</b> EL</li>
 <li>geriebener Parmesan: <b class="menge">1</b> TL</li>
 <li>Safran: <b class="menge">4</b> g</li>
@@ -612,8 +830,8 @@ Beilage
 Beilage
 <li>gemischter Salat aus Tomaten und Karotten mit Balsamessig: <b class="menge">200</b> g</li>
 Dessert
-<li>getrocknete rote Heidelbeeren: <b class="menge">20</b> g</li>
-<li>Walnüsse: <b class="menge">25</b> g</li>
+<li>getrocknete rote Heidelbeeren: <b class="dried_blueberries"><b class="menge">20</b></b> g</li>
+<li>Walnüsse: <b class="walnuts"><b class="menge">25</b></b> g</li>
 </ul>
 
 <h3>Tag 5</h3>
@@ -622,7 +840,7 @@ Dessert
 
 <ul>
 <li>grüner & schwarzer Tee mit Zitronensaft</li>
-<li>Reis- oder Vollkornzwieback: <b class="menge">40</b> g</li>
+<li>Reis- oder Vollkornzwieback: <b class="Dinkelzwieback"><b class="menge">40</b></b> g</li>
 <li>mittelgroße Banane: <b class="menge">1</b></li>
 <li>Zartbitterschockolade (mind. 70% Kakaoanteil): <b class="menge">30</b> g</li>
 </ul>
@@ -630,12 +848,12 @@ Dessert
 <p>Mittagessen</p>
 
 <ul>
-<li>Dinkel: <b class="menge">40</b> g</li>
+<li>Dinkel: <b class="spelt"><b class="menge">40</b></b> g</li>
 <li>mittelgroße Karotte: <b class="menge">1</b> </li>
-<li>Kirschtomate: <b class="menge">150</b> g</li>
+<li>Kirschtomate: <b class="tomatoes"><b class="menge">150</b></b> g</li>
 <li>eingelegte Artischokenherzen: <b class="menge">80</b> g</li>
-<li>Pilze: <b class="menge">150</b> g</li>
-<li>Oliven: <b class="menge">20</b> g</li>
+<li>Pilze: <b class="mushrooms"><b class="menge">150</b></b> g</li>
+<li>Oliven: <b class="olives"><b class="menge">20</b></b> g</li>
 <li>Olivenöl: <b class="menge">1</b> EL</li>
 <li>Knoblauchzehe: <b class="menge">1</b> </li>
 <li>Petersilie, Salz, Pfeffer</li>
@@ -649,27 +867,27 @@ Beilage
 <p>Snack</p>
 
 <ul>
-<li>Mandelmilch: <b class="menge">240</b> g</li>
+<li>Mandelmilch: <b class="almond_milk"><b class="menge">240</b></b> ml</li>
 <li>Schokonuss-Müsliriegel: <b class="menge">1</b></li>
 </ul>
 
 <p>Abendessen</p>
 
 <ul>
-<li>gekochte weiße Bohnen: <b class="menge">200</b> g</li>
-<li>Nudeln: <b class="menge">40</b> g</li>
+<li>gekochte weiße Bohnen: <b class="white beans"><b class="menge">200</b></b> g</li>
+<li>Nudeln: <b class="pasta"><b class="menge">40</b></b> g</li>
 <li>Kartoffel: <b class="menge">1</b></li>
 <li>Aubergine: <b class="menge">1</b></li>
-<li>Zucchini: <b class="menge">1</b></li>
+<li>Zucchini: <b class="zuccini"><b class="menge">250</b></b> g</li>
 <li>Kohl: <b class="menge">1</b></li>
-<li>Erbsen: <b class="menge">1</b>  Handvoll</li>
-<li>grüne Bohnen: <b class="menge">150</b> g</li>
+<li>Erbsen: <b class="peas"><b class="menge">1</b></b>  Handvoll</li>
+<li>grüne Bohnen: <b class="green_beans"><b class="menge">150</b></b> g</li>
 <li>Knoblauchzehe: <b class="menge">1</b> </li>
 <li>Pesto: <b class="menge">1</b> TL</li>
 <li>Salz und Pfeffer</li>
 Beilage
 <li>grüner Salat: <b class="menge">150</b> g</li>
-<li>Vollkornbrot: <b class="menge">20</b> g</li>
+<li>Vollkornbrot: <b class="wholemeal_weizen_bread"><b class="menge">20</b></b> g</li>
 Desert
 <li>frisches Obst, z.B. Weintrauben: <b class="menge">150</b> g</li>
 </ul>
@@ -687,7 +905,7 @@ Desert
 <p>Mittagessen</p>
 
 <ul>
-<li>Tomaten: <b class="menge">500</b> g</li>
+<li>Tomaten: <b class="tomatoes"><b class="menge">500</b></b> g</li>
 <li>mittelgroße Karotte: <b class="menge">1</b></li>
 <li>mittelgroßer Sellerie: <b class="menge">1</b></li>
 <li>mittelgroße Kartoffel: <b class="menge">1</b></li>
@@ -700,31 +918,31 @@ Desert
 
 Beilage
 <li>gemischter grüner Salat mit Karotte und Tomate: <b class="menge">200</b> g</li>
-<li>gekochtes Blattgemüse: <b class="menge">150</b> g</li>
-<li>Vollkornbrot: <b class="menge">20</b> g</li>
+<li>gekochtes Blattgemüse: <b class="other_leafy_greens"><b class="menge">150</b></b> g</li>
+<li>Vollkornbrot: <b class="wholemeal_weizen_bread"><b class="menge">20</b></b> g</li>
 </ul>
 
 <p>Snack</p>
 
 <ul>
-<li>Mandelmilch: <b class="menge">240</b> ml</li>
+<li>Mandelmilch: <b class="almondmilk"><b class="menge">240</b></b> ml</li>
 <li>Schokonuss-Müsliriegel: <b class="menge">1</b></li>
 </ul>
 
 <p>Abendessen</p>
 
 <ul>
-<li>eingeweichte Kichererbsen: <b class="menge">200</b> g Abtropfgewicht</li>
+<li>eingeweichte Kichererbsen: <b class="chickpeas"><b class="menge">200</b></b> g Abtropfgewicht</li>
 <li>Knoblauch</li>
 <li>Rosmarin</li>
 <li>Olivenöl: <b class="menge">2</b> EL</li>
-<li>Brokkoli: <b class="menge">150</b> g</li>
+<li>Brokkoli: <b class="broccoli"><b class="menge">150</b></b> g</li>
 <li>Salz und Pfeffer</li>
 <li>Kichererbsen-Farinata (glutenfrei): <b class="menge">60</b> g</li>
 <li>Zitronensaft</li>
 Dessert:
 <li>getrocknete Aprikosen: <b class="menge">20</b> g</li>
-<li>Mandeln: <b class="menge">25</b> g</li>
+<li>Mandeln: <b class="almond"><b class="menge">25</b></b> g</li>
 </ul>
 
 <h3>Tag 7</h3>
@@ -733,8 +951,8 @@ Dessert:
 
 <ul>
 <li>Kaffee oder Tee</li>
-<li>Mandelmilch: <b class="menge">240</b> ml</li>
-<li>Rosinenbrot: <b class="menge">40</b> g</li>
+<li>Mandelmilch: <b class="almondmilk"><b class="menge">240</b></b> ml</li>
+<li>Rosinenbrot: <b class="raisinbread"><b class="menge">40</b></b> g</li>
 <li>Honig: <b class="menge">1</b> TL</li>
 </ul>
 
@@ -742,11 +960,11 @@ Dessert:
 
 <ul>
 <li>Gerste: <b class="menge">40</b> g</li>
-<li>Brokkoli: <b class="menge">150</b> g</li>
-<li>Kirschtomaten: <b class="menge">100</b> g</li>
-<li>mittelgroße Karotte: <b class="menge">1</b></li>
+<li>Brokkoli: <b class="broccoli"><b class="menge">150</b></b> g</li>
+<li>Kirschtomaten: <b class="tomatoes"><b class="menge">100</b></b> g</li>
+<li>mittelgroße Karotte: <b class="carrot"><b class="menge">1</b></b></li>
 <li>Zwiebeln nach Belieben</li>
-<li>Feta: <b class="menge">20</b> g</li>
+<li>Feta: <b class="feta"><b class="menge">20</b></b> g</li>
 <li>Olivenöl: <b class="menge">1</b> EL</li>
 <li>Petersilie, Salz und Pfeffer</li>
 </ul>
@@ -754,22 +972,23 @@ Dessert:
 <p>Abendessen</p>
 
 <ul>
-<li>Pizzateig: <b class="menge">100</b> g</li>
-<li>Sardinen und Sardellen: <b class="menge">100</b> g</li>
-<li>Kirschtomaten: <b class="menge">80</b> g</li>
+<li>Pizzateig: <b class="pizzadow"><b class="menge">100</b></b> g</li>
+<li>Sardinen und Sardellen: <b class="sardinas"><b class="menge">100</b></b> g</li>
+<li>Kirschtomaten: <b class="tomatoes"><b class="menge">80</b></b> g</li>
 <li>in öl oder Essig eingelegte Artischockenherzen: <b class="menge">50</b> g</li>
-<li>Pilze: <b class="menge">100</b> g</li>
-<li>Spinat: <b class="menge">100</b> g</li>
-<li>Paprika: <b class="menge">100</b> g</li>
-<li>schwarze Oliven: <b class="menge">20</b> g</li>
+<li>Pilze: <b class="mushrooms"><b class="menge">100</b></b> g</li>
+<li>Spinat: <b class="spinach"><b class="menge">100</b></b> g</li>
+<li>Paprika: <b class="paprika"><b class="menge">100</b></b> g</li>
+<li>schwarze Oliven: <b class="olives"><b class="menge">20</b></b> g</li>
 <li>Olivenöl: <b class="menge">2</b> EL</li>
 <li>Salz und Pfeffer</li>
 <li>Kräuter und Gewürze</li>
 
 Dessert
-<li>Pistazien (ungesalzen): <b class="menge">25</b> g</li>
-<li>getrocknete rote Heidelbeeren: <b class="menge">20</b> g</li>
+<li>Pistazien (ungesalzen): <b class="pistachio"><b class="menge">25</b></b> g</li>
+<li>getrocknete rote Heidelbeeren: <b class="dried_blueberries"><b class="menge">20</b></b> g</li>
 </ul>
+</div>
 
 
 </body>
