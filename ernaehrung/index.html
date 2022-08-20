@@ -99,6 +99,11 @@ function multiply_quantities(multiplikator) {
     ingredient_after_one_week("asparagus", week);
     ingredient_after_one_week("dried_fruits", week);
     ingredient_after_one_week("spelt", week);
+    ingredient_after_one_week("pumpkin_seed", week);
+    ingredient_after_one_week("parmesan", week);
+    ingredient_after_one_week("riegel", week);
+    ingredient_after_one_week("bitter_chocolate", week);
+    ingredient_after_one_week("barley", week);
   }
 
 function adjust_quantities(){
@@ -126,7 +131,7 @@ function adjust_quantities(){
 
 <h1>Beispiel-Diet</h1>
 
-<h2>Unvollstaendige Einkaufsliste Woche 1</h2>
+<h2>Unvollständige Einkaufsliste Woche 1</h2>
 <ul>
 <li>Spinat: <b id="total_spinach_week_1">0</b> g</li>
 <li>Anderes Blattgemüse (z.B. Mangold): <b id="total_other_leafy_greens_week_1">0</b> g</li>
@@ -178,6 +183,11 @@ function adjust_quantities(){
 <li>Spargel: <b id="total_asparagus_week_1">0</b> g</li>
 <li>Getrocknetes Obst: <b id="total_dried_fruits_week_1">0</b> g</li>
 <li>Dinkel: <b id="total_spelt_week_1">0</b> g</li>
+<li>Kürbiskerne: <b id="total_pumpkin_seed_week_1">0</b> TL</li>
+<li>Parmesan: <b id="total_parmesan_week_1">0</b> TL</li>
+<li>Schokonuss-Müsliriegel (geringer Zuckeranteil, Zartbitterschokolade, ohne Milch): <b id="total_riegel_week_1">0</b></li>
+<li>Zartbitterschockolade (mind. 70% Kakaoanteil): <b id="total_bitter_chocolate_week_1">0</b> g</li>
+<li>Gerste: <b id="total_barley_week_1">0</b> g</li>
 
 </ul>
 
@@ -199,7 +209,7 @@ function adjust_quantities(){
 <h3>Frisches für Salate</h3>
 Tomaten, Karotten, Fenchel, Paprika,...
 
-<h2>Unvollstaendige Einkaufsliste Woche 2</h2>
+<h2>Unvollständige Einkaufsliste Woche 2</h2>
 <ul>
 <li>Spinat: <b id="total_spinach_week_2">0</b> g</li>
 <li>Anderes Blattgemüse (z.B. Mangold): <b id="total_other_leafy_greens_week_2">0</b> g</li>
@@ -251,6 +261,11 @@ Tomaten, Karotten, Fenchel, Paprika,...
 <li>Spargel: <b id="total_asparagus_week_2">0</b> g</li>
 <li>Getrocknetes Obst: <b id="total_dried_fruits_week_2">0</b> g</li>
 <li>Dinkel: <b id="total_spelt_week_2">0</b> g</li>
+<li>Kürbiskerne: <b id="total_pumpkin_seed_week_2">0</b> TL</li>
+<li>Parmesan: <b id="total_parmesan_week_2">0</b> TL</li>
+<li>Schokonuss-Müsliriegel (geringer Zuckeranteil, Zartbitterschokolade, ohne Milch): <b id="total_riegel_week_2">0</b></li>
+<li>Zartbitterschockolade (mind. 70% Kakaoanteil): <b id="total_bitter_chocolate_week_2">0</b> g</li>
+<li>Gerste: <b id="total_barley_week_2">0</b> g</li>
 
 </ul>
 
@@ -296,7 +311,7 @@ Tomaten, Karotten, Fenchel, Paprika,...
 <p>Snack</p>
 <ul>
 <li>Kokosmilch: <b class="coconutmilk"><b class="menge">240</b></b> ml</li>
-<li>Schokonuss-Müsliriegel (geringer Zuckeranteil, Zartbitterschokolade, ohne Milch): <b class="menge">240</b> g</li>
+<li>Schokonuss-Müsliriegel (geringer Zuckeranteil, Zartbitterschokolade, ohne Milch): <b class="riegel"><b class="menge">1</b></b></li>
 </ul>
 
 <p>Abendessen</p>
@@ -306,7 +321,7 @@ Tomaten, Karotten, Fenchel, Paprika,...
 <li>Vollkornnudeln: <b class="pasta"><b class="menge">40</b></b> g</li>
 <li>Olivenöl: <b class="menge">2</b> EL</li>
 <li>Knoblauch, Chilischote, Salz, Pfeffer</li>
-<li>Parmesan  <b class="menge">1</b> TL</li>
+<li>Parmesan  <b class="parmesan"><b class="menge">1</b></b> TL</li>
 </ul>
 
 <br>
@@ -350,7 +365,7 @@ Als Beilage:
 <p>Snack</p>
 <ul>
 <li>Mandelmilch: <b class="almondmilk"><b class="menge">240</b></b> ml</li>
-<li>Schokonuss-Müsliriegel</li>
+<li>Schokonuss-Müsliriegel: <b class="riegel"><b class="menge">1</b></b></li>
 </ul>
 
 <p>Abendessen</p>
@@ -420,7 +435,7 @@ Dazu
 <li>Suppengemüse: <b class="soup_vegetables"><b class="menge">250</b></b> g</li>
 <li>gekochte Kichererbsen: <b class="chickpeas"><b class="menge">200</b></b> g (Abtropfgewicht)</li>
 <li>Olivenöl: <b class="menge">2</b> EL</li>
-<li>geriebener Parmesan: <b class="menge">1</b> TL</li>
+<li>geriebener Parmesan: <b class="parmesan"><b class="menge">1</b></b> TL</li>
 <li>Salz und Pfeffer</li>
 
 Beilage
@@ -443,7 +458,7 @@ Desert
 <p>Mittagessen</p>
 
 <ul>
-<li>Gerste: <b class="menge">30</b> g</li>
+<li>Gerste: <b class="barley"><b class="menge">30</b></b> g</li>
 <li>Tomate: <b class="tomatoes"><b class="menge">150</b></b> g</li>
 <li>rohe Pilze: <b class="mushrooms"><b class="menge">75</b></b> g</li>
 <li>rohe Paprika: <b class="menge">150</b> g</li>
@@ -458,7 +473,7 @@ Desert
 
 <ul>
 <li>Nussmilch: <b class="nutmilk"><b class="menge">240</b></b> ml bzw. <b class="menge">1</b> Glas</li>
-<li>Schokonuss-Müsliriegel</li>
+<li>Schokonuss-Müsliriegel: <b class="riegel"><b class="menge">1</b></b></li>
 </ul>
 
 <p>Abendessen</p>
@@ -510,7 +525,7 @@ Beilage:
 
 <ul>
 <li>Nussmilch: <b class="nutmilk"><b class="menge">240</b></b> ml</li>
-<li>Schokonuss-Müsliriegel</li>
+<li>Schokonuss-Müsliriegel: <b class="riegel"><b class="menge">1</b></b></li>
 </ul>
 
 <p>Abendessen</p>
@@ -557,7 +572,7 @@ Dessert
 
 <ul>
 <li>Mandelmilch: <b class="almondmilk"><b class="menge">240</b></b> ml</li>
-<li>Schokonuss-Müsliriegel: <b class="menge">1</b></li>
+<li>Schokonuss-Müsliriegel: <b class="riegel"><b class="menge">1</b></b></li>
 </ul>
 
 <p>Abendessen</p>
@@ -572,7 +587,7 @@ Dessert
 <li>Knoblauchzehen</li>
 <li>Basilikumblätter <b class="menge">5</b></li>
 <li>Olivenöl <b class="menge">2</b> EL</li>
-<li>geriebener Parmesan <b class="menge">1</b> TL</li>
+<li>geriebener Parmesan <b class="parmesan"><b class="menge">1</b></b> TL</li>
 
 Beilage
 <li>gemischter Salat aus Tomaten, Karotten, Mais, Gurke mit öl und Zitronensaft <b class="menge">200</b> g</li>
@@ -604,7 +619,7 @@ Desert
 <li>Olivenöl: <b class="menge">1</b> EL</li>
 <li>Knoblauchzehen: <b class="menge">2</b></li>
 <li>Chili</li>
-<li>geriebener Parmesan: <b class="menge">1</b> TL</li>
+<li>geriebener Parmesan: <b class="parmesan"><b class="menge">1</b></b> TL</li>
 <li>Salz, Pfeffer</li>
 <li>Weizenvollkornbrot: <b class="wholemeal_weizen_bread"><b class="menge">20</b></b> g</li>
 Beilage
@@ -615,7 +630,7 @@ Beilage
 
 <ul>
 <li>Ziegenjoghurt: <b class="menge">125</b> g</li>
-<li>Schockonuss-Müsliregel: <b class="menge">8</b> g</li>
+<li>Schokonuss-Müsliregel: <b class="riegel"><b class="menge">1</b></b></li>
 </ul>
 
 <p>Abendessen</p>
@@ -627,7 +642,7 @@ Beilage
 <li>Knoblauchzehen: <b class="menge">2</b></li>
 <li>Weißwein: <b class="menge">40</b> ml</li>
 <li>Petersilie</li>
-<li>Oliven: <b class="menge">15</b></li>
+<li>Oliven: <b class="olives"><b class="menge">15</b></b> g</li>
 <li>Kapern: <b class="menge">20</b> g</li>
 <li>Olivenöl: <b class="menge">2</b> EL</li>
 <li>Salz und Pfeffer</li>
@@ -668,7 +683,7 @@ Dessert:
 <p>Snack</p>
 <ul>
 <li>Nussmilch: <b class="nutmilk"><b class="menge">240</b></b>ml</li>
-<li>Schokonuss-Müsliriegel: <b class="menge">1</b></li>
+<li>Schokonuss-Müsliriegel: <b class="riegel"><b class="menge">1</b></b></li>
 </ul>
 
 <p>Abendessen</p>
@@ -707,7 +722,7 @@ Desert
 <li>Petersilie, Chili (nach Belieben)</li>
 <li>Salz und Pfeffer</li>
 <li>geröstete Brotwürfel: <b class="menge">20</b> g</li>
-<li>Kürbiskerne: <b class="menge">1</b> TL</li>
+<li>Kürbiskerne: <b class="pumpkin_seed"><b class="menge">1</b></b> TL</li>
 Beilage
 <li>gemischter Salat aus Gurke, Karotte, Tomate: <b class="menge">200</b> g</li>
 <li>Vollkornbrot: <b class="wholemeal_weizen_bread"><b class="menge">40</b></b> g</li>
@@ -767,7 +782,7 @@ Beilage
 <p>Snack</p>
 <ul>
 <li>Kokosmilch: <b class="coconutmilk"><b class="menge">240</b></b> ml</li>
-<li>Schokonuss-Müsliriegel: <b class="menge">1</b></li>
+<li>Schokonuss-Müsliriegel: <b class="riegel"><b class="menge">1</b></b></li>
 </ul>
 
 <p>Abendessen</p>
@@ -813,7 +828,7 @@ Beilage
 <p>Snack</p>
 <ul>
 <li>Ziegenjoghurt: <b class="menge">100</b> g</li>
-<li>Schokonuss-Müsliriegel: <b class="menge">1</b></li>
+<li>Schokonuss-Müsliriegel: <b class="riegel"><b class="menge">1</b></b></li>
 </ul>
 
 <p>Abendessen</p>
@@ -823,7 +838,7 @@ Beilage
 <li>Garnelen: <b class="prawns"><b class="menge">80</b></b> g</li>
 <li>Kirschtomaten: <b class="tomatoes"><b class="menge">150</b></b> g</li>
 <li>Olivenöl: <b class="menge">2</b> EL</li>
-<li>geriebener Parmesan: <b class="menge">1</b> TL</li>
+<li>geriebener Parmesan: <b class="parmesan"><b class="menge">1</b></b> TL</li>
 <li>Safran: <b class="menge">4</b> g</li>
 <li>Petersilie, Salz, Pfeffer</li>
 Beilage
@@ -845,7 +860,7 @@ Dessert
 <li>grüner & schwarzer Tee mit Zitronensaft</li>
 <li>Reis- oder Vollkornzwieback: <b class="Dinkelzwieback"><b class="menge">40</b></b> g</li>
 <li>mittelgroße Banane: <b class="menge">1</b></li>
-<li>Zartbitterschockolade (mind. 70% Kakaoanteil): <b class="menge">30</b> g</li>
+<li>Zartbitterschokolade (mind. 70% Kakaoanteil): <b class="bitter_chocolate"><b class="menge">30</b></b> g</li>
 </ul>
 
 <p>Mittagessen</p>
@@ -871,7 +886,7 @@ Beilage
 
 <ul>
 <li>Mandelmilch: <b class="almond_milk"><b class="menge">240</b></b> ml</li>
-<li>Schokonuss-Müsliriegel: <b class="menge">1</b></li>
+<li>Schokonuss-Müsliriegel: <b class="riegel"><b class="menge">1</b></b></li>
 </ul>
 
 <p>Abendessen</p>
@@ -929,7 +944,7 @@ Beilage
 
 <ul>
 <li>Mandelmilch: <b class="almondmilk"><b class="menge">240</b></b> ml</li>
-<li>Schokonuss-Müsliriegel: <b class="menge">1</b></li>
+<li>Schokonuss-Müsliriegel: <b class="riegel"><b class="menge">1</b></b></li>
 </ul>
 
 <p>Abendessen</p>
@@ -962,7 +977,7 @@ Dessert:
 <p>Mittagessen</p>
 
 <ul>
-<li>Gerste: <b class="menge">40</b> g</li>
+<li>Gerste: <b class="barley"><b class="menge">40</b></b> g</li>
 <li>Brokkoli: <b class="broccoli"><b class="menge">150</b></b> g</li>
 <li>Kirschtomaten: <b class="tomatoes"><b class="menge">100</b></b> g</li>
 <li>mittelgroße Karotte: <b class="carrot"><b class="menge">1</b></b></li>
