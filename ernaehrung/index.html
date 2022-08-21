@@ -104,6 +104,10 @@ function multiply_quantities(multiplikator) {
     ingredient_after_one_week("riegel", week);
     ingredient_after_one_week("bitter_chocolate", week);
     ingredient_after_one_week("barley", week);
+    ingredient_after_one_week("cherries", week);
+    ingredient_after_one_week("corn", week);
+    ingredient_after_one_week("lentils", week);
+    ingredient_after_one_week("serials", week);
   }
 
 function adjust_quantities(){
@@ -188,6 +192,10 @@ function adjust_quantities(){
 <li>Schokonuss-Müsliriegel (geringer Zuckeranteil, Zartbitterschokolade, ohne Milch): <b id="total_riegel_week_1">0</b></li>
 <li>Zartbitterschockolade (mind. 70% Kakaoanteil): <b id="total_bitter_chocolate_week_1">0</b> g</li>
 <li>Gerste: <b id="total_barley_week_1">0</b> g</li>
+<li>Kirschen: <b id="total_cherries_week_1">0</b> g</li>
+<li>Mais: <b id="total_corn_week_1">0</b> g</li>
+<li>Linsen: <b id="total_lentils_week_1">0</b> g</li>
+<li>Müsli: <b id="total_serials_week_1">0</b> g</li>
 
 </ul>
 
@@ -266,6 +274,10 @@ Tomaten, Karotten, Fenchel, Paprika,...
 <li>Schokonuss-Müsliriegel (geringer Zuckeranteil, Zartbitterschokolade, ohne Milch): <b id="total_riegel_week_2">0</b></li>
 <li>Zartbitterschockolade (mind. 70% Kakaoanteil): <b id="total_bitter_chocolate_week_2">0</b> g</li>
 <li>Gerste: <b id="total_barley_week_2">0</b> g</li>
+<li>Kirschen: <b id="total_cherries_week_2">0</b> g</li>
+<li>Mais: <b id="total_corn_week_2">0</b> g</li>
+<li>Linsen: <b id="total_lentils_week_2">0</b> g</li>
+<li>Müsli: <b id="total_serials_week_2">0</b> g</li>
 
 </ul>
 
@@ -441,7 +453,7 @@ Dazu
 Beilage
 <li>grüner Salat (Tomate, Karotten Fenchel, grüner Paprika, Olivenöl, Zitronensaft): <b class="menge">200</b> g</li>
 Desert
-<li><b class="menge">100</b> g frische Kirschen oder <b class="menge">20</b> g getrocknete Kirschen</li>
+<li><b class="cherries"><b class="menge">100</b></b> g frische Kirschen oder <b class="menge">20</b> g getrocknete Kirschen</li>
 <li>Mandeln: <b class="menge">25</b> TL</li>
 </ul>
 
@@ -461,8 +473,8 @@ Desert
 <li>Gerste: <b class="barley"><b class="menge">30</b></b> g</li>
 <li>Tomate: <b class="tomatoes"><b class="menge">150</b></b> g</li>
 <li>rohe Pilze: <b class="mushrooms"><b class="menge">75</b></b> g</li>
-<li>rohe Paprika: <b class="menge">150</b> g</li>
-<li>Mais: <b class="menge">10</b> g</li>
+<li>rohe Paprika: <b class="paprika"><b class="menge">150</b></b> g</li>
+<li>Mais: <b class="corn"><b class="menge">10</b></b> g</li>
 <li>eingelegtes Gemüse (Artischockenherzen, Cornichons, Silberzwiebeln): <b class="menge">150</b> g</li>
 <li>Pekannüsse: <b class="pekannuts"><b class="menge">9</b></b> g</li>
 <li>Olivenöl: <b class="menge">1</b> EL</li>
@@ -479,7 +491,7 @@ Desert
 <p>Abendessen</p>
 
 <ul>
-<li>eingeweichte Linsen<b class="menge">150</b> g (Aptropfgewicht)</li>
+<li>eingeweichte Linsen<b class="lentils"><b class="menge">150</b></b> g (Aptropfgewicht)</li>
 <li>Nudeln<b class="menge">40</b> g</li>
 <li>mittelgroße Kartoffel<b class="menge">1</b></li>
 <li>Karotte<b class="carrot"><b class="menge">1</b></b> </li>
@@ -501,7 +513,7 @@ Dessert:
 
 <ul>
 <li>schwarzer Kaffee</li>
-<li>Müsli: <b class="menge">80</b> g</li>
+<li>Müsli: <b class="serials"><b class="menge">80</b></b> g</li>
 <li>Mandelmilch: <b class="almondmilk"><b class="menge">240</b></b> ml</li>
 <li>Honig: <b class="menge">1</b> TL</li>
 </ul>
@@ -607,7 +619,7 @@ Desert
 <ul>
 <li>schwarzer Kaffee</li>
 <li>Mandelmilch: <b class="almondmilk"><b class="menge">240</b></b> ml</li>
-<li>Getreideflocken mit Trockenobst mit Nüssen: <b class="menge">60</b> g</li>
+<li>Getreideflocken mit Trockenobst mit Nüssen: <b class="serials"><b class="menge">60</b></b> g</li>
 <li>frisches Obst</li>
 </ul>
 
@@ -662,7 +674,7 @@ Dessert:
 <p>Frühstück</p>
 <ul>
 <li>schwarzer Kaffee</li>
-<li>Müsli: <b class="menge">80</b>g</li>
+<li>Müsli: <b class="serials"><b class="menge">80</b></b>g</li>
 <li>Mandelmilch ohne Zuckerzusatz: <b class="almondmilk"><b class="menge">240</b></b>ml</li>
 <li>Honig: <b class="menge">1</b>TL</li>
 </ul>
